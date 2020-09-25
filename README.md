@@ -1,2 +1,2 @@
-# Gemirzinho
-Useful functions.
+# GemirTools
+Useful functions. 
