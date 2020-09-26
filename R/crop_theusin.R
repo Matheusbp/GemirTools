@@ -11,6 +11,7 @@
 #'
 #' @export
 #' @examples
+#' library("raster")
 #' r <- raster::raster(nrow=45, ncol=90)
 #' values(r) <- 1:ncell(r)
 #' e <- raster::extent(-160, 10, 30, 60)
