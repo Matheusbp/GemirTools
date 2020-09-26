@@ -12,7 +12,10 @@
 #' @export
 #' @examples
 #' library("raster")
-#' #I do not have any example. Malz aí!
+#' r <- raster::raster(nrow=45, ncol=90)
+#' values(r) <- 1:ncell(r)
+#' e <- raster::extent(-160, 10, 30, 60)
+#' crop_theusin(e, r)
 
 crop_theusin <- function(dataset, shape){
 
