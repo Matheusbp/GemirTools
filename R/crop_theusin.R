@@ -14,7 +14,7 @@
 #'
 #' r <- raster::raster(nrow=45, ncol=90)
 #' num_cells <- raster::ncell(r)
-#' values(r) <- 1:num_cells
+#' raster::values(r) <- 1:num_cells
 #' e <- raster::extent(-160, 10, 30, 60)
 #' crop_theusin(e, r)
 
