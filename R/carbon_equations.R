@@ -13,7 +13,7 @@
 #'
 #' @return The output returns the amount of Carbon in each plant
 #'
-#' @note References
+#' \note{ References
 #' Velasco, 2009: Estimativa de sequestro de carbono em mata ciliar: projeto POMAR, São Paulo (SP) / Estimate of carbon sequestration in riparian forests: the POMAR project case, São Paulo (SP). Ambiência, 5, 135–141.
 #' Vieira, S. A., and Coauthors, 2008: Estimation of biomass and carbon stocks: The case of the Atlantic Forest. Biota Neotrop., 8, 21–29, https://doi.org/10.1590/S1676-06032008000200001.
 #' Alves, L. F., S. A. Vieira, M. A. Scaranello, P. B. Camargo, F. A. M. Santos, C. A. Joly, and L. A. Martinelli, 2010: Forest structure and live aboveground biomass variation along an elevational gradient of tropical Atlantic moist forest (Brazil). For. Ecol. Manage., 260, 679–691, https://doi.org/10.1016/j.foreco.2010.05.023.
@@ -21,7 +21,7 @@
 #' Meireles, 2018: CARACTERIZAÇÃO DO ESTOQUE DE CARBONO E EQUAÇÕES ALOMÉTRICAS PARA ESTIMATIVA DE BIOMASSA DE CAFEEIROS ASSOCIADOS À GREVÍLEAS. 0–155.
 #' Corrêa, A., 2013: AGROFLORESTA, E C O L O G I A e SOCIEDADE.
 #' Conti, G., and Coauthors, 2019: Developing allometric models to predict the individual aboveground biomass of shrubs worldwide. Glob. Ecol. Biogeogr., 28, 961–975, https://doi.org/10.1111/geb.12907.
-#'
+#' }
 #'
 #'
 #'
