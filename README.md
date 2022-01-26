@@ -1,12 +1,9 @@
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/"
-)
-```
+---
+output: github_document
+---
 
-# GemirTools  <img src="man/figures/logo.png" align="right" alt="" width="120" />
+
+# GemirTools  <img src="man/figures/logo.png" align="right" alt="" width="250" />
 
 +Useful functions
 
