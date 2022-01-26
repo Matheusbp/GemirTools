@@ -6,13 +6,12 @@
 \alias{coffee_carbon}
 \alias{banana_carbon}
 \alias{jussara_carbon}
-\alias{carbono_produto_madeira}
 \alias{arbusto_carbon}
-\title{Set of Carbon equations}
+\title{Set of Carbon equations of ABG}
 \usage{
-palmeira_carbon(dap_palmeira)
+palmeira_carbon(dap)
 
-general_carbon(dap_arvere, altura, densidade_madeira)
+general_carbon(dap, altura, densidade_madeira)
 
 coffee_carbon(diam_base)
 
@@ -20,20 +19,10 @@ banana_carbon(dap)
 
 jussara_carbon(dap, altura)
 
-carbono_produto_madeira(
-  carbono_biomassa_arvores,
-  anos,
-  wwf_fraction = 0.24,
-  slf_class = 0.12,
-  fo = 0.86
-)
-
 arbusto_carbon(altura_arbusto, crown_diameter)
 }
 \arguments{
-\item{dap_palmeira}{DAP da palmeira [cm]}
-
-\item{dap_arvere}{DAP da árvore na equação geral [cm]}
+\item{dap}{DAP da arvore [cm]}
 
 \item{altura}{Altura da árvore [m]}
 
@@ -41,25 +30,12 @@ arbusto_carbon(altura_arbusto, crown_diameter)
 
 \item{diam_base}{Diametro da base do café [cm]}
 
-\item{dap}{DAP da arvore [cm]}
-
-\item{carbono_biomassa_arvores}{O carbono total da especie [kgC or tC]}
-
-\item{anos}{Anos pós corte}
-
-\item{wwf_fraction}{0.24 from Verra}
-
-\item{slf_class}{0.12 from Verra}
-
-\item{fo}{0.86 from Verra}
-
 \item{altura_arbusto}{Altura do arbusto [cm]}
 
 \item{crown_diameter}{Dimetro da copa do arbusto [m]}
 }
 \value{
-The output returns the amount of Carbon in each plant or
-the carbon sequesteres after cutting trees (if using carbono_produto_madeira())
+The output returns the amount of Carbon in each plant
 }
 \description{
 These functions calculate the amount of Carbon in each plant +

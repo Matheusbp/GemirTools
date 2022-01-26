@@ -2,10 +2,10 @@
 
 export(arbusto_carbon)
 export(banana_carbon)
-export(carbono_produto_madeira)
 export(coffee_carbon)
 export(crop_theusin)
 export(evalparsetext)
 export(general_carbon)
 export(jussara_carbon)
 export(palmeira_carbon)
+export(wood_product_carbon)
