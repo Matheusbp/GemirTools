@@ -11,6 +11,8 @@
 #'
 #' @return The output returns the carbon sequestered in the products produced with the timber
 #'
+#' @note References
+#' The Earth Partners LLC, 2012: Vcs Module Vmd0026 Estimation of Carbon Stocks in IN THE LONG LIVED WOOD PRODUCTS POOL. 0–26.
 
 
 #' @export
