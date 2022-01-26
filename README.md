@@ -1,11 +1,6 @@
----
-output: github_document
----
-
-
 # GemirTools  <img src="man/figures/logo.png" align="right" alt="" width="250" />
 
-+Useful functions
+Useful functions + carbon equations
 
 
 ## Installation
