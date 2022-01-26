@@ -105,5 +105,5 @@ jussara_carbon <- function(dap, altura) {
 #### arbustos
 # conti, 2019
 arbusto_carbon <- function(altura_arbusto, crown_diameter) {
-  return(0.47 * exp(-0.37 + (1.903 * log(crown_diameter)) + (0.652 * log(altura)) * 1.403))
+  return(0.47 * exp(-0.37 + (1.903 * log(crown_diameter)) + (0.652 * log(altura_arbusto)) * 1.403))
 }
