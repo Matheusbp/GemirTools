@@ -1,45 +1,30 @@
-#' @title Carbon equations
+#' Set of Carbon equations
 #'
-#' @description #sobre termos a biomassa total
-#' Atlantic forests can sequester 1.5 to 3.5 tons/ha*year of CO2 with potential 
-#' to get 70 tons/ha in 20 years (Montagnini and Nair 2004). Approximately 48% of
-#' the tree biomass is carbon (Lewis et al. 2019 used 49%, and secondly Martin
-#'  and Thomas 2011, it is 47%). This information indicates that we should focus
-#'   in dense trees in order to improve the sequestration of CO2.
+#' These functions calculate the amount of Carbon in each plant +
+#' the carbon sequestered after some years after cut the trees
 #'
-#' @param dap_palmeira DAP da palmeira
-#' @param dap_arvere DAP da árvore na equação geral
-#' @param altura altura da árvore
-#' @param densidade_madeira densidade da madeira na equação geral
-#' @param diam_base diametro da base do café
-#' @param dap DAP da arvore
-#' @param carbono_biomassa_arvores o carbono total da especie y
+#'
+#' @param dap_palmeira DAP da palmeira [cm]
+#' @param dap_arvere DAP da árvore na equação geral [cm]
+#' @param altura Altura da árvore [m]
+#' @param densidade_madeira Densidade da madeira na equação geral [g/cm^3]
+#' @param diam_base Diametro da base do café [cm]
+#' @param dap DAP da arvore [cm]
+#' @param carbono_biomassa_arvores O carbono total da especie [kgC or tC]
 #' @param anos Anos pós corte
-#' @param wwf_fraction = 0.24 verra
-#' @param slf_class = 0.12, verra
-#' @param fo = 0.86, verra
-#' @param crown_diameter Diametro da copa do arbusto
-#' @return The output of the function evaluated in suatring vector.
+#' @param wwf_fraction 0.24 from Verra
+#' @param slf_class 0.12 from Verra 
+#' @param fo 0.86 from Verra
+#' @param crown_diameter Dimetro da copa do arbusto [m]
+#' @param altura_arbusto Altura do arbusto [cm]
+#' 
+#' @return The output returns the amount of Carbon in each plant or 
+#' the carbon sequesteres after cutting trees (if using carbono_produto_madeira())
 #'
-#' @note It is necessary to add <<- instead of <- when using evalparsetext function to
-#' add information to a object (see example).
-#'
-#' @export
 #' @examples
-#' arbusto_carbon(1, 0.30)
+#' arbusto_carbon(100, 0.30)
 
-#21/12/2021
-#carbon equations
-
-#sobre termos a biomassa total
-#Atlantic forests can sequester 1.5 to 3.5 tons/ha*year of CO2 with potential 
-#to get 70 tons/ha in 20 years (Montagnini and Nair 2004). Approximately 48% of
-# the tree biomass is carbon (Lewis et al. 2019 used 49%, and secondly Martin
-#  and Thomas 2011, it is 47%). This information indicates that we should focus
-#   in dense trees in order to improve the sequestration of CO2.
-
-
-
+#' @export
 
 #### Palmeira
 
@@ -47,17 +32,13 @@
 # POMAR, São Paulo (SP) / Estimate of carbon sequestration in riparian forests:
 #  the POMAR project case, São Paulo (SP), foi utilizado a equação 1 para
 #   Palmeiras:
-  
-
-# ln(PF) = -1.497 + 2.548 * ln(D)
-
-
-# Em que PF é peso fresco e D é DAP.
 
 palmeira_carbon <- function(dap_palmeira){
   return(0.48 * exp(-1.497 + 2.548 * log(dap_palmeira)))
 }  
 
+
+#' @export
 #### Espécies em geral com DAP >= 5 cm
 
 
@@ -71,12 +52,11 @@ palmeira_carbon <- function(dap_palmeira){
 # Em que rho é a densidade da madeira (g/cm-3), AGB é expresses AGB in kg as 
 # a function of diameter at breast height (dbh), total tree height, and average 
 # wood density.
-
-
 general_carbon <- function(dap_arvere, altura, densidade_madeira){
   return(0.48 * exp(−2.977 + log(densidade_madeira * dap_arvere^2 * altura)))
 }
 
+#' @export
 #### Café arábica
 
 # Já Meirelles, 2018 (CARACTERIZAÇÃO DO ESTOQUE DE CARBONO E EQUAÇÕES 
@@ -88,14 +68,15 @@ coffee_carbon <- function(diam_base){
   return(0.48 * (-1.6877 + 1.3923 * diam_base))
 }
 
+#' @export
 #### Banana
 #de correa, 2013a = -3,98414; b = 2,20132
-
 
 banana_carbon <- function(dap){
   return(0.48 * exp(-3.98414 + 2.20132 * log(dap)))
 }
 
+#' @export
 #### jussara
 #de correa, 2013 a = -2,34626; b = 0,79482
 
@@ -104,13 +85,7 @@ jussara_carbon <- function(dap, altura){
   return(0.48 * exp(-2.34626 + 0.79482 * log(dap^2 * altura)))
 }
 
-### EQUAÇÕES DO VCS MODULE VMD0026
-#           ESTIMATION OF CARBON STOCKS IN 
-#         THE LONG LIVED WOOD PRODUCTS POOL
-
-#função de 1quantidade de carbono proveniente de produtos feitos a partir
-# do corte de madeira
-
+#' @export
 carbono_produto_madeira <- function(carbono_biomassa_arvores, anos, 
                                     wwf_fraction = 0.24, 
                                     slf_class = 0.12,
@@ -145,14 +120,11 @@ carbono_produto_madeira <- function(carbono_biomassa_arvores, anos,
   return(carbono_sequestrado_produtos)
 }
 
-
+#' @export
 #### arbustos
 
-arbusto_carbon <- function(altura, crown_diameter){
+arbusto_carbon <- function(altura_arbusto, crown_diameter){
   return(0.47 * exp(-0.37 + (1.903 * log(crown_diameter)) + (0.652 * log(altura)) * 1.403))
 }
-
-
-#### soil carbon
 
 
