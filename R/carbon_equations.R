@@ -9,7 +9,7 @@
 #' @param densidade_madeira Densidade da madeira na equação geral [g/cm^3]
 #' @param diam_base Diametro da base do café [cm]
 #' @param crown_diameter Dimetro da copa do arbusto [m]
-#' @param altura_arbusto Altura do arbusto [cm]
+#' @param altura_arbusto Altura do arbusto [m]
 #'
 #' @return The output returns the amount of Carbon in each plant
 #'
