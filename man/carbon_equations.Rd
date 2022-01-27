@@ -30,7 +30,7 @@ arbusto_carbon(altura_arbusto, crown_diameter)
 
 \item{diam_base}{Diametro da base do café [cm]}
 
-\item{altura_arbusto}{Altura do arbusto [cm]}
+\item{altura_arbusto}{Altura do arbusto [m]}
 
 \item{crown_diameter}{Dimetro da copa do arbusto [m]}
 }
