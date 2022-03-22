@@ -10,7 +10,6 @@
 #' @param diam_base Diametro da base do café [cm]
 #' @param crown_diameter Dimetro da copa do arbusto [m]
 #' @param altura_arbusto Altura do arbusto [m]
-#' @param porc_C = 0.47 from IPCC Porcentagem da biomassa referente ao carbono (C)/100
 #'
 #' @return The output returns the amount of Carbon in each plant
 #'
@@ -33,8 +32,6 @@
 #' Corrêa, A., 2013: AGROFLORESTA, E C O L O G I A e SOCIEDADE.
 #'
 #' Conti, G., and Coauthors, 2019: Developing allometric models to predict the individual aboveground biomass of shrubs worldwide. Glob. Ecol. Biogeogr., 28, 961–975, https://doi.org/10.1111/geb.12907.
-#'
-#' IPCC (Intergovernmental Panel on Climate Change). Forest Lands. In Intergovernmental Panel on Climate Change Guidelines for National Greenhouse Gas Inventories; Institute for Global Environmental Strategies (IGES): Hayama, Japan, 2006; p. 83. Available online: https://www.ipcc-nggip.iges.or.jp/public/2006gl/ (accessed on 22 March 2022).
 #' }
 #' @rdname carbon_equations
 #' @export
@@ -45,8 +42,9 @@
 #  the POMAR project case, São Paulo (SP), foi utilizado a equação 1 para
 #   Palmeiras:
 
-palmeira_carbon <- function(dap, porc_C = 0.47) {
-  return(porc_C * exp(-1.497 + 2.548 * log(dap)))
+palmeira_carbon <- function(dap) {
+  return(0.48 * exp(-1.497 + 2.548 * log(dap)))
+  return(0.48 * exp(-1.497 + 2.548 * log(dap)))
 }
 
 
@@ -65,8 +63,8 @@ palmeira_carbon <- function(dap, porc_C = 0.47) {
 # Em que rho é a densidade da madeira (g/cm-3), AGB é expresses AGB in kg as
 # a function of diameter at breast height (dbh), total tree height, and average
 # wood density.
-general_carbon <- function(dap, altura, densidade_madeira, porc_C = 0.47) {
-  return(porc_C * exp(-2.977 + log(densidade_madeira * dap^2 * altura)))
+general_carbon <- function(dap, altura, densidade_madeira) {
+  return(0.48 * exp(-2.977 + log(densidade_madeira * dap^2 * altura)))
 }
 
 #' @rdname carbon_equations
@@ -78,8 +76,8 @@ general_carbon <- function(dap, altura, densidade_madeira, porc_C = 0.47) {
 #  estudo localizado nas regiões do Planalto da Conquista e Chapada Diamantina,
 #  Bahia.
 
-coffee_carbon <- function(diam_base, porc_C = 0.47) {
-  return(porc_C * (-1.6877 + 1.3923 * diam_base))
+coffee_carbon <- function(diam_base) {
+  return(0.48 * (-1.6877 + 1.3923 * diam_base))
 }
 
 #' @rdname carbon_equations
@@ -87,8 +85,8 @@ coffee_carbon <- function(diam_base, porc_C = 0.47) {
 #### Banana
 # de correa, 2013a = -3,98414; b = 2,20132
 
-banana_carbon <- function(dap, porc_C = 0.47) {
-  return(porc_C * exp(-3.98414 + 2.20132 * log(dap)))
+banana_carbon <- function(dap) {
+  return(0.48 * exp(-3.98414 + 2.20132 * log(dap)))
 }
 
 #' @rdname carbon_equations
@@ -97,8 +95,8 @@ banana_carbon <- function(dap, porc_C = 0.47) {
 # de correa, 2013 a = -2,34626; b = 0,79482
 
 
-jussara_carbon <- function(dap, altura, porc_C = 0.47) {
-  return(porc_C * exp(-2.34626 + 0.79482 * log(dap^2 * altura)))
+jussara_carbon <- function(dap, altura) {
+  return(0.48 * exp(-2.34626 + 0.79482 * log(dap^2 * altura)))
 }
 
 
@@ -106,6 +104,6 @@ jussara_carbon <- function(dap, altura, porc_C = 0.47) {
 #' @export
 #### arbustos
 # conti, 2019
-arbusto_carbon <- function(altura_arbusto, crown_diameter, porc_C = 0.47) {
-  return(porc_C * exp(-0.37 + (1.903 * log(crown_diameter)) + (0.652 * log(altura_arbusto)) * 1.403))
+arbusto_carbon <- function(altura_arbusto, crown_diameter) {
+  return(0.47 * exp(-0.37 + (1.903 * log(crown_diameter)) + (0.652 * log(altura_arbusto)) * 1.403))
 }
