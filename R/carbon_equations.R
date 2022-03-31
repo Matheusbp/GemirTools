@@ -8,6 +8,7 @@
 #' @param altura Altura da árvore [m]
 #' @param densidade_madeira Densidade da madeira na equação geral [g/cm^3]
 #' @param diam_base Diametro da base do café [cm]
+#' @param diam_30cm Diâmetro da altura de 30 cm [cm]
 #' @param crown_diameter Dimetro da copa do arbusto [m]
 #' @param porc_C from IPCC Porcentagem da biomassa referente ao carbono (C)/100 = 0.47
 #' @param altura_arbusto Altura do arbusto [m]
@@ -35,6 +36,9 @@
 #' Conti, G., and Coauthors, 2019: Developing allometric models to predict the individual aboveground biomass of shrubs worldwide. Glob. Ecol. Biogeogr., 28, 961–975, https://doi.org/10.1111/geb.12907.
 #'
 #' IPCC (Intergovernmental Panel on Climate Change). Forest Lands. In Intergovernmental Panel on Climate Change Guidelines for National Greenhouse Gas Inventories; Institute for Global Environmental Strategies (IGES): Hayama, Japan, 2006; p. 83. Available online: https://www.ipcc-nggip.iges.or.jp/public/2006gl/ (accessed on 22 March 2022).
+#'
+#' Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46–57, https://doi.org/10.1016/j.agee.2013.04.013.
+#'
 #' }
 #' @rdname carbon_equations
 #' @export
@@ -115,3 +119,18 @@ arbusto_carbon <- function(altura_arbusto, crown_diameter,
                            porc_C = 0.47) {
   return(porc_C * exp(-0.37 + (1.903 * log(crown_diameter)) + (0.652 * log(altura_arbusto)) * 1.403))
 }
+
+#' @rdname carbon_equations
+#' @export
+#'
+#' #### cacau
+# Somarriba, 2013
+cacau_carbon <- function(altura, diam_30cm) {
+  return(porc_C * 10^(−1.684 + 2.158 * log10(diam_30cm) + 0.892 * log10(altura)))
+}
+
+#' @rdname carbon_equations
+#' @export
+
+
+
