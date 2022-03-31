@@ -134,3 +134,4 @@ cacau_carbon <- function(altura, diam_30cm) {
 
 
 
+
