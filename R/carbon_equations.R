@@ -123,7 +123,7 @@ arbusto_carbon <- function(altura_arbusto, crown_diameter,
 #' @rdname carbon_equations
 #' @export
 #'
-#' #### cacau
+#### cacau
 # Somarriba, 2013
 cacau_carbon <- function(altura, diam_30cm) {
   return(porc_C * 10^(−1.684 + 2.158 * log10(diam_30cm) + 0.892 * log10(altura)))
@@ -131,7 +131,3 @@ cacau_carbon <- function(altura, diam_30cm) {
 
 #' @rdname carbon_equations
 #' @export
-
-
-
-
