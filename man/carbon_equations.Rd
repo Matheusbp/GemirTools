@@ -22,7 +22,7 @@ jussara_carbon(dap, altura, porc_C = 0.47)
 
 arbusto_carbon(altura_arbusto, crown_diameter, porc_C = 0.47)
 
-cacau_carbon(altura, diam_30cm)
+cacau_carbon(altura, diam_30cm, porc_C = 0.47)
 }
 \arguments{
 \item{dap}{DAP da arvore [cm]}
@@ -55,7 +55,7 @@ Velasco, 2009: Estimativa de sequestro de carbono em mata ciliar: projeto POMAR,
 
 Vieira, S. A., and Coauthors, 2008: Estimation of biomass and carbon stocks: The case of the Atlantic Forest. Biota Neotrop., 8, 21–29, https://doi.org/10.1590/S1676-06032008000200001.
 
-Alves, L. F., S. A. Vieira, M. A. Scaranello, P. B. Camargo, F. A. M. Santos, C. A. Joly, and L. A. Martinelli, 2010: Forest structure and live aboveground biomass variation along an elevational gradient of tropical Atlantic moist forest (Brazil). For. Ecol. Manage., 260, 679–691, https://doi.org/10.1016/j.foreco.2010.05.023.\n
+Alves, L. F., S. A. Vieira, M. A. Scaranello, P. B. Camargo, F. A. M. Santos, C. A. Joly, and L. A. Martinelli, 2010: Forest structure and live aboveground biomass variation along an elevational gradient of tropical Atlantic moist forest (Brazil). For. Ecol. Manage., 260, 679–691, https://doi.org/10.1016/j.foreco.2010.05.023.
 
 Chave, J., and Coauthors, 2005: Tree allometry and improved estimation of carbon stocks and balance in tropical forests. Oecologia, 145, 87–99, https://doi.org/10.1007/s00442-005-0100-x.
 
