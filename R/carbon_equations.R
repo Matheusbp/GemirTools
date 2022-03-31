@@ -10,8 +10,8 @@
 #' @param diam_base Diametro da base do café [cm]
 #' @param diam_30cm Diâmetro da altura de 30 cm [cm]
 #' @param crown_diameter Dimetro da copa do arbusto [m]
-#' @param porc_C from IPCC Porcentagem da biomassa referente ao carbono (C)/100 = 0.47
 #' @param altura_arbusto Altura do arbusto [m]
+#' @param porc_C from IPCC Porcentagem da biomassa referente ao carbono (C)/100 = 0.47
 #'
 #' @return The output returns the amount of Carbon in each plant
 #'
