@@ -131,10 +131,10 @@ cacau_carbon <- function(altura, diam_30cm,
   return(porc_C * 10^(-1.684 + 2.158 * log10(diam_30cm) + 0.892 * log10(altura)))
 }
 
+#' @rdname carbon_equations
+#' @export
 #### Euterpe oleracea Mart.
 # de De miranda D. et al 2012
-
-
 euterpe_oleracea_carbon <- function(dap) {
   return(-2.22017  +  (2.29353 * dap) + (0.0148155 * dap^2))
 }

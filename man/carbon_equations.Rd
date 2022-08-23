@@ -8,6 +8,7 @@
 \alias{jussara_carbon}
 \alias{arbusto_carbon}
 \alias{cacau_carbon}
+\alias{euterpe_oleracea_carbon}
 \title{Set of Carbon equations of ABG}
 \usage{
 palmeira_carbon(dap, porc_C = 0.47)
@@ -23,6 +24,8 @@ jussara_carbon(dap, altura, porc_C = 0.47)
 arbusto_carbon(altura_arbusto, crown_diameter, porc_C = 0.47)
 
 cacau_carbon(altura, diam_30cm, porc_C = 0.47)
+
+euterpe_oleracea_carbon(dap)
 }
 \arguments{
 \item{dap}{DAP da arvore [cm]}
