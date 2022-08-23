@@ -13,7 +13,7 @@
 #' @param altura_arbusto Altura do arbusto [m]
 #' @param porc_C from IPCC Porcentagem da biomassa referente ao carbono (C)/100 = 0.47
 #'
-#' @return The output returns the amount of Carbon in each plant
+#' @return The output returns the amount of Carbon in each plant [kg]
 #'
 #'
 #' @examples
@@ -37,6 +37,7 @@
 #'
 #' IPCC (Intergovernmental Panel on Climate Change). Forest Lands. In Intergovernmental Panel on Climate Change Guidelines for National Greenhouse Gas Inventories; Institute for Global Environmental Strategies (IGES): Hayama, Japan, 2006; p. 83. Available online: https://www.ipcc-nggip.iges.or.jp/public/2006gl/ (accessed on 22 March 2022).
 #'
+#' de Miranda, D. L. C., Sanquetta, C. R., Costa, L. G. da S., & Corte, A. P. D. (2012). Biomassa e carbono em Euterpe oleracea Mart., na Ilha do Marajó - PA. Floresta e Ambiente, 19(3), 336–343. https://doi.org/10.4322/floram.2012.039
 #' Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46–57, https://doi.org/10.1016/j.agee.2013.04.013.
 #'
 #' }
@@ -122,6 +123,7 @@ arbusto_carbon <- function(altura_arbusto, crown_diameter,
 
 #' @rdname carbon_equations
 #' @export
+
 #### cacau
 # Somarriba, 2013
 cacau_carbon <- function(altura, diam_30cm,
@@ -129,6 +131,11 @@ cacau_carbon <- function(altura, diam_30cm,
   return(porc_C * 10^(-1.684 + 2.158 * log10(diam_30cm) + 0.892 * log10(altura)))
 }
 
+#### Euterpe oleracea Mart.
+# de De miranda D. et al 2012
 
 
+euterpe_oleracea_carbon <- function(dap) {
+  return(-2.22017  +  (2.29353 * dap) + (0.0148155 * dap^2))
+}
 
