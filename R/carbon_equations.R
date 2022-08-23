@@ -8,9 +8,10 @@
 #' @param altura Altura da árvore [m]
 #' @param densidade_madeira Densidade da madeira na equação geral [g/cm^3]
 #' @param diam_base Diametro da base do café [cm]
+#' @param diam_30cm Diâmetro da altura de 30 cm [cm]
 #' @param crown_diameter Dimetro da copa do arbusto [m]
-#' @param porc_C from IPCC Porcentagem da biomassa referente ao carbono (C)/100 = 0.47
 #' @param altura_arbusto Altura do arbusto [m]
+#' @param porc_C from IPCC Porcentagem da biomassa referente ao carbono (C)/100 = 0.47
 #'
 #' @return The output returns the amount of Carbon in each plant [kg]
 #'
@@ -24,7 +25,7 @@
 #'
 #' Vieira, S. A., and Coauthors, 2008: Estimation of biomass and carbon stocks: The case of the Atlantic Forest. Biota Neotrop., 8, 21–29, https://doi.org/10.1590/S1676-06032008000200001.
 #'
-#' Alves, L. F., S. A. Vieira, M. A. Scaranello, P. B. Camargo, F. A. M. Santos, C. A. Joly, and L. A. Martinelli, 2010: Forest structure and live aboveground biomass variation along an elevational gradient of tropical Atlantic moist forest (Brazil). For. Ecol. Manage., 260, 679–691, https://doi.org/10.1016/j.foreco.2010.05.023.\n
+#' Alves, L. F., S. A. Vieira, M. A. Scaranello, P. B. Camargo, F. A. M. Santos, C. A. Joly, and L. A. Martinelli, 2010: Forest structure and live aboveground biomass variation along an elevational gradient of tropical Atlantic moist forest (Brazil). For. Ecol. Manage., 260, 679–691, https://doi.org/10.1016/j.foreco.2010.05.023.
 #'
 #' Chave, J., and Coauthors, 2005: Tree allometry and improved estimation of carbon stocks and balance in tropical forests. Oecologia, 145, 87–99, https://doi.org/10.1007/s00442-005-0100-x.
 #'
@@ -37,6 +38,7 @@
 #' IPCC (Intergovernmental Panel on Climate Change). Forest Lands. In Intergovernmental Panel on Climate Change Guidelines for National Greenhouse Gas Inventories; Institute for Global Environmental Strategies (IGES): Hayama, Japan, 2006; p. 83. Available online: https://www.ipcc-nggip.iges.or.jp/public/2006gl/ (accessed on 22 March 2022).
 #'
 #' de Miranda, D. L. C., Sanquetta, C. R., Costa, L. G. da S., & Corte, A. P. D. (2012). Biomassa e carbono em Euterpe oleracea Mart., na Ilha do Marajó - PA. Floresta e Ambiente, 19(3), 336–343. https://doi.org/10.4322/floram.2012.039
+#' Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46–57, https://doi.org/10.1016/j.agee.2013.04.013.
 #'
 #' }
 #' @rdname carbon_equations
@@ -121,6 +123,14 @@ arbusto_carbon <- function(altura_arbusto, crown_diameter,
 
 #' @rdname carbon_equations
 #' @export
+
+#### cacau
+# Somarriba, 2013
+cacau_carbon <- function(altura, diam_30cm,
+                         porc_C = 0.47) {
+  return(porc_C * 10^(-1.684 + 2.158 * log10(diam_30cm) + 0.892 * log10(altura)))
+}
+
 #### Euterpe oleracea Mart.
 # de De miranda D. et al 2012
 

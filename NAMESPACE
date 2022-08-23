@@ -2,6 +2,7 @@
 
 export(arbusto_carbon)
 export(banana_carbon)
+export(cacau_carbon)
 export(coffee_carbon)
 export(crop_theusin)
 export(evalparsetext)

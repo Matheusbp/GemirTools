@@ -7,22 +7,27 @@
 \alias{banana_carbon}
 \alias{jussara_carbon}
 \alias{arbusto_carbon}
+\alias{cacau_carbon}
 \title{Set of Carbon equations of ABG}
 \usage{
-palmeira_carbon(dap)
+palmeira_carbon(dap, porc_C = 0.47)
 
-general_carbon(dap, altura, densidade_madeira)
+general_carbon(dap, altura, densidade_madeira, porc_C = 0.47)
 
-coffee_carbon(diam_base)
+coffee_carbon(diam_base, porc_C = 0.47)
 
-banana_carbon(dap)
+banana_carbon(dap, porc_C = 0.47)
 
-jussara_carbon(dap, altura)
+jussara_carbon(dap, altura, porc_C = 0.47)
 
-arbusto_carbon(altura_arbusto, crown_diameter)
+arbusto_carbon(altura_arbusto, crown_diameter, porc_C = 0.47)
+
+cacau_carbon(altura, diam_30cm, porc_C = 0.47)
 }
 \arguments{
 \item{dap}{DAP da arvore [cm]}
+
+\item{porc_C}{from IPCC Porcentagem da biomassa referente ao carbono (C)/100 = 0.47}
 
 \item{altura}{Altura da árvore [m]}
 
@@ -33,6 +38,8 @@ arbusto_carbon(altura_arbusto, crown_diameter)
 \item{altura_arbusto}{Altura do arbusto [m]}
 
 \item{crown_diameter}{Dimetro da copa do arbusto [m]}
+
+\item{diam_30cm}{Diâmetro da altura de 30 cm [cm]}
 }
 \value{
 The output returns the amount of Carbon in each plant
@@ -48,7 +55,7 @@ Velasco, 2009: Estimativa de sequestro de carbono em mata ciliar: projeto POMAR,
 
 Vieira, S. A., and Coauthors, 2008: Estimation of biomass and carbon stocks: The case of the Atlantic Forest. Biota Neotrop., 8, 21–29, https://doi.org/10.1590/S1676-06032008000200001.
 
-Alves, L. F., S. A. Vieira, M. A. Scaranello, P. B. Camargo, F. A. M. Santos, C. A. Joly, and L. A. Martinelli, 2010: Forest structure and live aboveground biomass variation along an elevational gradient of tropical Atlantic moist forest (Brazil). For. Ecol. Manage., 260, 679–691, https://doi.org/10.1016/j.foreco.2010.05.023.\n
+Alves, L. F., S. A. Vieira, M. A. Scaranello, P. B. Camargo, F. A. M. Santos, C. A. Joly, and L. A. Martinelli, 2010: Forest structure and live aboveground biomass variation along an elevational gradient of tropical Atlantic moist forest (Brazil). For. Ecol. Manage., 260, 679–691, https://doi.org/10.1016/j.foreco.2010.05.023.
 
 Chave, J., and Coauthors, 2005: Tree allometry and improved estimation of carbon stocks and balance in tropical forests. Oecologia, 145, 87–99, https://doi.org/10.1007/s00442-005-0100-x.
 
@@ -57,6 +64,11 @@ Meireles, 2018: CARACTERIZAÇÃO DO ESTOQUE DE CARBONO E EQUAÇÕES ALOMÉTRICAS
 Corrêa, A., 2013: AGROFLORESTA, E C O L O G I A e SOCIEDADE.
 
 Conti, G., and Coauthors, 2019: Developing allometric models to predict the individual aboveground biomass of shrubs worldwide. Glob. Ecol. Biogeogr., 28, 961–975, https://doi.org/10.1111/geb.12907.
+
+IPCC (Intergovernmental Panel on Climate Change). Forest Lands. In Intergovernmental Panel on Climate Change Guidelines for National Greenhouse Gas Inventories; Institute for Global Environmental Strategies (IGES): Hayama, Japan, 2006; p. 83. Available online: https://www.ipcc-nggip.iges.or.jp/public/2006gl/ (accessed on 22 March 2022).
+
+Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46–57, https://doi.org/10.1016/j.agee.2013.04.013.
+
 }
 }
 \examples{
