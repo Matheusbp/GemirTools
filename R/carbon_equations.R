@@ -12,7 +12,7 @@
 #' @param porc_C from IPCC Porcentagem da biomassa referente ao carbono (C)/100 = 0.47
 #' @param altura_arbusto Altura do arbusto [m]
 #'
-#' @return The output returns the amount of Carbon in each plant
+#' @return The output returns the amount of Carbon in each plant [kg]
 #'
 #'
 #' @examples
@@ -35,6 +35,9 @@
 #' Conti, G., and Coauthors, 2019: Developing allometric models to predict the individual aboveground biomass of shrubs worldwide. Glob. Ecol. Biogeogr., 28, 961–975, https://doi.org/10.1111/geb.12907.
 #'
 #' IPCC (Intergovernmental Panel on Climate Change). Forest Lands. In Intergovernmental Panel on Climate Change Guidelines for National Greenhouse Gas Inventories; Institute for Global Environmental Strategies (IGES): Hayama, Japan, 2006; p. 83. Available online: https://www.ipcc-nggip.iges.or.jp/public/2006gl/ (accessed on 22 March 2022).
+#'
+#' de Miranda, D. L. C., Sanquetta, C. R., Costa, L. G. da S., & Corte, A. P. D. (2012). Biomassa e carbono em Euterpe oleracea Mart., na Ilha do Marajó - PA. Floresta e Ambiente, 19(3), 336–343. https://doi.org/10.4322/floram.2012.039
+#'
 #' }
 #' @rdname carbon_equations
 #' @export
@@ -115,3 +118,14 @@ arbusto_carbon <- function(altura_arbusto, crown_diameter,
                            porc_C = 0.47) {
   return(porc_C * exp(-0.37 + (1.903 * log(crown_diameter)) + (0.652 * log(altura_arbusto)) * 1.403))
 }
+
+#' @rdname carbon_equations
+#' @export
+#### Euterpe oleracea Mart.
+# de De miranda D. et al 2012
+
+
+euterpe_oleracea_carbon <- function(dap) {
+  return(-2.22017  +  (2.29353 * dap) + (0.0148155 * dap^2))
+}
+
