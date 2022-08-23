@@ -52,7 +52,11 @@ These functions calculate the amount of Carbon in each plant +
 the carbon sequestered after some years after cut the trees
 }
 \note{
-{ References
+{
+
+Note que o dado da Euterpe oleracea nos dá direto os kg de carbono (C) de cada planta, nao necessitando usar porc_C.
+
+References
 
 Velasco, 2009: Estimativa de sequestro de carbono em mata ciliar: projeto POMAR, São Paulo (SP) / Estimate of carbon sequestration in riparian forests: the POMAR project case, São Paulo (SP). Ambiência, 5, 135–141.
 
