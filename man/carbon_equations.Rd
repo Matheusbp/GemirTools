@@ -42,7 +42,7 @@ cacau_carbon(altura, diam_30cm, porc_C = 0.47)
 \item{diam_30cm}{Diâmetro da altura de 30 cm [cm]}
 }
 \value{
-The output returns the amount of Carbon in each plant
+The output returns the amount of Carbon in each plant [kg]
 }
 \description{
 These functions calculate the amount of Carbon in each plant +
@@ -67,6 +67,7 @@ Conti, G., and Coauthors, 2019: Developing allometric models to predict the indi
 
 IPCC (Intergovernmental Panel on Climate Change). Forest Lands. In Intergovernmental Panel on Climate Change Guidelines for National Greenhouse Gas Inventories; Institute for Global Environmental Strategies (IGES): Hayama, Japan, 2006; p. 83. Available online: https://www.ipcc-nggip.iges.or.jp/public/2006gl/ (accessed on 22 March 2022).
 
+de Miranda, D. L. C., Sanquetta, C. R., Costa, L. G. da S., & Corte, A. P. D. (2012). Biomassa e carbono em Euterpe oleracea Mart., na Ilha do Marajó - PA. Floresta e Ambiente, 19(3), 336–343. https://doi.org/10.4322/floram.2012.039
 Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46–57, https://doi.org/10.1016/j.agee.2013.04.013.
 
 }
