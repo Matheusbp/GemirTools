@@ -9,6 +9,9 @@
 \alias{arbusto_carbon}
 \alias{cacau_carbon}
 \alias{euterpe_oleracea_carbon}
+\alias{euterpe_precatoria_carbon}
+\alias{citrus_carbon}
+\alias{jaqueira_carbon}
 \title{Set of Carbon equations of ABG}
 \usage{
 palmeira_carbon(dap, porc_C = 0.47)
@@ -26,6 +29,12 @@ arbusto_carbon(altura_arbusto, crown_diameter, porc_C = 0.47)
 cacau_carbon(altura, diam_30cm, porc_C = 0.47)
 
 euterpe_oleracea_carbon(dap)
+
+euterpe_precatoria_carbon(altura, porc_C = 0.47)
+
+citrus_carbon(diam_30, porc_C = 0.47)
+
+jaqueira_carbon(dap, porc_C = 0.47)
 }
 \arguments{
 \item{dap}{DAP da arvore [cm]}
@@ -48,8 +57,8 @@ euterpe_oleracea_carbon(dap)
 The output returns the amount of Carbon in each plant [kg]
 }
 \description{
-These functions calculate the amount of Carbon in each plant +
-the carbon sequestered after some years after cut the trees
+These functions calculate the amount of Carbon in each plant in kg
+per individual.
 }
 \note{
 {
@@ -76,6 +85,12 @@ IPCC (Intergovernmental Panel on Climate Change). Forest Lands. In Intergovernme
 
 de Miranda, D. L. C., Sanquetta, C. R., Costa, L. G. da S., & Corte, A. P. D. (2012). Biomassa e carbono em Euterpe oleracea Mart., na Ilha do Marajó - PA. Floresta e Ambiente, 19(3), 336–343. https://doi.org/10.4322/floram.2012.039
 Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46–57, https://doi.org/10.1016/j.agee.2013.04.013.
+
+Allometric equations for estimating biomass of euterpe precatoria, the most abundant palm species in the Amazon, da Silva, 2015;
+
+Ètz Schroth, G., Agra, S. D., Geraldes Teixeira, W., Haag, D., & Lieberei, R. (2002). Conversion of secondary forest into agroforestry and monoculture plantations in Amazonia: consequences for biomass, litter and soil carbon stocks after 7 years. In Forest Ecology and Management (Vol. 163).
+
+Saha, C., Mahmood, H., Nayan, S. N. S., Siddique, M. R. H., Abdullah, S. M. R., Islam, S. M. Z., Iqbal, M. Z., & Akhter, M. (2021). Allometric biomass models for the most abundant fruit tree species of Bangladesh: A Non-destructive approach. Environmental Challenges, 3. https://doi.org/10.1016/j.envc.2021.100047
 
 }
 }

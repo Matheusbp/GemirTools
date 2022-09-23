@@ -1,7 +1,7 @@
 #' Set of Carbon equations of ABG
 #'
-#' These functions calculate the amount of Carbon in each plant +
-#' the carbon sequestered after some years after cut the trees
+#' These functions calculate the amount of Carbon in each plant in kg
+#' per individual.
 #'
 #'
 #' @param dap DAP da arvore [cm]
@@ -43,6 +43,12 @@
 #'
 #' de Miranda, D. L. C., Sanquetta, C. R., Costa, L. G. da S., & Corte, A. P. D. (2012). Biomassa e carbono em Euterpe oleracea Mart., na Ilha do Marajó - PA. Floresta e Ambiente, 19(3), 336–343. https://doi.org/10.4322/floram.2012.039
 #' Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46–57, https://doi.org/10.1016/j.agee.2013.04.013.
+#'
+#'Allometric equations for estimating biomass of euterpe precatoria, the most abundant palm species in the Amazon, da Silva, 2015;
+#'
+#'Ètz Schroth, G., Agra, S. D., Geraldes Teixeira, W., Haag, D., & Lieberei, R. (2002). Conversion of secondary forest into agroforestry and monoculture plantations in Amazonia: consequences for biomass, litter and soil carbon stocks after 7 years. In Forest Ecology and Management (Vol. 163).
+#'
+#'Saha, C., Mahmood, H., Nayan, S. N. S., Siddique, M. R. H., Abdullah, S. M. R., Islam, S. M. Z., Iqbal, M. Z., & Akhter, M. (2021). Allometric biomass models for the most abundant fruit tree species of Bangladesh: A Non-destructive approach. Environmental Challenges, 3. https://doi.org/10.1016/j.envc.2021.100047
 #'
 #' }
 #' @rdname carbon_equations
@@ -142,4 +148,38 @@ cacau_carbon <- function(altura, diam_30cm,
 euterpe_oleracea_carbon <- function(dap) {
   return(-2.22017  +  (2.29353 * dap) + (0.0148155 * dap^2))
 }
+
+
+#' @rdname carbon_equations
+#' @export
+#### Euterpe precatoria.
+# de da Silva, et al. 2015, porém a equação vem de goodman et.al 2013
+# pois teve menor erro para amazonia
+euterpe_precatoria_carbon <- function(altura, porc_C = 0.47) {
+  return(porc_C * ( (13.59 * altura) - 108.8) )
+}
+
+
+#' @rdname carbon_equations
+#' @export
+#### citrus sp
+# schroth 2002 mas está no no anexo 4.2 do IPCC Good Practice Guidance
+# for Land Use, Land-Use Change and Forestry.
+# Neste doc tem equações de biomassa de VÁRIAS espécies
+citrus_carbon <- function(diam_30, porc_C = 0.47){
+  ab = pi * ((diam_30^2) / 4) #area basal BA = basal area, cm2
+  return(porc_C * ( -6.64 + (0.279 * ab) + (0.000514 * ab^2) ))
+}
+
+
+#' @rdname carbon_equations
+#' @export
+#### jaqueira - Artocarpus heterophyllus sp
+# saha et. al 2021 nos dá o total aboveground biomass kg/tree
+jaqueira_carbon <- function(dap, porc_C = 0.47) {
+   return(porc_C * ( exp(-0.8971 + 1.9908 * log(dap))) )
+}
+
+
+
 
