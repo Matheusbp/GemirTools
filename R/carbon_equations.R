@@ -207,7 +207,7 @@ crescimento_lento_carbon <- function(dap, altura, porc_C = 0.47) {
   if(length(dap == 1)){
     dq <- dap
   }else{
-    dq <- sqrt(sum(dap^2)
+    dq <- sqrt(sum(dap^2))
                }
 
   return(porc_C * ( 3.78824 + 0.0474763 * (dq^2 * altura) )
