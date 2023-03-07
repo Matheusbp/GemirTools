@@ -210,9 +210,8 @@ crescimento_lento_carbon <- function(dap, altura, porc_C = 0.47) {
     dq <- sqrt(sum(dap^2))
                }
 
-  return(porc_C * ( 3.78824 + 0.0474763 * (dq^2 * altura) )
-
-         }
+  return(porc_C * ( 3.78824 + 0.0474763 * (dq^2 * altura) ))
+  }
 
 #' @rdname carbon_equations
 #' @export
@@ -228,9 +227,9 @@ crescimento_medio_carbon <- function(dap, idade, altura, porc_C = 0.47) {
 
   dm = max(dap)
 
-  return(porc_C * ( 30.1977 - 494.53 * (g^2) * dm + 1346.73 * (g^2) * idade + 24.563 * (altura^2) * g )
+  return(porc_C * ( 30.1977 - 494.53 * (g^2) * dm + 1346.73 * (g^2) * idade + 24.563 * (altura^2) * g ))
 
-         }
+  }
 
 #' @rdname carbon_equations
 #' @export
@@ -308,7 +307,7 @@ cupuacu_carbon <- function(diam_30cm,
 
   ab = pi * ((diam_30cm^2) / 4) #area basal BA = basal area, cm2
 
-  return(porc_C * (-3.9 + 0.23 * ab + 0.0015 * (ab^2))))
+  return(porc_C * (-3.9 + 0.23 * ab + 0.0015 * (ab^2)))
 }
 
 #' @rdname carbon_equations
