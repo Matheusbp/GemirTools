@@ -198,6 +198,7 @@ acacia_carbon <- function(dap, porc_C = 0.47) {
   return(porc_C * (0.4103 * (dap^2.3315)) )
 }
 
+
 #' @rdname carbon_equations
 #' @export
 #### especies com crecimento lento descrito em
@@ -211,7 +212,8 @@ crescimento_lento_carbon <- function(dap, altura, porc_C = 0.47) {
                }
 
   return(porc_C * ( 3.78824 + 0.0474763 * (dq^2 * altura) ))
-  }
+}
+
 
 #' @rdname carbon_equations
 #' @export
@@ -229,7 +231,8 @@ crescimento_medio_carbon <- function(dap, idade, altura, porc_C = 0.47) {
 
   return(porc_C * ( 30.1977 - 494.53 * (g^2) * dm + 1346.73 * (g^2) * idade + 24.563 * (altura^2) * g ))
 
-  }
+}
+
 
 #' @rdname carbon_equations
 #' @export
@@ -247,6 +250,7 @@ crescimento_rapido_carbon <- function(dap, idade, altura, porc_C = 0.47) {
 
 }
 
+
 #' @rdname carbon_equations
 #' @export
 #### pupunha
@@ -258,6 +262,7 @@ pupunha_carbon <- function(dap, porc_C = 0.47) {
   return(porc_C * ( 0.97 + 0.078 * ab - 0.00094 * ab^2 + 0.0000064 * ab^3 ))
 
 }
+
 
 #' @rdname carbon_equations
 #' @export
@@ -271,6 +276,7 @@ castanheira_carbon <- function(dap, porc_C = 0.47) {
 
 }
 
+
 #' @rdname carbon_equations
 #' @export
 ### coco gigante
@@ -279,6 +285,7 @@ coco_carbon <- function(altura,
                         porc_C = 0.47) {
   return(porc_C * (3.7964 * altura^1.8130))
 }
+
 
 #' @rdname carbon_equations
 #' @export
@@ -289,6 +296,7 @@ eucalipto_carbon <- function(dap, altura,
   return(porc_C * (1.22 * dap^2 * altura * 0.01))
 }
 
+
 #' @rdname carbon_equations
 #' @export
 ### teca
@@ -297,6 +305,7 @@ teca_carbon <- function(dap,
                         porc_C = 0.47) {
   return(porc_C * (0.153 * (dap^2.382)))
 }
+
 
 #' @rdname carbon_equations
 #' @export
@@ -310,6 +319,7 @@ cupuacu_carbon <- function(diam_30cm,
   return(porc_C * (-3.9 + 0.23 * ab + 0.0015 * (ab^2)))
 }
 
+
 #' @rdname carbon_equations
 #' @export
 ### general_tropical umida amazonia
@@ -319,7 +329,4 @@ general_carbon_higuchi <- function(dap, altura,
                              porc_C = 0.47) {
   return(porc_C * ( -2.694 + 2.038 * log(dap) + 0.902 * log(altura)))
 }
-
-
-
 
