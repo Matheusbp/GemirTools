@@ -25,7 +25,7 @@
 \alias{general_carbon_higuchi}
 \title{Set of Carbon equations of ABG}
 \usage{
-palmeira_carbon(dap, porc_C = 0.47)
+palmeira_carbon(dap, porcentagem_peso_seco = 0.6, porc_C = 0.47)
 
 general_carbon(dap, altura, densidade_madeira, porc_C = 0.47)
 
