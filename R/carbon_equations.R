@@ -72,9 +72,10 @@
 #  the POMAR project case, São Paulo (SP), foi utilizado a equação 1 para
 #   Palmeiras:
 
-palmeira_carbon <- function(dap,
+palmeira_carbon <- function(dap, porcentagem_peso_seco = 0.6,
                             porc_C = 0.47) {
-  return(porc_C * exp(-1.497 + 2.548 * log(dap)))
+  #a porcentagem de peso seco é 60% pq 40% é agua segundo higuchi e  está em velasco 2009
+  return(porc_C * (exp(-1.497 + 2.548 * log(dap)) * porcentagem_peso_seco))
 }
 
 
