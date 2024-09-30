@@ -331,3 +331,88 @@ general_carbon_higuchi <- function(dap, altura,
   return(porc_C * ( -2.694 + 2.038 * log(dap) + 0.902 * log(altura)))
 }
 
+
+#' @rdname carbon_equations
+#' @export
+#### Espécies em geral com DAP >= 5 cm em mata atlantica restoration
+
+
+# Nogueira Junior, L. R., Engel, V. L., Parrotta, J. A., de Melo, A. C. G., &
+# Ré, D. S. (2014). Allometric equations for estimating tree biomass in restored
+# mixed-species Atlantic Forest stands. Biota Neotropica, 14(2). https://doi.org/10.1590/1676-06032013008413
+# BARU
+# https://doi.org/10.1590/1676-06032013008413
+
+general_carbon_mixed_atlantic_forest_abg <- function(dap, altura, densidade_madeira, porc_C = 0.47) {
+  return(porc_C * exp(-1.305 + 1.055 * log(dap^2) + 0.34 * log(altura) + 1.077 * log(densidade_madeira)))
+}
+
+#' @rdname carbon_equations
+#' @export
+#### Espécies em geral com DAP >= 5 cm em mata atlantica restoration
+
+# Nogueira Junior, L. R., Engel, V. L., Parrotta, J. A., de Melo, A. C. G., &
+# Ré, D. S. (2014). Allometric equations for estimating tree biomass in restored
+# mixed-species Atlantic Forest stands. Biota Neotropica, 14(2). https://doi.org/10.1590/1676-06032013008413
+# BARU
+# https://doi.org/10.1590/1676-06032013008413
+
+general_carbon_mixed_atlantic_forest_bgb <- function(dap, altura, densidade_madeira, porc_C = 0.47) {
+  return(porc_C * exp(-2.086 + 1.086 * log(dap^2 * densidade_madeira)))
+}
+
+
+#' @rdname carbon_equations
+#' @export
+#### Avocado - sem roots
+
+# Shem Kuyah, Catherine Muthuri, Denis Wakaba, Athanase Rusanganwa Cyamweshi, Paul Kiprotich, Athanase Mukuralinda,
+# Allometric equations and carbon sequestration potential of mango (Mangifera indica) and avocado (Persea americana) in Kenya,
+# Trees, Forests and People, Volume 15, 2024, 100467, ISSN 2666-7193, https://doi.org/10.1016/j.tfp.2023.100467.
+# (https://www.sciencedirect.com/science/article/pii/S2666719323000997)
+
+avocado_carbon <- function(dap, porc_C = 0.47) {
+  return(porc_c * 0.0638 * (dap^2.5435))
+}
+
+#' @rdname carbon_equations
+#' @export
+#### Fitofisionomia da mata atlantica densa
+
+# tiepolo, 2002 & VIEIRA S 2008 & fonseca et al 2024 Em caso de nao ter dados para a fitofisionomia de mata atlantica, usamos chave 2005
+#
+
+general_dense_atlantic_forest_carbon <- function(dap, porc_C){
+  abg = 21.297 - 6.953 * dap + 0.74 * dap^2
+  return(abg * porc_C)
+}
+
+
+#' @rdname carbon_equations
+#' @export
+#### Araucaria - sem roots
+
+# http://bibliotecaflorestal.ufv.br/bitstream/handle/123456789/15746/Revista_Floresta_v39_n2_p232-237_2009.pdf?sequence=1
+#
+
+araucaria_carbon <- function(dap, h, porc_C){
+  pvf = -929.564 + (-43.244 * dap) + (1.773 * dap^2) + (-0.013 * dap^2 * h) + (1220.484 * log(h))
+  return(pvf * porc_C)
+}
+
+#' @rdname carbon_equations
+#' @export
+#### Cedro asustraliano - sem roots
+
+# Ng. Polbina Monsang, Keshav Kumar Upadhyay, Rajdeep Chanda, Rajiv Pandey, Shri Kant Tripathi,
+# Volumetric tree growth models for aboveground biomass estimation of Pinus kesiya and Toona ciliata in Northeast India,
+# Ecological Frontiers,
+# 2024,ISSN 2950-5097,
+# https://doi.org/10.1016/j.ecofro.2024.04.010.
+# (https://www.sciencedirect.com/science/article/pii/S2950509724000479)
+
+cedro_australiano_carbon <- function(dap, h, porc_C){
+  return(exp(-2.0311 + 1.4858 * log(dap * altura * densidade)) * porc_c)
+}
+
+

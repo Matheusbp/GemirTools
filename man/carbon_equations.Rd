@@ -23,6 +23,12 @@
 \alias{teca_carbon}
 \alias{cupuacu_carbon}
 \alias{general_carbon_higuchi}
+\alias{general_carbon_mixed_atlantic_forest_abg}
+\alias{general_carbon_mixed_atlantic_forest_bgb}
+\alias{avocado_carbon}
+\alias{general_dense_atlantic_forest_carbon}
+\alias{araucaria_carbon}
+\alias{cedro_australiano_carbon}
 \title{Set of Carbon equations of ABG}
 \usage{
 palmeira_carbon(dap, porcentagem_peso_seco = 0.6, porc_C = 0.47)
@@ -68,6 +74,28 @@ teca_carbon(dap, porc_C = 0.47)
 cupuacu_carbon(diam_30cm, porc_C = 0.47)
 
 general_carbon_higuchi(dap, altura, porc_C = 0.47)
+
+general_carbon_mixed_atlantic_forest_abg(
+  dap,
+  altura,
+  densidade_madeira,
+  porc_C = 0.47
+)
+
+general_carbon_mixed_atlantic_forest_bgb(
+  dap,
+  altura,
+  densidade_madeira,
+  porc_C = 0.47
+)
+
+avocado_carbon(dap, porc_C = 0.47)
+
+general_dense_atlantic_forest_carbon(dap, porc_C)
+
+araucaria_carbon(dap, h, porc_C)
+
+cedro_australiano_carbon(dap, h, porc_C)
 }
 \arguments{
 \item{dap}{DAP da arvore [cm]}
