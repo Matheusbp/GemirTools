@@ -397,7 +397,7 @@ general_dense_atlantic_forest_carbon <- function(dap, porc_C){
 
 araucaria_carbon <- function(dap, h, porc_C){
   pvf = -929.564 + (-43.244 * dap) + (1.773 * dap^2) + (-0.013 * dap^2 * h) + (1220.484 * log(h))
-  return(pvf * porc_C)
+  return(pvf * porc_C * 0.5) #multiplica-se por 0.5 devido a querermos a biomassa seca e aqui é peso verde do fuste! 50% é agua.
 }
 
 #' @rdname carbon_equations
