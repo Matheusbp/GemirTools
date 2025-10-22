@@ -1,0 +1,102 @@
+"Espécie","Bioma","Estado","Compartimento","Peso","d mín.","d máx.","R2/R2aj","Syx","Equação","Autor"
+"Anadenanthera colubrina(Vell.) Brenan","Mata Atlântica","MG","Acima 
+(tronco+galhos+folhas)","Seco","10,0","40,0","95,37","32,0%","exp(-
+10,429926397+2,3703560196*log(d)+0,7048908784*log(ht))*1000","Scolforo et al. (2008)¹"
+"Anadenanthera colubrina(Vell.) Brenan","Mata Atlântica","MG","Acima 
+(tronco+galhos+folhas)","Seco","10,0","40,0","94,50","28,8%","exp(-
+9,341381587+2,27623091*log(d)+0,3954337202*log(ht))*1000","Scolforo et al. (2008)¹"
+"Guadua chacoensis
+(Rojas) Londoño","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,6","14,0","0,87","19,7%","-19,27046+3,15377*ht","Mognon et al. (2014)"
+"Guadua chacoensis
+(Rojas) Londoño","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,6","14,0","0,83","22,5%","-28,09540+5,90368*d","Mognon et al. (2014)"
+"Guadua chacoensis
+(Rojas) Londoño","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,6","14,0","0,84","22,4%","-1,70418+0,30633*(d^2)","Mognon et al. (2014)"
+"Guadua chacoensis
+(Rojas) Londoño","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,6","14,0","0,92","15,8%","6,9623+0,00776*(d*(ht^2))","Mognon et al. (2014)"
+"Guadua chacoensis
+(Rojas) Londoño","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,6","14,0","0,93","15,0%","-27,53382+2,80989*d+1,91081*ht","Mognon et al. (2014)"
+"Guadua chacoensis 
+(Rojas) Londoño","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,6","14,0","0,86","20,5%","exp(0,62186+0,35049*log(ht^2))","Mognon et al. (2014)"
+"Guadua chacoensis
+(Rojas) Londoño","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,6","14,0","0,83","22,7%","exp(-1,66543+2,16569*log(d))","Mognon et al. (2014)"
+"Guadua chacoensis
+(Rojas) Londoño","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,6","14,0","0,83","22,8%","-30,53017+(8,51517*(d^0,5)*log(d))","Mognon et al. (2014)"
+"Kielmeyera coriacea
+Mart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","97,64","12,7%","exp(-
+10,454935288+2,1243668209*log(d)+0,4846364811*log(ht))*1000","Scolforo et al. (2008)¹"
+"Kielmeyera coriacea
+Mart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","91,00","28,9%","exp(-
+11,131420131+2,7809202201*log(d)+0,1607924005*log(ht))*1000","Scolforo et al. (2008)¹"
+"Kielmeyera 10oriáceaMart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","96,09","21,2%","exp(-
+11,2626907253+2,428844827*log(d)+0,8160943744*log(ht))*1000","Scolforo et al. (2008)¹"
+"Kielmeyera coriacea
+Mart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","98,11","16,8%","exp(-
+11,240733240+2,1478860499*log(d)+1,2256819954*log(ht))*1000","Scolforo et al. (2008)¹"
+"Kielmeyera coriacea
+Mart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","93,55","15,4%","exp(-
+9,9024961214+1,8386525322*log(d)+0,8826336654*log(ht))*1000","Scolforo et al. (2008)¹"
+"Kielmeyera coriacea
+Mart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","91,19","17,1%","exp(-
+9,9172024926+1,7980764189*log(d)+0,8570052692*log(ht))*1000","Scolforo et al. (2008)¹"
+"Kielmeyera coriacea 
+Mart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","95,21","12,4%","exp(-
+10,450166419+2,1184324516*log(d)+0,9437181178*log(ht))*1000","Scolforo et al. (2008)¹"
+"Kielmeyera coriacea
+Mart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","56,25","31,8%","exp(-
+9,5840753965+1,4473363882*log(d)+1,2694519160*log(ht))*1000","Scolforo et al. (2008)¹"
+"Kielmeyera coriacea
+Mart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","93,23","19,2%","exp(-
+9,4099752305+1,4178739454*log(d)+1,3497746854*log(ht))*1000","Scolforo et al. (2008)¹"
+"Kielmeyera coriacea
+Mart. & Zucc.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","90,36","24,0%","exp(-10,6053+2,20772*log(d)+0,726309*log(ht))*1000","Scolforo et al. (2008)¹"
+"Leucaena leucocephala(Lam.) de Wit","Mata Atlântica","PR","Total (abaixo+acima)","Seco","1,3","15,0","0,89","-","(7281,6-7207,5*ht-1308,9*hf+4400,7*cap)/1000","Aleixo et al. (2008)²"
+"Leucaena leucocephala(Lam.) de Wit","Mata Atlântica","PR","Total (abaixo+acima)","Seco","1,3","15,0","0,89","-","(6779,1-7965,5*ht+4462,4*cap)/1000","Aleixo et al. (2008)²"
+"Leucaena leucocephala(Lam.) de Wit","Mata Atlântica","PR","Total (abaixo+acima)","Seco","1,3","15,0","0,82","-","(-29139,1+2832,8*cap)/1000","Aleixo et al. (2008)²"
+"Leucaena leucocephala(Lam.) de Wit","Mata Atlântica","PR","Total (abaixo+acima)","Seco","1,3","15,0","0,94","-","exp(3,4756+0,22*ht-0,028*hf+1,4425*log(cap))/1000","Aleixo et al. (2008)²"
+"Leucaena leucocephala(Lam.) de Wit","Mata Atlântica","PR","Total (abaixo+acima)","Seco","1,3","15,0","0,57","-","(-83092,2-1825,5*ht+45613,24*log(cap))/1000","Aleixo et al. (2008)²"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","96,75","46,3% exp(-","10,439791707+2,1182873001*log(d)+0,8339834928*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","95,71","41,7% exp(-","10,9532786932+2,5464820134*log(d)+0,4667754371*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","96,71","21,4% exp(-","9,7244062219+2,2048968123*log(d)+0,5515240994*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","96,37","55,2% exp(-","10,2622957616+2,1516946479*log(d)+0,7265663432*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","93,36","67,3% exp(-","10,4843366195+1,6816091448*log(d)+1,4063159347*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Mata Atlântica","MG","Acima 
+(tronco+galhos+folhas)","Seco","-","-","95,63",NA,"22,6% 0,0334430*(d^2,3979902)*(hf^0,426536)","Amaro et al. (2013)"
+"Várias","Mata Atlântica","MG","Acima 
+(tronco+galhos+folhas)","Seco","-","-","94,93",NA,"24,2% 0,028135*(d^2,306505)*(hf*0,557845)","Amaro et al. (2013)"
+"Várias","Mata Atlântica","SP","Abaixo (raízes)","Seco","5,0","36,0","0,86",NA,"15,3% exp(-2,68610+2,08390*log(d))","Rasera (2019)"
+"Várias","Mata Atlântica","SP","Abaixo (raízes)","Seco","5,0","36,0","0,87",NA,"12,3% exp(-3,79570+1,76660*log(d)+0,82990*log(ht))","Rasera (2019)"
+"Várias","Mata Atlântica","SP","Abaixo (raízes)","Seco","5,0","36,0","0,88",NA,"12,2% exp(-3,84890+0,87380*log((d^2)*ht))","Rasera (2019)"
+"Várias","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,0","15,0","0,87","-","exp(-1,19829+1,98391*log(d))","Lacerda et al. (2009)³"
+"Várias","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,0","36,0","0,75",NA,"56,3% exp(-1,4309+2,0158*log(d))","Rasera (2019)"
+"Várias","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,0","36,0","0,78",NA,"51,1% exp(-2,6925+0,8610*log((d^2)*ht))","Rasera (2019)"
+"Várias","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,0","36,0","0,78",NA,"49,7% exp(-3,2369+1,5467*log(d)+1,2860*log(ht))","Rasera (2019)"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"¹ peso seco inclui apenas galhos >=3cm² cap - circunferência a altura do peito ³ tronco + galhada",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

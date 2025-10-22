@@ -1,0 +1,138 @@
+"Espécie","Bioma","Estado","Compartimento","Peso","d mín.","d máx.","R2/R2aj","Syx","Equação","Autor"
+"Acacia mangium Willd.","Amazônia","RR","Abaixo (raízes)","Fresco","8,0","30,0","0,91","2,9%","0,045404*(d^2,388124)","Gomes (2017)¹"
+"Acacia mangium Willd.","Amazônia","RR","Abaixo (raízes)","Fresco","8,0","30,0","0,91","3,0%","-6,40565-0,44868*(d^2)","Gomes (2017)¹"
+"Acacia mangium Willd.","Amazônia","RR","Abaixo (raízes)","Fresco","8,0","30,0","0,91","3,0%","-6,40565-0,44868*d+0,18296*(d^2)","Gomes (2017)¹"
+"Acacia mangium Willd.","Amazônia","RR","Abaixo (raízes)","Fresco","8,0","30,0","0,91","2,9%","0,048504*(d^2,464056)*(hf^-0,11171)","Gomes (2017)¹"
+"Acacia mangium Willd.","Amazônia","RR","Abaixo (raízes)","Fresco","8,0","30,0","0,85","3,7%","7,312124+0,00858*((d^2)*hf)","Gomes (2017)¹"
+"Acacia mangium Willd.","Amazônia","RR","Abaixo (raízes)","Fresco","8,0","30,0","0,86","3,7%","0,034423*(((d^2)*hf)^0,860268)","Gomes (2017)¹"
+"Acacia mangium Willd.","Amazônia","RR","Acima 
+(tronco+galhos+folhas)","Fresco","8,0","30,0","0,96","1,8%","0,365953*(d^2,322782)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Acima 
+(tronco+galhos+folhas)","Fresco","8,0","30,0","0,96","1,9%","-50,9254+1,127341*(d^2)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Acima 
+(tronco+galhos+folhas)","Fresco","8,0","30,0","0,96","1,8%","106,2327-17,5133*d+1,565445*(d^2)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Acima 
+(tronco+galhos+folhas)","Fresco","8,0","30,0","0,96","1,8%","0,356584*(d^2,293789)*(hf^0,042882)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Acima 
+(tronco+galhos+folhas)","Fresco","8,0","30,0","0,92","2,5%","55,75248+0,055382*((d^2)*hf)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Acima 
+(tronco+galhos+folhas)","Fresco","8,0","30,0","0,92","2,6%","0,262875*(((d^2)*hf)^0,843795)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Total (abaixo+acima)","Fresco","8,0","30,0","0,96","1,7%","0,4103*(d^2,3315)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Total (abaixo+acima)","Fresco","8,0","30,0","0,96","1,8%","-60,7206+1,3039*(d^2)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Total (abaixo+acima)","Fresco","8,0","30,0","0,96","1,7%","120,9697-20,9697*d+1,8104*(d^2)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Total (abaixo+acima)","Fresco","8,0","30,0","0,97","1,7%","0,4049*(d^2,3166)*(hf^0,0221)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Total (abaixo+acima)","Fresco","8,0","30,0","0,92","2,6%","63,0646+0,0640*((d^2)*hf)","Gomes (2017)"
+"Acacia mangium Willd.","Amazônia","RR","Total (abaixo+acima)","Fresco","8,0","30,0","0,92","2,6%","0,2968*(((d^2)*hf)^0,8460)","Gomes (2017)"
+"Acacia mearnsii De Wild.","Pampa","RS","Abaixo (raízes)","Seco","5,1","26,0","0,93","25,9%","exp(-2,796042+2,085428*log(d))","Barichello et al. (2005)"
+"Acacia mearnsii De Wild.","Pampa","RS","Abaixo (raízes)","Seco","3,6","19,6","0,97","18,0%","10^(-2,2681+2,282014*log10(d))","Caldeira et al. (2011)"
+"Acacia mearnsii De Wild.","Pampa","RS","Acima 
+(tronco+galhos+folhas)","Seco","5,1","26,0","0,99","10,7%","exp(-1,575087+2,388265*log(d))","Barichello et al. (2005)"
+"Acacia mearnsii De Wild.","Pampa","RS","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,95","-","exp(-4,6341+1,9310*log(d)+1,4545*log(ht))","Behling et al. (2012)"
+"Acacia mearnsii De Wild.","Pampa","RS","Total (abaixo+acima)","Seco","3,6","19,6","0,99","3,4%","10^(-1,2874+2,80262*log10(d))","Caldeira et al. (2011)"
+"Bambusa oldhamii Munro","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,6","10,3","0,50","21,8%","-11,3316+1,7578*ht","Sanquetta et al. (2015a)"
+"Bambusa oldhamii Munro","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,6","10,3","0,78","14,6%","-13,4200+3,9572*d","Sanquetta et al. (2015a)"
+"Bambusa oldhamii Munro","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,6","10,3","0,78","14,7%","6,1342+0,0109*((d^2)*ht)","Sanquetta et al. (2015a)"
+"Bambusa oldhamii Munro","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,6","10,3","0,77","14,8%","-15,2078+3,4891*d+0,3369*ht","Sanquetta et al. (2015a)"
+"Bambusa oldhamii Munro","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,6","10,3","0,76","23,6%","exp(-0,9677+1,8521*log(d))","Sanquetta et al. (2015a)"
+"Bambusa oldhamii Munro","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,6","10,3","0,77","14,7%","-14,3187+6,0518*sqrt(d)*log(d)","Sanquetta et al. (2015a)"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"¹ apenas as raízes grossas com diâmetro ≥ 2 mm",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Bambusa oldhamii Munro","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,6","10,3","0,44","23,1%","-14,3187+(6,0518*(d^0,5))*log(d)","Sanquetta et al. (2015a)"
+"Bambusa vulgaris
+Schrad. ex J.C.Wendl.","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,7","10,0","0,48","24,0%","-8,4429+1,8657*ht","Sanquetta et al. (2015a)"
+"Bambusa vulgaris
+Schrad. ex J.C.Wendl.","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,7","10,0","0,73","17,4%","-21,7880+5,1622*d","Sanquetta et al. (2015a)"
+"Bambusa vulgaris
+Schrad. ex J.C.Wendl.","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,7","10,0","0,76","16,5%","4,9887+0,0144*((d^2)*ht)","Sanquetta et al. (2015a)"
+"Bambusa vulgaris
+Schrad. ex J.C.Wendl.","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,7","10,0","0,74","17,1%","-23,0656+4,2613*d+0,5638*ht","Sanquetta et al. (2015a)"
+"Bambusa vulgaris
+Schrad. ex J.C.Wendl.","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,7","10,0","0,71","23,6%","exp(-1,6425+2,2003*log(d))","Sanquetta et al. (2015a)"
+"Bambusa vulgaris
+Schrad. ex J.C.Wendl.","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,7","10,0","0,74","17,0%","exp(-2,0124+0,7204*log((d^2)*ht))","Sanquetta et al. (2015a)"
+"Bambusa vulgaris
+Schrad. ex J.C.Wendl.","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,7","10,0","0,72","17,5%","-22,3139+7,1274*(d^0,5)*log(d)","Sanquetta et al. (2015a)"
+"Cryptomeria japonica
+(Thunb. Ex L.f.) D.Don","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","14,7","35,4","0,93","14,7%","-337,67366+24,02437*d","Coutinho et al. (2017)"
+"Cryptomeria japonica
+(Thunb. Ex L.f.) D.Don","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","14,7","35,4","0,94","13,5%","-408,53074+20,99843*d+6,61730*ht","Coutinho et al. (2017)"
+"Cryptomeria japonica
+(Thunb. Ex L.f.) D.Don","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","14,7","35,4","0,96","11,1%","5,81707+0,01679*d^2*ht","Coutinho et al. (2017)"
+"Eucalyptus camaldulensisDehnh.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,0","0,97","14,2%","exp(-9,609445+2,63942*log(d))","Franco (1996)"
+"Eucalyptus camaldulensisDehnh.","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,0","0,97","11,5%","0,002222-
+0,000062*(d^2)+0,00002*(d^2*ht)+0,000001405*(d* ht^2)","Franco (1996)"
+"Eucalyptus grandis W.Hill","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","10,0","18,7","-","6,8%","0,0192*(d^1,8766)*(ht^1,0980)","Ribeiro et al. (2015)"
+"Eucalyptus grandis W.Hill","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","10,0","18,7","-","6,7%","0,0249*(((d^2)*ht)^0,9679)","Ribeiro et al. (2015)"
+"Pinus caribaea var. hondurensis (Sénécl.) W. H. Barrett & Golfari","Mata Atlântica","BA","Acima 
+(tronco+galhos+folhas)","Seco","5,8","23,8","87,44","29,4%","exp(-2,47+2,51*log(d))","Lima et al. (2016)"
+"Pinus caribaea var. hondurensis (Sénécl.) W. H. Barrett & Golfari","Mata Atlântica","BA","Acima 
+(tronco+galhos+folhas)","Seco","5,8","23,8","88,88","31,3%","exp(5,87-24,05*1/d)","Lima et al. (2016)"
+"Pinus caribaea var. hondurensis (Sénécl.) W. H. Barrett & Golfari","Mata Atlântica","BA","Acima 
+(tronco+galhos+folhas)","Seco","5,8","23,8","80,50","28,9%","11,90-2,85*d+0,47*(d^2)","Lima et al. (2016)"
+"Pinus caribaea var. hondurensis (Sénécl.) W. H. Barrett & Golfari","Mata Atlântica","BA","Acima 
+(tronco+galhos+folhas)","Seco","5,8","23,8","76,34","30,9%","-49,17+8,31*d","Lima et al. (2016)"
+"Pinus caribaea var. hondurensis (Sénécl.) W. H. Barrett & Golfari","Mata Atlântica","BA","Acima 
+(tronco+galhos+folhas)","Seco","5,8","23,8","84,42","25,6%","5,19+0,03*((d^2)*ht)","Lima et al. (2016)"
+"Pinus caribaea var. hondurensis (Sénécl.) W. H. Barrett & Golfari","Mata Atlântica","BA","Acima 
+(tronco+galhos+folhas)","Seco","5,8","23,8","86,94","26,6%","-17,36+0,09*(d^2)+0,02*((d^2)*ht)+2,37*ht","Lima et al. (2016)"
+"Pinus caribaea var. hondurensis (Sénécl.) W. H. Barrett & Golfari","Mata Atlântica","BA","Acima 
+(tronco+galhos+folhas)","Seco","5,8","23,8","90,46","27,5%","exp(-4,02 +1,83*log(d)+1,36*log(ht))","Lima et al. (2016)"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Pinus caribaea var. hondurensis (Sénécl.) W. H. Barrett & Golfari","Mata Atlântica","BA","Acima 
+(tronco+galhos+folhas)","Seco","5,8","23,8","74,47","32,0%","-55,88+12,50*(d^0,5)*log(d)","Lima et al. (2016)"
+"Pinus caribaea var. hondurensis (Sénécl.) W. H. Barrett & Golfari","Mata Atlântica","BA","Acima 
+(tronco+galhos+folhas)","Seco","5,8","23,8","91,28","26,4%","-161,18+14,65*d-0,11*(d^2)-
+2,99*(d*ht)+0,10*((d^2)*ht)+26,00*ht","Lima et al. (2016)"
+"Pinus spp.","Mata Atlântica","PR","Abaixo (raízes)","Seco","3,6","35,9","0,82","29,3%","-9,3709+1,2439*d+0,0122*(d^2)","Schikowski et al. (2013)"
+"Pinus spp.","Mata Atlântica","PR","Abaixo (raízes)","Seco","3,6","35,9","0,82","29,5%","-11,8026+1,5909*d+0,0001*(d^2)*ht","Schikowski et al. (2013)"
+"Pinus spp.","Mata Atlântica","PR","Abaixo (raízes)","Seco","3,6","35,9","0,82","28,9%","-3,0203+0,0729*(d^2)-0,0011*(d^2)*ht","Schikowski et al. (2013)"
+"Pinus spp.","Mata Atlântica","PR","Abaixo (raízes)","Seco","3,6","35,9","0,83","28,3%","-10,2883+0,6824*d+1,3065*ht","Schikowski et al. (2013)"
+"Pinus spp.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","3,6","35,9","0,96","17,7%","109,4775-20,1123*d+1,0041*(d^2)","Schikowski et al. (2013)"
+"Pinus spp.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","3,6","35,9","0,97","15,4%","-12,9265+1,4294*d+0,0185*(d^2)*ht","Schikowski et al. (2013)"
+"Pinus spp.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","3,6","35,9","0,97","15,5%","12,1156-2,5386*d+0,1702*(d^2)+0,0156*(d^2)*ht","Schikowski et al. (2013)"
+"Pinus spp.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","3,6","35,9","0,84","37,2%","-297,2604+15,5684*d+11,5991*ht","Schikowski et al. (2013)"
+"Pinus taeda L.","Mata Atlântica","PR","Abaixo (raízes)","Fresco","-","-","43,64","22,8%","162,0559-9,2412*d+0,2393*(d^2)","Sanquetta et al. (2003)"
+"Pinus taeda L.","Mata Atlântica","PR","Abaixo (raízes)","Fresco","-","-","49,85","21,2%","263,0526-14,4282*d+0,0124*((d^2)*ht)","Sanquetta et al. (2003)"
+"Pinus taeda L.","Mata Atlântica","PR","Abaixo (raízes)","Fresco","-","-","33,54","21,9%","256,8161-13,6711*d-0,0801*(d^2)+0,0151*d^2*ht","Sanquetta et al. (2003)"
+"Pinus taeda L.","Mata Atlântica","PR","Abaixo (raízes)","Fresco","-","-","43,97","22,4%","39,5338-0,1705*(d^2)+0,0106*((d^2)*ht)","Sanquetta et al. (2003)"
+"Pinus taeda L.","Mata Atlântica","PR","Abaixo (raízes)","Fresco","-","-","34,28","24,3%","-40,3714+6,8804*d-1,9488*ht","Sanquetta et al. (2003)"
+"Pinus taeda L.","Mata Atlântica","PR","Abaixo (raízes)","Fresco","-","-","45,47","25,2%","-0,4656+(d^1,0870)+(ht^0,6888)","Sanquetta et al. (2003)"
+"Pinus taeda L.","Mata Atlântica","RS","Abaixo (raízes)","Seco","18,1","50,8","0,98","3,0%","exp(6,334737-73,401781*(d^-1))","Witschoreck (2008)"
+"Pinus taeda L.","Mata Atlântica","RS","Acima 
+(tronco+galhos+folhas)","Seco","18,1","50,8","0,98","1,5%","exp(7,854652-63,900403*(d^-1))","Witschoreck (2008)"
+"Pinus taeda L.","Mata Atlântica","RS","Total (abaixo+acima)","Seco","18,1","50,8","0,98","1,5%","exp(8,051060-65,107266*(d^-1))","Witschoreck (2008)"
+"Platanus x acerifolia","Pampa","RS","Abaixo (raízes)","Seco","-","-","0,81","11,5%","10^(1,841753-9,680439*(d^-1))","Hoppe et al. (2006)"
+"Platanus x acerifolia","Pampa","RS","Total (abaixo+acima)","Seco","-","-","0,95","7,0%","10^(-1,161443+0,913291*log10((d^2)*ht))","Hoppe et al. (2006)"
+"Syzygium cumini (L.) Skeels","Amazônia","MT","Total (abaixo+acima)","Seco","10,0","23,0","0,87","-","-185,219+19,884*d","Robortella (2010)"
+"Syzygium cumini (L.) Skeels","Amazônia","MT","Total (abaixo+acima)","Seco","10,0","23,0","0,87","-","-16,366+0,061*((d^2)*ht)","Robortella (2010)"
+"Syzygium cumini (L.) Skeels","Amazônia","MT","Total (abaixo+acima)","Seco","10,0","23,0","0,87","-","-183,248+19,934*d-0,312*ht","Robortella (2010)"
+"Syzygium cumini (L.) Skeels","Amazônia","MT","Total (abaixo+acima)","Seco","10,0","23,0","0,89","-","0,098*(d^2,569)","Robortella (2010)"
+"Syzygium cumini (L.) Skeels","Amazônia","MT","Total (abaixo+acima)","Seco","10,0","23,0","0,87","-","0,017*(((d^2)*ht)^1,144)","Robortella (2010)"
+"Syzygium cumini (L.) Skeels","Amazônia","MT","Total (abaixo+acima)","Seco","10,0","23,0","0,92","-","exp(-2,450+2,607*log(d))","Robortella (2010)"
+"Syzygium cumini (L.) Skeels","Amazônia","MT","Total (abaixo+acima)","Seco","10,0","23,0","0,90","-","exp(-4,396+01,851*log(d*ht))","Robortella (2010)"
+"Syzygium cumini (L.) Skeels","Amazônia","MT","Total (abaixo+acima)","Seco","10,0","23,0","0,92","-","exp(-2,298+2,575*log(d)+0,105*log(hf/ht))","Robortella (2010)"

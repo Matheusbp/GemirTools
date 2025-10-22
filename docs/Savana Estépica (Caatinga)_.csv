@@ -1,0 +1,199 @@
+"Espécie","Bioma","Estado","Compartimento","Peso","d mín.","d máx.","R2/R2aj","Syx","Equação","Autor"
+"Anadenanthera colubrina (Vell.) Brenan","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Fresco","3,0","26,0","91,99","16,7%","54,92921*((1-exp(-0,178713*d))^2,490494)","Abreu et al. (2016)"
+"Anadenanthera colubrina (Vell.) Brenan","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Fresco","3,0","26,0","93,45","15,1%","51,63157/(1+16,05867*exp(-0,362138*d))","Abreu et al. (2016)"
+"Anadenanthera colubrina (Vell.) Brenan","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,89","20,7%","48,7255∗(1-exp(-0,1435∗d))^2,4096","Dalla Lana et al. (2018)"
+"Anadenanthera colubrina (Vell.) Brenan","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,86","22,9%","1,7527*(d^1,1265)","Dalla Lana et al. (2018)"
+"Anadenanthera colubrina (Vell.) Brenan","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,86","22,9%","1,7531*(d^2)^0,5632","Dalla Lana et al. (2018)"
+"Anadenanthera colubrina (Vell.) Brenan","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,84","24,8%","1,4905*((d^2)*ht)^0,4069","Dalla Lana et al. (2018)"
+"Anadenanthera colubrina (Vell.) Brenan","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","6,0","27,0","0,97","-","-76,809+14,899*d","Padilha (2011)"
+"Anadenanthera colubrina var. cebil (Griseb.) Altschul","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,94","-","0,2482*(d^2,1628)","Sampaio e Silva (2005)"
+"Aspidosperma pyrifolium Mart. & Zucc.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,74","27,0%","0,7271*(d^0,8176)*(ht^0,6229)","Dalla Lana et al. (2018)"
+"Aspidosperma pyrifolium Mart. & Zucc.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,71","28,3%","1,0110*(d^1,1361)","Dalla Lana et al. (2018)"
+"Aspidosperma pyrifolium Mart. & Zucc.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,71","28,3%","1,0109*(d^2)^0,5681","Dalla Lana et al. (2018)"
+"Aspidosperma pyrifolium Mart. & Zucc.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,75","26,6%","0,7858*((d^2)*ht)^0,4550","Dalla Lana et al. (2018)"
+"Aspidosperma pyrifolium Mart. & Zucc.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,85","-","0,3675*(d^1,8355)","Sampaio e Silva (2005)"
+"Astronium urundeuva 
+(M. Allemão) Engl.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,98","-","0,1397*(d^2,4659)","Sampaio e Silva (2005)"
+"Bauhinia cheilantha 
+(Bong.) Steud.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,97","12,1%","0,0699*(d^2,2115)*(ht^0,8155)","Dalla Lana et al. (2018)"
+"Bauhinia cheilantha 
+(Bong.) Steud.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,94","65,1%","exp(-2,7776+2,1672*log(d)+0,9313*log(ht))","Dalla Lana et al. (2018)"
+"Bauhinia cheilantha 
+(Bong.) Steud.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,94","64,4%","exp(-2,8746+1,0523*log((d^2)*ht))","Dalla Lana et al. (2018)"
+"Bauhinia cheilantha 
+(Bong.) Steud.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,94","17,9%","0,1543*(d^2,4831)","Dalla Lana et al. (2018)"
+"Bauhinia cheilantha 
+(Bong.) Steud.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,94","17,9%","0,1543*(d^2)^1,2416","Dalla Lana et al. (2018)"
+"Bauhinia cheilantha 
+(Bong.) Steud.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,97","12,5%","0,0568*((d^2)*ht)^1,0531","Dalla Lana et al. (2018)"
+"Bauhinia forficata Link","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,95","-","10^(-2,480+0,9270*log10(d^2*ht))","Schacht et al. (1988)"
+"Cenostigma bracteosum 
+(Tul.) E. Gagnon & G.P. Lewis","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,83","24,4%","0,6221*(d^1,1061)*(ht^0,6840)","Dalla Lana et al. (2018)"
+"Cenostigma bracteosum 
+(Tul.) E. Gagnon & G.P. Lewis","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,85","23,4%","6,6205+0,0341*((d^2)*ht)","Dalla Lana et al. (2018)"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"23.0",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Savana Estépica (Caatinga)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Espécie","Bioma","Estado","Compartimento","Peso","d mín.","d máx.","R2/R2aj","Syx","Equação","Autor"
+"Cenostigma bracteosum 
+(Tul.) E. Gagnon & G.P. Lewis","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,75","30,1%","0,9765*(d^1,5126)","Dalla Lana et al. (2018)"
+"Cenostigma bracteosum 
+(Tul.) E. Gagnon & G.P. Lewis","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,75","30,1%","0,9767*(d^2)^0,7563","Dalla Lana et al. (2018)"
+"Cenostigma bracteosum 
+(Tul.) E. Gagnon & G.P. Lewis","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,84","24,1%","0,6173*((d^2)*ht)^0,5957","Dalla Lana et al. (2018)"
+"Cenostigma pyramidale 
+(Tul.) E. Gagnon & G.P. Lewis","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,99","-","0,0626*(d^2)*ht","Schacht et al. (1988)"
+"Cenostigma pyramidale 
+(Tul.) E. Gagnon & G.P. Lewis","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,82","-","0,2365*(d^2,1928)","Sampaio e Silva (2005)"
+"Cenostigma pyramidale 
+(Tul.) E. Gagnon & G.P. Lewis","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","19,0","0,68","-","0,3129*(d^1,8838)","Sampaio et al. (2010)"
+"Cenostigma pyramidale 
+(Tul.) E. Gagnon & G.P. Lewis","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","19,0","0,69","-","0,0904*(d*(ht^1,3904))","Sampaio et al. (2010)"
+"Cereus jamacaru DC.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,70","-","0,0010*(d^3,2327)","Sampaio e Silva (2005)"
+"Cnidoscolus quercifolius Pohl","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,79","27,2%","3,9444+0,0186*((d^2)*ht)","Dalla Lana et al. (2018)"
+"Cnidoscolus quercifolius Pohl","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,72","17,5%","exp(-0,6664+0,5237*log((d^2)*ht))","Dalla Lana et al. (2018)"
+"Cnidoscolus quercifolius Pohl","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,82","25,5%","0,6064*(d^1,4216)","Dalla Lana et al. (2018)"
+"Cnidoscolus quercifolius Pohl","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,82","25,5%","0,6064*(d^2)^0,7108","Dalla Lana et al. (2018)"
+"Cnidoscolus quercifolius Pohl","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,82","25,8%","0,4896*((d^2)*ht)^0,5387","Dalla Lana et al. (2018)"
+"Coccoloba guaranitica Hassler","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","5,0","24,0","0,99","-","6,717*exp(d*0,139)","Padilha (2011)"
+"Cordia oncocalyx Allemão","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,98","-","8,730+0,0414*((d^2)*ht)","Schacht et al. (1988)"
+"Croton heliotropiifolius Kunth","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,76","19,0%","0,1868*(d^1,2764)*(ht^0,9401)","Dalla Lana et al. (2018)"
+"Croton heliotropiifolius Kunth","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,71","31,8%","exp(-1,6887+1,2224*log(d)+0,9761*log(ht))","Dalla Lana et al. (2018)"
+"Croton heliotropiifolius Kunth","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,76","19,2%","0,6522+0,0582*((d^2)*ht)","Dalla Lana et al. (2018)"
+"Croton heliotropiifolius Kunth","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,70","32,2%","exp(-1,5518+0,7158*log((d^2)*ht))","Dalla Lana et al. (2018)"
+"Croton heliotropiifolius Kunth","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,76","19,1%","0,2219*((d^2)*ht)^0,7065","Dalla Lana et al. (2018)"
+"Croton hemiargyreus Müll.Arg.","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,97","-","0,886+0,0484*((d^2)*ht)","Schacht et al. (1988)"
+"Croton jacobinensis Baill.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,84","-","0,3569*(d^1,8565)","Sampaio e Silva (2005)"
+"Croton jacobinensis Baill.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","13,0","0,62","-","0,4171*(d^1,5601)","Sampaio et al. (2010)"
+"Croton jacobinensis Baill.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","13,0","0,67","-","0,0867*(d*(ht^1,2852))","Sampaio et al. (2010)"
+"Dalbergia cearensis Ducke","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,1","0,67","-","exp(-3,710+1,878*log(d*ht))","Nogueira et al. (2021)"
+"Dalbergia cearensis Ducke","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,1","0,66","-","exp(-4,135+1,713*log(d)+2,325*log(ht))","Nogueira et al. (2021)"
+"Dalbergia cearensis Ducke","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,1","0,64","-","exp(-2,763+1,055*log(d^2*ht))","Nogueira et al. (2021)"
+"Dalbergia cearensis Ducke","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,1","0,57","-","exp(-1,249+2,280*log(d))","Nogueira et al. (2021)"
+"Dalbergia cearensis Ducke","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,1","0,42","-","exp(-3,676+4,252*log(ht))","Nogueira et al. (2021)"
+"Diplokeleba floribunda N.E.Br.","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","7,0","27,0","0,98","-","0,306*(d^2,145)","Padilha (2011)"
+"Jatropha mollissima 
+(Pohl) Baill.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,83","-","0,1970*(d^1,8145)","Sampaio e Silva (2005)"
+"Mimosa caesalpiniifolia Benth.","Caatinga","CE","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,95","-","4,020+0,339*((d^2)*ht)","Schacht et al. (1988)"
+"Mimosa hostilis (Mart.) Benth.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,96","-","0,3127*(d^2,1183)","Sampaio e Silva (2005)"
+"Mimosa ophthalmocentra Mart. ex Benth.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,90","19,8%","6,0137*(d^1,7250)*(ht^-1,338)","Dalla Lana et al. (2018)"
+"Mimosa ophthalmocentra Mart. ex Benth.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,88","9,0%","exp(1,1118+1,7371*log(d)-0,9536*log(ht))","Dalla Lana et al. (2018)"
+"Mimosa ophthalmocentra Mart. ex Benth.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,75","32,0%","43,6748∗(1-exp(-0,2103∗d))^2,9584","Dalla Lana et al. (2018)"
+"Mimosa ophthalmocentra Mart. ex Benth.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,71","34,2%","2,2018*(d^1,1066)","Dalla Lana et al. (2018)"
+"Mimosa ophthalmocentra Mart. ex Benth.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,71","34,2%","2,2016*(d^2)^0,5533","Dalla Lana et al. (2018)"
+"Mimosa ophthalmocentra Mart. ex Benth.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","24,0","0,81","-","0,4369*(d^1,8493)","Sampaio et al. (2010)"
+"Mimosa ophthalmocentra Mart. ex Benth.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","24,0","0,73","-","0,0893*(d*(ht^1,4322))","Sampaio et al. (2010)"
+"Mimosa tenuiflora (Willd.) Poir.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,89","22,1%","3,0407+0,0458*((d^2)*ht)","Dalla Lana et al. (2018)"
+"Mimosa tenuiflora (Willd.) Poir.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,92","10,6%","exp(-1,6100+0,7850*log((d^2)*ht))","Dalla Lana et al. (2018)"
+"Mimosa tenuiflora (Willd.) Poir.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,94","16,8%","0,5084*(d^1,7121)","Dalla Lana et al. (2018)"
+"Mimosa tenuiflora (Willd.) Poir.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,94","16,8%","0,5084*(d^2)^0,8561","Dalla Lana et al. (2018)"
+"Mimosa tenuiflora (Willd.) Poir.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","34,0","0,70","-","0,3344*(d^1,9648)","Sampaio et al. (2010)"
+"Mimosa tenuiflora (Willd.) Poir.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","34,0","0,64","-","0,4138*(d^1,7718)","Sampaio et al. (2010)"
+"Mimosa tenuiflora (Willd.) Poir.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","34,0","0,69","-","0,0710*(d*(ht^1,5120))","Sampaio et al. (2010)"
+"Mimosa tenuiflora (Willd.) Poir.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","34,0","0,66","-","0,0798*(d*(ht^1,4591))","Sampaio et al. (2010)"
+"Monteverdia rigida (Mart.) Biral","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,95","-","0,3460*(d^2,0231)","Sampaio e Silva (2005)"
+"Phyllostylon rhamnoides
+(Poiss.) Taub.","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","6,0","28,0","1,00","-","5,886*exp(d*0,127)","Padilha (2011)"
+"Schinopsis brasiliensis Engl.","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","50,0","0,97","-","0,2274*(d^2,2710)","Sampaio e Silva (2005)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,74","47,6%","0,8905*(d^1,2189)*(ht^0,2333)","Dalla Lana et al. (2018)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,85","23,5%","exp(-1,2884+1,6102*log(d)+0,4343*log(ht))","Dalla Lana et al. (2018)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,84","23,7%","exp(-1,4991+0,7290*log((d^2)*ht))","Dalla Lana et al. (2018)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,74","47,1%","55,8948*(1-exp(-0,1176*d))^2,2982","Dalla Lana et al. (2018)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,73","48,1%","0,9867*(d^1,3692)","Dalla Lana et al. (2018)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,73","48,1%","0,9867*(d^2)^0,6846","Dalla Lana et al. (2018)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","1,9","9,5","0,73","48,4%","0,8471*((d^2)*ht)^0,5034","Dalla Lana et al. (2018)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","30,0","0,95","-","0,0612*(d*ht)^1,5811","Sampaio e Silva (2005)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","30,0","0,92","-","0,1730*(d^2,2950)","Sampaio e Silva (2005)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","30,0","0,82","-","0,2627*(d^1,9010)","Sampaio e Silva (2005)"
+"Várias","Caatinga","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,0","30,0","0,95","-","0,2368*(d^2,2219)","Sampaio e Silva (2005)¹"
+"Várias","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","6,0","25,0","0,98","-","0,188*(d^2,266)","Padilha (2011)²"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"¹ espécies pequenas² espécies grandes",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

@@ -29,6 +29,97 @@
 \alias{general_dense_atlantic_forest_carbon}
 \alias{araucaria_carbon}
 \alias{cedro_australiano_carbon}
+\alias{acacia_mearnsii_de_wild_pampa}
+\alias{aniba_rosiodora_ducke_amazonia}
+\alias{bellucia_spp_amazonia}
+\alias{bertholletia_excelsa_bonpl_amazonia}
+\alias{cecropia_sciadophylla_mart_amazonia}
+\alias{cedrela_odorata_l_amazonia}
+\alias{ceiba_speciosa_a_st_hil_ravenna_amazonia}
+\alias{croton_matourensis_aubl_amazonia}
+\alias{goupia_glabra_aubl_amazonia}
+\alias{guadua_weberbaueri_pilg_amazonia}
+\alias{handroanthus_chrysotrichus_mart_ex_dc_mattos_amazonia}
+\alias{laetia_procera_poepp_eichler_amazonia}
+\alias{schinus_terebinthifolia_raddi_amazonia}
+\alias{syzygium_cumini_l_skeels_amazonia}
+\alias{tabebuia_aurea_silva_manso_benth_hook_f_ex_s_moore_amazonia}
+\alias{varias_amazonia}
+\alias{vismia_cayennensis_jacq_pers_amazonia}
+\alias{vismia_japurensis_reichardt_amazonia}
+\alias{anadenanthera_colubrina_vell_brenan_caatinga}
+\alias{anadenanthera_colubrina_var_cebil_griseb_altschul_caatinga}
+\alias{aspidosperma_pyrifolium_mart_zucc_caatinga}
+\alias{astronium_urundeuva_m_allemao_engl_caatinga}
+\alias{bauhinia_cheilantha_bong_steud_caatinga}
+\alias{cenostigma_bracteosum_tul_e_gagnon_g_p_lewis_caatinga}
+\alias{cenostigma_pyramidale_tul_e_gagnon_g_p_lewis_caatinga}
+\alias{cereus_jamacaru_dc_caatinga}
+\alias{cnidoscolus_quercifolius_pohl_caatinga}
+\alias{croton_heliotropiifolius_kunth_caatinga}
+\alias{croton_jacobinensis_baill_caatinga}
+\alias{dalbergia_cearensis_ducke_caatinga}
+\alias{jatropha_mollissima_pohl_baill_caatinga}
+\alias{mimosa_caesalpiniifolia_benth_caatinga}
+\alias{mimosa_hostilis_mart_benth_caatinga}
+\alias{mimosa_ophthalmocentra_mart_ex_benth_caatinga}
+\alias{mimosa_tenuiflora_willd_poir_caatinga}
+\alias{monteverdia_rigida_mart_biral_caatinga}
+\alias{schinopsis_brasiliensis_engl_caatinga}
+\alias{varias_caatinga}
+\alias{anadenanthera_colubrina_vell_brenan_cerrado}
+\alias{croton_floribundus_spreng_cerrado}
+\alias{eremanthus_erythropappus_dc_macleish_cerrado}
+\alias{eucalyptus_camaldulensisdehnh_cerrado}
+\alias{eucalyptus_grandis_w_hill_cerrado}
+\alias{kielmeyera_10oriaceamart_zucc_cerrado}
+\alias{kielmeyera_coriacea_mart_zucc_cerrado}
+\alias{stryphnodendron_adstringens_mart_coville_cerrado}
+\alias{stryphnodendron_adstringens_mart_coville_cerrado_v2}
+\alias{varias_cerrado}
+\alias{anadenanthera_colubrina_vell_brenan_mata_atlantica}
+\alias{araucaria_angustifolia_bertol_kuntze_mata_atlantica}
+\alias{ateleia_glazioveana_baill_mata_atlantica}
+\alias{avicennia_schaueriana_stapf_leechm_ex_moldenke_mata_atlantica}
+\alias{bambusa_oldhamii_munro_mata_atlantica}
+\alias{bambusa_vulgaris_schrad_ex_j_c_wendl_mata_atlantica}
+\alias{cecropia_glaziovii_snethl_mata_atlantica}
+\alias{cryptomeria_japonica_thunb_ex_l_f_d_don_mata_atlantica}
+\alias{cyathea_delgadii_sternb_mata_atlantica}
+\alias{euterpe_edulis_mart_mata_atlantica}
+\alias{guadua_chacoensis_rojas_londo_o_mata_atlantica}
+\alias{guadua_chacoensis_rojas_londo_o_mata_atlantica_v2}
+\alias{laguncularia_racemosa_l_c_f_gaertn_mata_atlantica}
+\alias{leucaena_leucocephala_lam_de_wit_mata_atlantica}
+\alias{mimosa_scabrella_benth_mata_atlantica}
+\alias{nectandra_grandiflora_nees_mata_atlantica}
+\alias{phyllostachys_aurea_riviere_c_riviere_mata_atlantica}
+\alias{pimenta_pseudocaryophyllus_gomes_landrum_mata_atlantica}
+\alias{pinus_caribaea_var_hondurensis_senecl_w_h_barrett_golfari_mata_atlantica}
+\alias{pinus_spp_mata_atlantica}
+\alias{pinus_taeda_l_mata_atlantica}
+\alias{rhizophora_mangle_l_mata_atlantica}
+\alias{tabebuia_cassinoides_lam_dc_mata_atlantica}
+\alias{tabebuia_cassinoides_lam_dc_mata_atlantica_v2}
+\alias{varias_mata_atlantica}
+\alias{attalea_phalerata_mart_ex_spreng_outro}
+\alias{euterpe_precatoria_mart_outro}
+\alias{iriartea_deltoidea_ruiz_pav_outro}
+\alias{mauritia_flexuosa_l_f_outro}
+\alias{mauritiella_aculeata_kunth_burret_outro}
+\alias{oenocarpus_bataua_mart_outro}
+\alias{socratea_exorrhiza_mart_h_wendl_outro}
+\alias{varias_outro}
+\alias{anadenanthera_colubrina_vell_brenan_pantanal}
+\alias{coccoloba_guaranitica_hassler_pantanal}
+\alias{diplokeleba_floribunda_n_e_br_pantanal}
+\alias{diptychandra_aurantiaca_tul_pantanal}
+\alias{licania_minutiflora_sagot_fritsch_pantanal}
+\alias{magonia_pubescens_a_st_hil_pantanal}
+\alias{phyllostylon_rhamnoides_poiss_taub_pantanal}
+\alias{protium_heptaphyllum_aubl_marchand_pantanal}
+\alias{terminalia_argentea_mart_zucc_pantanal}
+\alias{varias_pantanal}
 \title{Set of Carbon equations of ABG}
 \usage{
 palmeira_carbon(dap, porcentagem_peso_seco = 0.6, porc_C = 0.47)
@@ -95,7 +186,222 @@ general_dense_atlantic_forest_carbon(dap, porc_C)
 
 araucaria_carbon(dap, h, porc_C)
 
-cedro_australiano_carbon(dap, h, porc_C)
+cedro_australiano_carbon(dap, h, densidade, porc_C = 0.47)
+
+acacia_mearnsii_de_wild_pampa(dap, porc_C = 0.47)
+
+aniba_rosiodora_ducke_amazonia(dap, altura, porc_C = 0.47)
+
+bellucia_spp_amazonia(dap, altura, porc_C = 0.47)
+
+bertholletia_excelsa_bonpl_amazonia(dap, altura, porc_C = 0.47)
+
+cecropia_sciadophylla_mart_amazonia(dap, porc_C = 0.47)
+
+cedrela_odorata_l_amazonia(dap, porc_C = 0.47)
+
+ceiba_speciosa_a_st_hil_ravenna_amazonia(dap, porc_C = 0.47)
+
+croton_matourensis_aubl_amazonia(dap, porc_C = 0.47)
+
+goupia_glabra_aubl_amazonia(dap, altura, porc_C = 0.47)
+
+guadua_weberbaueri_pilg_amazonia(dap, porc_C = 0.47)
+
+handroanthus_chrysotrichus_mart_ex_dc_mattos_amazonia(
+  dap,
+  hf,
+  altura,
+  porc_C = 0.47
+)
+
+laetia_procera_poepp_eichler_amazonia(dap, altura, porc_C = 0.47)
+
+schinus_terebinthifolia_raddi_amazonia(dap, porc_C = 0.47)
+
+syzygium_cumini_l_skeels_amazonia(dap, porc_C = 0.47)
+
+tabebuia_aurea_silva_manso_benth_hook_f_ex_s_moore_amazonia(dap, porc_C = 0.47)
+
+varias_amazonia(dap, porc_C = 0.47)
+
+vismia_cayennensis_jacq_pers_amazonia(dap, porc_C = 0.47)
+
+vismia_japurensis_reichardt_amazonia(dap, porc_C = 0.47)
+
+anadenanthera_colubrina_vell_brenan_caatinga(dap, porc_C = 0.47)
+
+anadenanthera_colubrina_var_cebil_griseb_altschul_caatinga(dap, porc_C = 0.47)
+
+aspidosperma_pyrifolium_mart_zucc_caatinga(dap, altura, porc_C = 0.47)
+
+astronium_urundeuva_m_allemao_engl_caatinga(dap, porc_C = 0.47)
+
+bauhinia_cheilantha_bong_steud_caatinga(dap, altura, porc_C = 0.47)
+
+cenostigma_bracteosum_tul_e_gagnon_g_p_lewis_caatinga(
+  dap,
+  altura,
+  porc_C = 0.47
+)
+
+cenostigma_pyramidale_tul_e_gagnon_g_p_lewis_caatinga(dap, porc_C = 0.47)
+
+cereus_jamacaru_dc_caatinga(dap, porc_C = 0.47)
+
+cnidoscolus_quercifolius_pohl_caatinga(dap, altura, porc_C = 0.47)
+
+croton_heliotropiifolius_kunth_caatinga(dap, altura, porc_C = 0.47)
+
+croton_jacobinensis_baill_caatinga(dap, porc_C = 0.47)
+
+dalbergia_cearensis_ducke_caatinga(dap, altura, porc_C = 0.47)
+
+jatropha_mollissima_pohl_baill_caatinga(dap, porc_C = 0.47)
+
+mimosa_caesalpiniifolia_benth_caatinga(dap, porc_C = 0.47)
+
+mimosa_hostilis_mart_benth_caatinga(dap, porc_C = 0.47)
+
+mimosa_ophthalmocentra_mart_ex_benth_caatinga(dap, altura, porc_C = 0.47)
+
+mimosa_tenuiflora_willd_poir_caatinga(dap, altura, porc_C = 0.47)
+
+monteverdia_rigida_mart_biral_caatinga(dap, porc_C = 0.47)
+
+schinopsis_brasiliensis_engl_caatinga(dap, porc_C = 0.47)
+
+varias_caatinga(dap, altura, porc_C = 0.47)
+
+anadenanthera_colubrina_vell_brenan_cerrado(dap, altura, porc_C = 0.47)
+
+croton_floribundus_spreng_cerrado(dap, porc_C = 0.47)
+
+eremanthus_erythropappus_dc_macleish_cerrado(dap, altura, porc_C = 0.47)
+
+eucalyptus_camaldulensisdehnh_cerrado(dap, altura, porc_C = 0.47)
+
+eucalyptus_grandis_w_hill_cerrado(dap, altura, porc_C = 0.47)
+
+kielmeyera_10oriaceamart_zucc_cerrado(dap, altura, porc_C = 0.47)
+
+kielmeyera_coriacea_mart_zucc_cerrado(dap, altura, porc_C = 0.47)
+
+stryphnodendron_adstringens_mart_coville_cerrado(dap, altura, porc_C = 0.47)
+
+stryphnodendron_adstringens_mart_coville_cerrado_v2(dap, altura, porc_C = 0.47)
+
+varias_cerrado(dap, altura, porc_C = 0.47)
+
+anadenanthera_colubrina_vell_brenan_mata_atlantica(dap, altura, porc_C = 0.47)
+
+araucaria_angustifolia_bertol_kuntze_mata_atlantica(dap, porc_C = 0.47)
+
+ateleia_glazioveana_baill_mata_atlantica(dap, altura, porc_C = 0.47)
+
+avicennia_schaueriana_stapf_leechm_ex_moldenke_mata_atlantica(
+  dap,
+  altura,
+  porc_C = 0.47
+)
+
+bambusa_oldhamii_munro_mata_atlantica(dap, porc_C = 0.47)
+
+bambusa_vulgaris_schrad_ex_j_c_wendl_mata_atlantica(dap, altura, porc_C = 0.47)
+
+cecropia_glaziovii_snethl_mata_atlantica(dap, altura, porc_C = 0.47)
+
+cryptomeria_japonica_thunb_ex_l_f_d_don_mata_atlantica(
+  dap,
+  altura,
+  porc_C = 0.47
+)
+
+cyathea_delgadii_sternb_mata_atlantica(dap, altura, porc_C = 0.47)
+
+euterpe_edulis_mart_mata_atlantica(dap, altura, porc_C = 0.47)
+
+guadua_chacoensis_rojas_londo_o_mata_atlantica(dap, altura, porc_C = 0.47)
+
+guadua_chacoensis_rojas_londo_o_mata_atlantica_v2(dap, altura, porc_C = 0.47)
+
+laguncularia_racemosa_l_c_f_gaertn_mata_atlantica(dap, altura, porc_C = 0.47)
+
+leucaena_leucocephala_lam_de_wit_mata_atlantica(
+  dap,
+  altura,
+  hf,
+  cap,
+  porc_C = 0.47
+)
+
+mimosa_scabrella_benth_mata_atlantica(dap, altura, porc_C = 0.47)
+
+nectandra_grandiflora_nees_mata_atlantica(dap, altura, porc_C = 0.47)
+
+phyllostachys_aurea_riviere_c_riviere_mata_atlantica(
+  dap,
+  altura,
+  porc_C = 0.47
+)
+
+pimenta_pseudocaryophyllus_gomes_landrum_mata_atlantica(dap, hf, porc_C = 0.47)
+
+pinus_caribaea_var_hondurensis_senecl_w_h_barrett_golfari_mata_atlantica(
+  dap,
+  altura,
+  porc_C = 0.47
+)
+
+pinus_spp_mata_atlantica(dap, altura, porc_C = 0.47)
+
+pinus_taeda_l_mata_atlantica(dap, porc_C = 0.47)
+
+rhizophora_mangle_l_mata_atlantica(dap, porc_C = 0.47)
+
+tabebuia_cassinoides_lam_dc_mata_atlantica(dap, porc_C = 0.47)
+
+tabebuia_cassinoides_lam_dc_mata_atlantica_v2(dap, porc_C = 0.47)
+
+varias_mata_atlantica(dap, porc_C = 0.47)
+
+attalea_phalerata_mart_ex_spreng_outro(hf, porc_C = 0.47)
+
+euterpe_precatoria_mart_outro(hf, porc_C = 0.47)
+
+iriartea_deltoidea_ruiz_pav_outro(dap, hf, porc_C = 0.47)
+
+mauritia_flexuosa_l_f_outro(hf, porc_C = 0.47)
+
+mauritiella_aculeata_kunth_burret_outro(hf, porc_C = 0.47)
+
+oenocarpus_bataua_mart_outro(hf, porc_C = 0.47)
+
+socratea_exorrhiza_mart_h_wendl_outro(dap, hf, porc_C = 0.47)
+
+varias_outro(dap, altura, porc_C = 0.47)
+
+acacia_mearnsii_de_wild_pampa(dap, porc_C = 0.47)
+
+anadenanthera_colubrina_vell_brenan_pantanal(dap, porc_C = 0.47)
+
+coccoloba_guaranitica_hassler_pantanal(dap, porc_C = 0.47)
+
+diplokeleba_floribunda_n_e_br_pantanal(dap, porc_C = 0.47)
+
+diptychandra_aurantiaca_tul_pantanal(dap, porc_C = 0.47)
+
+licania_minutiflora_sagot_fritsch_pantanal(dap, porc_C = 0.47)
+
+magonia_pubescens_a_st_hil_pantanal(dap, porc_C = 0.47)
+
+phyllostylon_rhamnoides_poiss_taub_pantanal(dap, porc_C = 0.47)
+
+protium_heptaphyllum_aubl_marchand_pantanal(dap, porc_C = 0.47)
+
+terminalia_argentea_mart_zucc_pantanal(dap, porc_C = 0.47)
+
+varias_pantanal(dap, porc_C = 0.47)
 }
 \arguments{
 \item{dap}{DAP da arvore [cm]}

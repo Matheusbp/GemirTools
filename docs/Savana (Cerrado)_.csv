@@ -1,0 +1,92 @@
+"Espécie","Bioma","Estado","Compartimento","Peso","d mín.","d máx.","R2/R2aj","Syx","Equação","Autor"
+"Anadenanthera colubrina(Vell.) Brenan","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","10,0","40,0","94,99","21,2%","exp(-9,995149073+2,4884117855*log(d)+0,3203838261*log(ht))*1000","Scolforo et al. (2008)¹"
+"Anadenanthera colubrina(Vell.) Brenan","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","10,0","40,0","91,93","24,3%","exp(-5,1733249886+2,8278563823*log(d)-
+2,0882060533*log(ht))*1000","Scolforo et al. (2008)¹"
+"Diptychandra aurantiaca Tul.","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","5,0","35,0","0,99","-","exp(-2,119+2,38*log(d))","Salis et al. (2006)"
+"Eremanthus erythropappus(DC.) MacLeish","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","35,0","98,48","20,7%","exp(-3,6776993+1,0141433*log((d^2)*ht))","Scolforo et al. (2008)¹"
+"Eremanthus erythropappus(DC.) MacLeish","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","35,0","98,05","23,2%","exp(-3,695112+1,0221402*log((d^2)*ht))","Scolforo et al. (2008)¹"
+"Eremanthus erythropappus(DC.) MacLeish","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","35,0","98,40","27,6%","exp(-3,513087+1,0109135*log((d^2)*ht))","Scolforo et al. (2008)¹"
+"Licania minutiflora 
+(Sagot) Fritsch","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","10,0","36,0","0,91","-","exp(-2,265+2,386*log(d))","Salis et al. (2006)"
+"Magonia pubescens A.St.-Hil.","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","7,0","35,0","0,99","-","exp(-2,888+2,795*log(d))","Salis et al. (2006)"
+"Protium heptaphyllum 
+(Aubl.) Marchand","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","8,0","36,0","0,97","-","exp(-2,083+2,536*log(d))","Salis et al. (2006)"
+"Stryphnodendron adstringens(Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","98,89","15,3%","exp(-11,4879612502+2,6267435633*log(d)+0,6604363613*log(ht))*1000","Scolforo et al. (2008)¹"
+"Stryphnodendron adstringens(Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","98,83","16,4%","exp(-11,5069953299+2,2647527215*log(d)+1,1946244031*log(ht))*1000","Scolforo et al. (2008)¹"
+"Stryphnodendron adstringens(Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","98,79","11,4%","exp(-11,3752699505+2,2058967302*log(d)+1,1811942644*log(ht))*1000","Scolforo et al. (2008)¹"
+"Stryphnodendron adstringens(Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","96,14","20,2%","exp(-11,1540582423+2,8732588246*log(d)+0,0690784938*log(ht))*1000","Scolforo et al. (2008)¹"
+"Stryphnodendron adstringens(Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","98,68","10,8%","exp(-11,3841308978+2,9100586552*log(d)+0,1989771767*log(ht))*1000","Scolforo et al. (2008)¹"
+"Stryphnodendron adstringens(Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","99,11","13,0%","exp(-10,4209629465+2,2735797216*log(d)+0,5710190938*log(ht))*1000","Scolforo et al. (2008)¹"
+"Stryphnodendron adstringens(Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","94,63","27,0%","exp(-10,5503679996+2,4360021855*log(d)+0,3995511285*log(ht))*1000","Scolforo et al. (2008)¹"
+"Stryphnodendron adstringens(Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","91,91","21,4%","exp(-10,1723567144+2,1419819825*log(d)+0,4862440445*log(ht))*1000","Scolforo et al. (2008)¹"
+"Stryphnodendron adstringens(Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","96,17","17,5%","exp(-10,4633765888+2,4542495475*log(d)+0,1955518745*log(ht))*1000","Scolforo et al. (2008)¹"
+"Stryphnodendron adstringens (Mart.) Coville","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","25,0","96,48","24,0%","exp(-11,2875746052+2,3822964052*log(d)+0,9086217316*log(ht))*1000","Scolforo et al. (2008)¹"
+"Terminalia argentea 
+Mart. & Zucc.","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","6,0","31,0","0,99","-","exp(-1,915+2,409*log(d))","Salis et al. (2006)"
+"Várias","Cerrado","DF","Acima (tronco+galhos)","Seco","5,0","32,3","98,60","26,0%","0,0288*d^2*ht","Rezende et al. (2006)²"
+"Várias","Cerrado","DF","Acima 
+(tronco+galhos+folhas)","Seco","5,6","37,4","-","44,7%","0,0468*(d^1,8294)*(ht^0,9410)","Souza (2020)³"
+"Várias","Cerrado","DF","Acima 
+(tronco+galhos+folhas)","Seco","5,0","39,0","-","51,2%","0,0033*(d^1,4989)*(ht^2,6094)","Souza (2020)4"
+"Várias","Cerrado","DF","Acima 
+(tronco+galhos+folhas)","Seco","5,3","49,0","-","32,6%","0,1061*(d^2,3253)*(ht^0,3352)","Souza (2020)5"
+"Várias","Cerrado","DF","Acima 
+(tronco+galhos+folhas)","Seco","5,0","32,3","-","32,5%","0,0272*(d^2,5825)*(ht^0,5174)","Souza (2020)6"
+"Várias","Cerrado","DF","Acima 
+(tronco+galhos+folhas)","Seco","5,0","49,0","-","60,8%","0,0237*(d^2,3733)*(ht^0,7464)","Souza (2020)7"
+"Várias","Cerrado","DF","Acima 
+(tronco+galhos+folhas)","Seco","5,0","49,0","-","79,7%","0,0049*(d^2,5019)*(ht^1,1310)","Souza (2020)8"
+"Várias","Cerrado","GO","Acima 
+(tronco+galhos+folhas)","Seco","5,0","-","0,69","13,6%","0,21220*(d^2,01655)*(ht^0,18081)","Santana et al. (2021)"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","27,6","0,88","39,4%","exp(-3,9336+2,9171*log(d))","Ribeiro et al. (2011)"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","96,22","34,3%","exp(-10,6778434551+2,4312156091*log(d)+0,6690995709*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","97,26","48,3%","exp(-10,0494414912+2,3529732141*log(d)+0,4522175499*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","96,95","44,2%","exp(-10,3446328162+2,4830156359*log(d)+0,4337627498*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","97,15","63,5%","exp(-10,2250784897+2,0204541469*log(d)+0,9297685811*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","97,14","55,5%","exp(-10,2276863236+2,4684541946*log(d)+0,4000186998*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","96,13","56,6%","exp(-10,1024202605+2,4038079403*log(d)+0,479410187*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","97,07","48,2%","exp(-10,2342711188+2,4593429847*log(d)+0,4107891746*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","98,73","16,6%","exp(-10,366838857+2,2457934972*log(d)+0,637840619*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","97,33","38,9%","exp(-11,3710317049+2,433521972*log(d)+0,8433902218*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","94,19","49,8%","exp(-12,2999911901+2,6961223975*log(d)+0,8094354054*log(ht))*1000","Scolforo et al. (2008)¹"
+"Várias","Cerrado","TO","Acima 
+(tronco+galhos+folhas)","Seco","5,0","60,0","0,97","28,0%","0,0123307*d^1,79593*ht^1,54701","Miguel et al. (2017)"
+"Várias","Pantanal","MS","Acima 
+(tronco+galhos+folhas)","Seco","6,0","27,0","0,91","-","exp(-2,566+2,533*log(d))","Salis et al. (2006)"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"¹ peso seco inclui apenas galhos >=3cm4 mata seca",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"5 cerradão",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"6 cerrado sensu stricto",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"7 abrange mata de galeria, mata seca, cerrado sensu stricto e cerradão 8 abrange mata de galeria, mata Seca e cerradão",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

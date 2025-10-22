@@ -1,0 +1,197 @@
+"Espécie","Bioma","Estado","Compartimento","Peso","d mín.","d máx.","R2/R2aj","Syx","Equação","Autor"
+"Avicennia schaueriana 
+Stapf & Leechm. ex Moldenke","Mata Atlântica","RJ","Acima 
+(tronco+galhos+folhas)","Seco","0,7","37,3","0,99","18,7%","123,8716*(d^2,5282)/1000","Estrada et al. (2014)"
+"Avicennia schaueriana 
+Stapf & Leechm. ex Moldenke","Mata Atlântica","RJ","Acima 
+(tronco+galhos+folhas)","Seco","0,7","37,3","0,99","17,4%","68,8881*((d^2)*ht)^0,9397/1000","Estrada et al. (2014)"
+"Avicennia schaueriana 
+Stapf & Leechm. ex Moldenke","Mata Atlântica","RJ","Acima 
+(tronco+galhos+folhas)","Seco","0,7","37,3","0,99","-","exp(4,8017+2,5282*log(d))/1000","Estrada et al. (2014)"
+"Banara guianensis Aubl.","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","0,99","-","exp(-1,90+1,11*log(d^2)+0,05*log(ht))","Uhl et al. (1988)¹"
+"Bellucia spp.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,2","26,8","0,97","-","0,1591*(d^2,37)","Nelson et al. (1999)"
+"Bellucia spp.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,2","26,8","0,99","-","exp(-1,8158+2,37*log(d))","Nelson et al. (1999)"
+"Bellucia spp.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,2","26,8","1,00","-","exp(-2,4387+2,0751*log(d)+0,5360*log(ht))","Nelson et al. (1999)"
+"Bellucia spp.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,2","26,8","0,91","-","exp(-5,8514+3,8980*log(ht))","Nelson et al. (1999)"
+"Cecropia glaziovii Snethl.","Mata Atlântica","SC","Acima 
+(tronco+galhos+folhas)","Seco","7,7","33,9","0,98","7,7 kg","295,6/(1+exp(6,1366-0,1161*d-0,1522*ht))","Uller et al. (2021)²"
+"Cecropia sciadophylla Mart.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,1","38,2","0,98","-","exp(-2,5118+2,4257*log(d))","Nelson et al. (1999)"
+"Cecropia spp.","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","0,98","-","exp(-3,78+0,95*log(d^2)+1,00*log(ht))","Uhl et al. (1988)¹"
+"Croton matourensis Aubl.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","2,3","25,3","0,99","-","exp(-2,7009+2,5996*log(d))","Nelson et al. (1999)"
+"Croton matourensis Aubl.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","2,3","25,3","0,99","-","exp(-3,4630+2,2885*log(d)+0,5906*log(ht))","Nelson et al. (1999)"
+"Cyathea delgadii Sternb.","Mata Atlântica","SC","Acima 
+(tronco+galhos+folhas)","Seco","6,3","19,5","0,92","3,6 kg","0,1523*d^1,1254*ht^1,0338","Uller et al. (2021)"
+"Euterpe edulis Mart.","Mata Atlântica","SC","Acima 
+(tronco+galhos+folhas)","Seco","3,9","15,8","0,84","7,1 kg","0,0175*d^1,5288*ht^1,66","Uller et al. (2021)"
+"Goupia glabra Aubl.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,5","12,2","0,99","-","exp(-1,7972+2,4206*log(d))","Nelson et al. (1999)"
+"Goupia glabra Aubl.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,5","12,2","1,00","-","exp(-2,4990+2,1283*log(d)+0,5508*log(ht))","Nelson et al. (1999)"
+"Laetia procera (Poepp.) Eichler","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,6","24,8","0,99","-","exp(-2,2244+2,5105*log(d))","Nelson et al. (1999)"
+"Laetia procera (Poepp.) Eichler","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,6","24,8","1,00","-","exp(-2,6385+2,1976*log(d)+0,4565*log(ht))","Nelson et al. (1999)"
+"Solanum crinitum Lam.","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","1,00","-","exp(-2,95+1,02*log(d^2)+0,83*log(ht))","Uhl et al. (1988)¹"
+"Solanum rugosum Dunal","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","0,96","-","exp(-3,06+0,89*log(d^2)+1,11*log(ht))","Uhl et al. (1988)¹"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,21","34,6%","-13,398+3,672*ht","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,96","7,9%","-25,095+4,858*d","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,90","12,4%","6,506+0,016*d^2*ht","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,96","8,2%","-25,016+4,862*d-0,011*ht","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,93","10,1%","exp(-1,445+1,985*log(d))","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,80","17,3%","exp(1,890+0,022*log(d^2*ht))","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,90","12,6%","1,165+0,267*(d^0,5)*log(d)","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,95","8,3%","-31,539+5,946*d-0,024*(d^2)-0,002*(d^2*ht)","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,96","8,1%","-29,005+5,480*d-0,002*(d^2*ht)","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,93","10,3%","exp(-1,569+1,953*log(d)+0,085*log(ht))","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,88","13,3%","exp(1,729+0,113*log(d^3))","Melo et al. (2014)"
+"Tabebuia cassinoides 
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,95","8,5%","329,366-125,944*(d)+17,719*(d^2)-
+1,043*(d^3)+0,022*(d^4)","Melo et al. (2014)"
+"Tabebuia cassinoides
+(Lam.) DC.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","8,0","15,9","0,90","12,0%","11,399+0,011*(d^3)","Melo et al. (2014)"
+"Várias","Amazônia","AC","Acima 
+(tronco+galhos+folhas)","Seco","50,4","149,9","0,62","169,6%","exp(-
+9,16151+1,52337*log(d)+1,35403*log(hf))*1000","Romero et al. (2020)"
+"Várias","Amazônia","AC","Acima 
+(tronco+galhos+folhas)","Seco","50,4","149,9","-","167,9%","0,0002996*d^1,367517*hf^1,254061*1000","Romero et al. (2020)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Fresco","5,0","-","0,97","-","exp(-1,335+1,551*log(d)+0,415*log(d^2)-0,053*log(d^3))","Chambers et al. (2001)3"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","-","0,97","-","exp(-0,370+0,333*log(d)+0,933*log(d)^2-0,122*log(d)^3)","Chambers et al. (2001)3"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","0,95","-","exp(-4,898+4,512*log(d)-0,319*log(d)^2)","Chambers et al. (2001)3"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","60,0","0,97","-","exp(0,720-1,042*log(d)+1,467*log(d)^2-
+0,188*log(d)^3)","Chambers et al. (2001)3"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,0","0,92","43 kg","exp(-1,754+2,665*log(d))","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","20,0","120,0","0,90","2035 kg","exp(-0,151+2,170*log(d))","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","120,0","0,97","1729 kg","exp(-1,497+2,548*log(d))","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,0","0,95","35 kg","exp(-2,668+2,081*log(d)+0,852*log(ht))","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","20,0","120,0","0,91","1497 kg","exp(-2,088+1,837*log(d)+0,939*log(ht))","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","120,0","0,98","812 kg","exp(-2,694+2,038*log(d)+0,902*log(ht))","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,0","0,94","34 kg","0,0056+0,621*((d/100)^2)*ht*1000","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","20,0","120,0","0,86","1508 kg","0,393+0,473*((d/100)^2)*ht*1000","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","120,0","0,90","716 kg","0,077+0,492*((d/100)^2)*ht*1000","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","20,0","0,94","31 kg","0,0336*(d^2,171)*(ht^1,038)","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","20,0","120,0","0,92","1159 kg","0,0009*(d^1,585)*(ht^2,651)","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","120,0","0,94","540 kg","0,001*(d^1,579)*(ht^2,621)","Higuchi et al. (1998)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,0","5,0","96,20","-","exp(-1,7689+2,3770*log(d))","Nascimento e Laurance (2002)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,2","28,6","0,98","-","exp(-1,9968+2,4128*log(d))","Nelson et al. (1999)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,2","28,6","0,99","-","exp(-2,5202+2,14*log(d)+0,4644*log(ht))","Nelson et al. (1999)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Seco","5,0","124,0","0,96","30,6%","exp(-1,716+2,413*log(d))","Nogueira et al. (2008)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Fresco","10,0","138,0","0,87","-","4,06*(d^1,76)","Araújo et al. (1999)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Fresco","10,0","138,0","0,88","-","400,32+39,99*d+0,97*(d^2)","Araújo et al. (1999)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Fresco","10,0","138,0","0,90","-","318,09+38,12*d+0,03*(d^2)*ht","Araújo et al. (1999)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Fresco","10,0","138,0","0,88","-","175,83+0,79*(d^2)+0,07*(d^2)*ht","Araújo et al. (1999)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Fresco","10,0","138,0","0,82","-","533,26+130,22*d+51*ht","Araújo et al. (1999)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Fresco","10,0","138,0","0,92","-","0,026*(d^1,529)*(ht^1,747)","Araújo et al. (1999)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Fresco","5,0","20,0","0,97","24,5%","exp(-
+2,4768+2,2301*log(d/100)+0,6518*log(ht))*1000","Higuchi et al. (1994)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Fresco","20,0","-","0,92","37,3%","exp(-
+3,8102+1,4631*log(d/100)+1,8190*log(ht))*1000","Higuchi et al. (1994)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Seco","1,0","21,4","0,97","68,0%","0,2237*(d^2,260)","Ducey et al. (2009)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Seco","1,0","21,4","0,94","98,0%","0,0985*(d^1,879)*(ht^0,7355)","Ducey et al. (2009)"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","0,96","-","exp(-2,17+1,02*log(d^2)+0,39*log(ht))","Uhl et al. (1988)¹"
+"Várias","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Seco","50,0","-","0,53","2,0%","23182,772-506,494*(d)+3,434*d^2+0,123*(d*hf)-0,002*d^2*hf","Lima et al. (2019)4"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","97,34","30,8%","exp(-10,9240874854+2,1188422024*
+log(d)+0,9848179885*log(ht))*1000","Scolforo et al. (2008)5"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","97,81","32,0%","exp(-10,5678122652+2,0679586507*
+log(d)+0,8722223725*log(ht))*1000","Scolforo et al. (2008)5"
+"Várias","Cerrado","MG","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","97,66","35,0%","exp(-10,6409194002+2,1533324963*
+log(d)+0,8248143766*log(ht))*1000","Scolforo et al. (2008)5"
+"Várias","Mata Atlântica","SC","Acima 
+(tronco+galhos+folhas)","Seco","5,4","56,0","0,86","33,9 kg","25,9310+0,0258*(d^2)*ht","Uller et al. (2019)"
+"Várias","Mata Atlântica","SC","Acima 
+(tronco+galhos+folhas)","Seco","5,4","56,0","0,88","22,3 kg","-48,4365+0,6467*(d^2)","Uller et al. (2019)"
+"Várias","Mata Atlântica","SC","Acima 
+(tronco+galhos+folhas)","Seco","5,4","56,0","0,87","27,3 kg","exp(-2,3702+2,5179*log(d))","Uller et al. (2019)"
+"Várias","Mata Atlântica","SC","Acima 
+(tronco+galhos+folhas)","Seco","5,4","56,0","0,86","30,6 kg","exp(-
+3,078059+1,068174*log(d^2)+0,661610*log(ht))","Uller et al. (2019)6"
+"Várias","Mata Atlântica","SC","Acima 
+(tronco+galhos+folhas)","Seco","5,4","56,0","0,86","33,6 kg","exp(-3,4062+0,9774*log((d^2)*ht))","Uller et al. (2019)"
+"Várias","Mata Atlântica","SP","Abaixo (raízes)","Seco","2,0","33,3","-","-","exp(-2,960+1,072*log(d^2))","Nogueira Júnior et al. (2014)"
+"Várias","Mata Atlântica","SP","Abaixo (raízes)","Seco","2,0","33,3","-","-","exp(-3,535+0,832*log((d^2)*ht))","Nogueira Júnior et al. (2014)"
+"Várias","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","5,4","68,5","0,94","-","exp(-2,245+2,388*log(d))","Colmanetti et al. (2018)"
+"Várias","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","2,0","33,3","-","-","-13,127+0,428*(d^2)","Nogueira Júnior et al. (2014)"
+"Várias","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","2,0","33,3","-","-","exp(-1,890+1,127*log(d^2))","Nogueira Júnior et al. (2014)"
+"Várias","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","2,0","33,3","-","-","exp(-2,541+0,883*log((d^2)*ht))","Nogueira Júnior et al. (2014)"
+"Várias","Mata Atlântica","SP","Acima 
+(tronco+galhos+folhas)","Seco","2,1","67,8","0,94","11,3%","exp(-2,052+0,801*log(d^2*ht))","Moreira-Burguer e Delitti (2010)7"
+"Vismia cayennensis 
+(Jacq.) Pers.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,6","21,8","0,99","-","exp(-2,3706+2,5392*log(d))","Nelson et al. (1999)"
+"Vismia cayennensis 
+(Jacq.) Pers.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,6","21,8","0,99","-","exp(-2,4240+2,4855*log(d)+0,0738*log(ht))","Nelson et al. (1999)"
+"Vismia cayennensis 
+(Jacq.) Pers.","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,6","21,8","0,99","-","exp(-2,0762+0,4759*log((d^4,6)*ht))","Nelson et al. (1999)"
+"Vismia guianensis 
+(Aubl.) Choisy","Amazônia","PA","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","1,00","-","exp(-3,54+1,13*log(d^2)+0,77*log(ht))","Uhl et al. (1988)¹"
+"Vismia japurensis Reichardt","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,5","28,6","0,99","-","exp(-1,7829+2,3651*log(d))","Nelson et al. (1999)"
+"Vismia japurensis Reichardt","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,5","28,6","0,99","-","exp(-2,0118+2,2337*log(d)+0,1877*log(ht))","Nelson et al. (1999)"
+"Vismia japurensis Reichardt","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","1,5","28,6","0,99","-","exp(-2,3362+0,4560*log((d^4,6)*ht))","Nelson et al. (1999)"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"¹ árvore em pasto abandonado",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"4fórmula redigitada após errata do autor 5 peso seco inclui apenas galhos >=3cm 6 eq. 6 da Tabela 6 com errata fornecida pelo autor 7floresta baixa de restinga",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
