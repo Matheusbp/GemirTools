@@ -1,0 +1,188 @@
+"Espécie","Bioma","Estado","Compartimento","Peso","d mín.","d máx.","R2/R2aj","Syx","Equação","Autor"
+"Attalea phalerata 
+Mart. ex Spreng.","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","17,0","50,0","0,86","-","exp(3,2579+1,1249*log(hf+1))","Goodman et al. (2013)"
+"Avicennia schaueriana 
+Stapf & Leechm. ex Moldenke","Mata Atlântica","PE","Acima 
+(tronco+galhos+folhas)","Seco","3,4","10,2","0,78","-","0,2309*(d^2,0685)","Medeiros e Sampaio (2008)"
+"Avicennia schaueriana 
+Stapf & Leechm. ex Moldenke","Mata Atlântica","PE","Acima 
+(tronco+galhos+folhas)","Seco","3,4","10,2","0,84","-","0,1327*((d^2)*ht)^0,8298","Medeiros e Sampaio (2008)"
+"Euterpe precatoria Mart.","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","12,0","19,0","0,97","-","-108,81+13,589*hf","Goodman et al. (2013)"
+"Iriartea deltoidea Ruiz & Pav.","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","6,0","33,0","0,97","-","exp(-3,483+0,94371*log((d^2)*hf))","Goodman et al. (2013)"
+"Laguncularia racemosa 
+(L.) C.F.Gaertn.","Mata Atlântica","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,1","17,8","0,96","-","0,1442*(d^2,325)","Medeiros e Sampaio (2008)"
+"Laguncularia racemosa 
+(L.) C.F.Gaertn.","Mata Atlântica","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,1","17,8","0,97","-","0,1214*((d^2)*ht)^0,8615","Medeiros e Sampaio (2008)"
+"Mauritia flexuosa L.f.","Outro","Outro","Abaixo (raízes)","Seco","19,0","36,0","0,93","-","exp(-0,3688+2,0106*log(hf))","Goodman et al. (2013)"
+"Mauritia flexuosa L.f.","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","19,0","36,0","0,90","-","exp(2,4647+1,3777*log(hf))","Goodman et al. (2013)"
+"Mauritiella aculeata 
+(Kunth) Burret","Outro","Outro","Abaixo (raízes)","Seco","8,0","15,0","0,95","-","exp(1,0945+0,11086*hf)","Goodman et al. (2013)"
+"Oenocarpus bataua Mart.","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","21,0","41,0","0,78","-","exp(4,5496+0,1387*hf)","Goodman et al. (2013)"
+"Palmeiras (várias)","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,89","-","exp(-6,3789-0,877*log(1/d^2)+2,151*log(ht))","Saldarriaga et al. (1988)¹"
+"Rhizophora mangle L.","Mata Atlântica","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,5","20,7","0,92","-","0,2938*(d^2,384)","Medeiros e Sampaio (2008)"
+"Rhizophora mangle L.","Mata Atlântica","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,5","20,7","0,94","-","0,2752*((d^2)*ht)^0,8529","Medeiros e Sampaio (2008)"
+"Socratea exorrhiza 
+(Mart.) H.Wendl.","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","4,0","24,0","0,98","-","exp(-3,7965+1,0029*log((d^2)*hf))","Goodman et al. (2013)"
+"Várias","Amazônia","AM","Abaixo (raízes)","Seco","5,0","138,0","0,89","15,2%","exp(-3,881+2,406*log(d))","Lima et al. (2012)"
+"Várias","Amazônia","AM","Abaixo (raízes)","Seco","5,0","138,0","0,90","13,7%","exp(-4,494+2,119*log(d)+0,499*log(ht))","Lima et al. (2012)"
+"Várias","Amazônia","AM","Abaixo (raízes)","Seco","5,0","138,0","0,90","12,7%","exp(3,572+0,929*log((d/100)^2*ht))","Lima et al. (2012)"
+"Várias","Amazônia","AM","Abaixo (raízes)","Seco","5,0","138,0","0,74","11,0%","0,320*(d^1,636)","Lima et al. (2012)"
+"Várias","Amazônia","AM","Abaixo (raízes)","Seco","5,0","138,0","0,73","11,0%","0,320*(d^1,636)*(ht^0,000)","Lima et al. (2012)"
+"Várias","Amazônia","AM","Abaixo (raízes)","Seco","5,0","138,0","0,73","11,1%","50,60*((d/100)^2*ht)^0,690","Lima et al. (2012)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","138,0","0,94","8,4%","exp(-2,025+2,459*log(d))","Lima et al. (2012)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","138,0","0,96","6,6%","exp(-3,372+1,830*log(d)+1,097*log(ht))","Lima et al. (2012)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","138,0","0,96","6,6%","exp(5,604+0,957*log((d/100)^2*ht))","Lima et al. (2012)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","138,0","0,93","5,6%","0,488*(d^2,083)","Lima et al. (2012)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","138,0","0,93","5,6%","0,488*(d^2,083)*(ht^0,000)","Lima et al. (2012)"
+"Várias","Amazônia","AM","Acima 
+(tronco+galhos+folhas)","Seco","5,0","138,0","0,92","6,2%","316,7*((d/100)^2*ht)^0,861","Lima et al. (2012)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Seco","5,0","138,0","0,95","8,9%","exp(-1,868+2,452*log(d))","Lima et al. (2012)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Seco","5,0","138,0","0,96","6,9%","exp(-3,106+1,874*log(d)+1,008*log(ht))","Lima et al. (2012)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Seco","5,0","138,0","0,96","7,0%","exp(5,739+0,954*log((d/100)^2*ht))","Lima et al. (2012)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Seco","5,0","138,0","0,92","5,9%","0,700*(d^2,018)","Lima et al. (2012)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Seco","5,0","138,0","0,92","5,9%","0,700*(d^2,018)*(ht^0,000)","Lima et al. (2012)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Seco","5,0","138,0","0,91","6,3%","369,01*((d/100)^2*ht)^0,838","Lima et al. (2012)"
+"Várias","Cerrado","SP","Acima 
+(tronco+galhos+folhas)","Seco","2,5","25,0","0,77","-","207,11*exp(0,977*ht)/1000","Delitti et al. (2006)²"
+"Várias","Cerrado","SP","Acima 
+(tronco+galhos+folhas)","Seco","2,5","25,0","0,88","-","32,86*d^2,47/1000","Delitti et al. (2006)²"
+"Várias","Mata Atlântica","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,1","20,7","0,89","-","0,1346*(d^2,525)","Medeiros e Sampaio (2008)"
+"Várias","Mata Atlântica","PE","Acima 
+(tronco+galhos+folhas)","Seco","2,1","20,7","0,90","-","0,1129*((d^2)*ht)^0,9241","Medeiros e Sampaio (2008)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Fresco","5,0","148,0","0,84","-","42,69-12,800*d+1,242*(d^2)","Brown (1997)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Fresco","5,0","148,0","0,97","-","exp(-2,134+2,530*log(d))","Brown (1997)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Fresco","10,0","-","0,83","-","38,49-11,788*d+1,193*(d^2)","Brown e Iverson (1992)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Fresco","10,0","-","0,83","-","1,276+0,034*((d^2)*ht)","Brown e Iverson (1992)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Fresco","5,0","130,0","0,78","-","38,4703-11,7883*d+1,1926*(d^2)","Brown et al. (1989)³"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Fresco","5,0","130,0","0,97","-","exp(-2,4090+0,9522*log((d^2)*ht))","Brown et al. (1989)³"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","6,0","40,0","0,80","-","exp(-3,3488+2,7483*log(d))","Goodman et al. (2013)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","6,0","200,0","0,99","-","exp(-1,232+2,178*log(d))","Basuki et al. (2009)4"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","6,0","200,0","0,99","-","exp(-1,813+2,339*log(d))","Basuki et al. (2009)4"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","6,0","200,0","0,98","-","exp(-1,098+2,142*log(d))","Basuki et al. (2009)4"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","6,0","200,0","0,98","-","exp(-2,193+2,371*log(d))","Basuki et al. (2009)4"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","6,0","200,0","0,98","-","exp(-1,498+2,234*log(d))","Basuki et al. (2009)4"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"¹ florestas tropicais úmidas",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"² altura do diâmetro não foi informada",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"³ florestas tropicais",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"4florestas tropicais úmidas de terras-baixas – dipterocarpus",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","6,0","200,0","0,96","-","exp(-1,201+2,196*log(d))","Basuki et al. (2009)4"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","0,89","-","exp(-1,996+2,32*log(d))","Brown (1997)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","4,0","112,0","0,92","-","21,297-6,953*d+0,740*(d^2)","Brown (1997)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","0,67","-","34,47-8,068*d+0,659*(d^2)","Brown e Iverson (1992)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","0,97","-","exp(-3,375+0,948*log(d^2*ht))","Brown e Iverson (1992)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","10,0","-","0,92","-","21,297022-6,952649*(d)+0,7403*(d^2)","Brown e Iverson (1992)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","5,0","40,0","0,67","-","34,4703-8,0671*d+0,6589*(d^2)","Brown et al. (1989)³"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","5,0","130,0","0,90","-","13,2579-4,8945*(d)+0,6713*(d^2)","Brown et al. (1989)³"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","5,0","130,0","0,90","-","exp(-3,3012+0,9439*log((d^2)*ht))","Brown et al. (1989)³"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","10,0","140,0","0,97","-","exp(-2,00+2,42*log(d))","Chave et al. (2001)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","1,0","10,0","0,91","-","exp(-1,8967+2,1135*log(d))","Djomo et al. (2010)5"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","1,0","79,0","0,96","-","exp(-2,1079+2,3278*log(d))","Djomo et al. (2010)5"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","1,0","79,0","0,96","-","exp(-3,0788+0,9066*log((d^2)*ht))","Djomo et al. (2010)5"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","4,9","87,7","0,93","38,7%","0,10419*d^2,491453","Huy et al. (2016)6"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","4,9","87,7","0,89","35,8%","25,15789-7,717925*d+0,82106*(d^2)","Huy et al. (2016)6"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","4,9","87,7","0,93","37,1%","15,90167-
+4,926814*d+0,59812*(d^2)+0,00409*(d^3)","Huy et al. (2016)6"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","4,9","87,7","0,95","31,6%","266,858*((d/100)^2*ht)^0,972330","Huy et al. (2016)6"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","4,9","87,7","0,94","32,7%","0,05054*(d^2,126979)*(ht^0,64600)","Huy et al. (2016)6"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","1,0","44,1","0,99","-","0,1525*(d^2,34)","Kenzo et al. (2009)7"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","2,0","44,2","0,99","-","0,1083*(((d^2)*ht)^0,80)","Kenzo et al. (2009)7"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","3,0","44,3","0,97","-","0,0558*(ht^2,53)","Kenzo et al. (2009)7"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"³ florestas tropicais",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"4florestas tropicais úmidas de terras-baixas – dipterocarpus 5florestas tropicais úmidas de terras-baixas",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"6florestas decíduas de folhosas",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"7floresta tropical",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","7,6","48,1","0,95","-","0,066*(d^2,59)","Ketterings et al. (2001)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","3,8","57,5","0,99","-","10^(-1,247+2,663*log10(d))","Martin et al. (1998)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","8,1","100,0","0,90","39,4%","0,465*(d^2,202)","Overman et al. (1994)8"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","8,1","100,0","0,94","62,8%","1,120*(d^2)","Overman et al. (1994)8"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","8,1","100,0","0,97","25,6%","exp(-1,966+1,242*log(d^2))","Overman et al. (1994)8"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","8,1","100,0","0,97","24,3%","exp(-3,843+1,035*log(d^2*ht))","Overman et al. (1994)8"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","8,1","45,0","0,81","42,8%","0,749*(d^2,011)","Overman et al. (1994)8"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","8,1","45,0","0,93","43,5%","0,780*(d^2)","Overman et al. (1994)8"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","8,1","45,0","0,93","27,5%","exp(-2,059+1,1256*log(d^2))","Overman et al. (1994)8"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","8,1","45,0","0,94","26,3%","exp(-3,555+1,002*log(d^2*ht))","Overman et al. (1994)8"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,57","43,7%","-0,060+0,227*(d^2)+0,002*ht","Sah et al. (2004)"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","1,0","5,0","0,93","-","-0,292+0,369*d-0,087*ht","Saldarriaga et al. (1988)¹"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","60,0","105,0","0,71","21,0%","exp(0,76+0,00015*d^2)*1000","Segura e Kanninen (2005)¹"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","60,0","105,0","0,71","21,2%","exp(-7,27+2,07*log(d))*1000","Segura e Kanninen (2005)¹"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","60,0","105,0","0,66","158,0%","(-7,45+0,17*d)*1000","Segura e Kanninen (2005)¹"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","60,0","105,0","0,64","162,2%","(-54,13+13,86*log(d))*1000","Segura e Kanninen (2005)¹"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","60,0","105,0","0,87","14,0%","exp(-
+6,93+1,86*log(d)+0,0045*log(d)*ht)*1000","Segura e Kanninen (2005)¹"
+"Várias","Outro","Outro","Acima 
+(tronco+galhos+folhas)","Seco","4,5","105,0","0,99","-","2,903*10^-2*((d^2)*ht)^0,9813","Yamakura et al. (1986)5"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"¹ florestas tropicais úmidas",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"5florestas tropicais úmidas de terras-baixas 8florestas ombrófila madura",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

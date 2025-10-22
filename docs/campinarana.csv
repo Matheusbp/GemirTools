@@ -1,0 +1,20 @@
+"Espécie","Bioma","Estado","Compartimento","Peso","d mín.","d máx.","R2/R2aj","Syx","Equação","Autor"
+"Várias","Amazônia","AM","Abaixo (raízes)","Fresco","5,0","-","0,94","6,5%","exp(-3,268+2,428*log(d))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Abaixo (raízes)","Fresco","5,0","-","0,94","6,3%","exp(-2,988+2,528*log(d)+0,192*log(ht))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Abaixo (raízes)","Fresco","10,0","-","0,89","6,1%","exp(-3,471+2,499*log(d))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Abaixo (raízes)","Fresco","10,0","-","0,89","6,2%","exp(-3,587+2,466*log(d)+0,071*log(ht))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Acima (tronco+galhos+folhas)","Fresco","5,0","-","0,98","4,3%","exp(-1,553+2,567*log(d))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Acima (tronco+galhos+folhas)","Fresco","5,0","-","0,98","4,3%","exp(-2,246+2,319*log(d)+0,476*log(ht))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Acima (tronco+galhos+folhas)","Fresco","10,0","-","0,96","4,5%","exp(-1,523+2,557*log(d))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Acima (tronco+galhos+folhas)","Fresco","10,0","-","0,96","4,4%","exp(-2,250+2,350*log(d)+0,446*log(ht))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Fresco","5,0","-","0,98","4,5%","exp(-1,373+2,546*log(d))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Fresco","5,0","-","0,98","4,4%","exp(-1,938+2,344*log(d)+0,388*log(ht))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Fresco","10,0","-","0,96","4,4%","exp(-1,374+2,546*log(d))","Woortmann et al. (2018)"
+"Várias","Amazônia","AM","Total (abaixo+acima)","Fresco","10,0","-","0,96","4,4%","exp(-2,001+2,368*log(d)+0,385*log(ht))","Woortmann et al. (2018)"
+"Várias","Amazônia","RR","Acima (tronco+galhos+folhas)","Seco","1,6","15,0","0,93","30,6%","exp(-3,9041+0,4658*log(cas^2*ht)+0,0458*(log(cas^2*ht)^2))","Barbosa e Ferreira (2004)¹"
+"Várias","Amazônia","RR","Acima (tronco+galhos+folhas)","Seco","1,6","15,0","0,93","30,4%","exp(-5,0170+0,8707*log((cas^2)*ht)+0,0309*cas)","Barbosa e Ferreira (2004)¹"
+"Várias","Amazônia","RR","Acima (tronco+galhos+folhas)","Seco","1,6","15,0","0,93","30,9%","exp(-5,4920+1,0141*log((cas^2)*ht))","Barbosa e Ferreira (2004)¹"
+"Várias","Amazônia","RR","Acima (tronco+galhos+folhas)","Seco","1,6","15,0","0,89","33,2%","-0,3789+0,0054*((cas^2)*ht)","Barbosa e Ferreira (2004)¹"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"¹ cas - circunferência na altura do solo",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

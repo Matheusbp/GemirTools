@@ -1,0 +1,113 @@
+"Espécie","Bioma","Estado","Compartimento","Peso","d mín.","d máx.","R2/R2aj","Syx","Equação","Autor"
+"Ateleia glazioveana Baill.","Mata Atlântica","RS","Acima 
+(tronco+galhos+folhas)","Seco","2,0","16,7","0,85","31,4%","-5,6260+1,2986*log(d^2*ht)","Fontoura et al. (2017)"
+"Mimosa scabrella Benth.","Mata Atlântica","PR","Abaixo (raízes)","Seco","4,3","23,0","0,96","1,7%","exp(-3,23191+2,881863*log(d)-0,63720*log(ht))","Mello et al. (2012)"
+"Mimosa scabrella Benth.","Mata Atlântica","PR","Total (abaixo+acima)","Seco","4,3","23,0","0,99","0,2%","-0,49361+0,034865*(d^2)*ht","Mello et al. (2012)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Abaixo (raízes)","Seco","9,0","35,0","70,76","77,5%","-28,3918+2,62445*d","Barbeiro et al. (2009)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Abaixo (raízes)","Seco","9,0","35,0","85,95","53,7%","15,6056-1,9267*d+0,00716883*(d^2)*ht","Barbeiro et al. (2009)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Abaixo (raízes)","Seco","9,0","35,0","79,00","65,4%","exp(-4,30406+2,37326*log(d))","Barbeiro et al. (2009)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Abaixo (raízes)","Seco","9,0","35,0","80,08","63,9%","exp(-3,8414+3,275*log(d)-0,366626*log(d^2*ht))","Barbeiro et al. (2009)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Abaixo (raízes)","Seco","9,0","35,0","96,33","27,4%","exp(-0,395587+0,132527*d+0,0519405*log(d^2*ht))","Barbeiro et al. (2009)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Total (abaixo+acima)","Seco","9,0","35,0","86,33","40,7%","-159,96+16,065*d","Barbeiro et al. (2009)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Total (abaixo+acima)","Seco","9,0","35,0","97,36","17,9%","46,1634-5,25673*d+0,0335853*(d^2)*ht","Barbeiro et al. (2009)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Total (abaixo+acima)","Seco","9,0","35,0","94,58","19,7%","exp(-2,26388+2,38201*log(d))","Barbeiro et al. (2009)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Total (abaixo+acima)","Seco","9,0","35,0","95,73","22,7%","exp(-3,10478+0,743088*log(d)+0,666342*log(d^2*ht))","Barbeiro et al. (2009)"
+"Nectandra grandiflora Nees","Mata Atlântica","PR","Total (abaixo+acima)","Seco","9,0","35,0","98,44","13,7%","exp(-2,08721+0,0364642*d+0,71874*log(d^2*ht))","Barbeiro et al. (2009)"
+"Phyllostachys aurea 
+Rivière & C. Rivière.","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","1,4","4,6","0,63","31,3%","(-650,820+77,754*d*10)/1000","Monastier et al. (2015)"
+"Phyllostachys aurea 
+Rivière & C. Rivière.","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","1,4","4,6","0,65","30,2%","(572,612+0,155*((d*10)^2)*ht)/1000","Monastier et al. (2015)"
+"Phyllostachys aurea 
+Rivière & C. Rivière.","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","1,4","4,6","0,60","30,7%","exp(2,188+1,293*log(d*10)+0,393*log(ht))/1000","Monastier et al. (2015)"
+"Phyllostachys aurea 
+Rivière & C. Rivière.","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","1,4","4,6","0,61","31,0%","exp(2,552+1,412*log(d*10))/1000","Monastier et al. (2015)"
+"Pimenta pseudocaryophyllus(Gomes) Landrum","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","6,0","12,0","0,55","30,2%","5,092633+1,830661*d","Girard (2005)"
+"Pimenta pseudocaryophyllus(Gomes) Landrum","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","6,0","12,0","0,58","29,0%","3,423637+0,994122*d+2,130317*hf","Girard (2005)"
+"Pimenta pseudocaryophyllus(Gomes) Landrum","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","6,0","12,0","0,96","8,9%","0,003297+1,730917*d+6,253*hf+0,165655*d^2-0,03107*(d^2*hf)-0,6033*(d*hf)","Girard (2005)"
+"Pimenta pseudocaryophyllus(Gomes) Landrum","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","6,0","12,0","0,06","44,0%","13,15335+0,019166*((d^2)*hf)","Girard (2005)"
+"Pimenta pseudocaryophyllus(Gomes) Landrum","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","6,0","12,0","0,98","5,7%","0,08562+5,147161*hf+0,364603*(d^2)-
+0,08531*((d^2)*hf)","Girard (2005)"
+"Pimenta pseudocaryophyllus(Gomes) Landrum","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","6,0","12,0","0,97","8,2%","hf*(0,077154+5,875792*d-0,37259*(d^2))","Girard (2005)"
+"Várias","Mata Atlântica","PR","Acima (tronco+galhos)","Seco","5,3","82,0","-","-","(0,028726*d^1,675713*ht^1,165411)+(0,003816*(d^2*ht)^1,121684)","Trautenmüller et al. (2021)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,4","105,7","0,95","47,9%","0,317*(d^2) + 0,009*((d^2)*ht)","Ratuchne (2010)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,4","105,7","0,95","46,7%","0,340*(d^2)-0,122*(ht^2)+0,008*((d^2)*ht)","Ratuchne (2010)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,4","105,7","0,96","47,2%","-3,025*d+0,425*(d^2)+0,006*((d^2)*ht)","Ratuchne (2010)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,4","105,7","0,95","46,5%","4,268*d-0,114*(d^2)+0,013*(d^3)-(0,0000722)*(d^4)","Ratuchne (2010)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,2","85,9","0,98","53,0%","exp(-3,07697+2,57018*log(d))","Ratuchne (2015)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,2","85,9","0,98","52,3%","0,03232*d^2,64923+15,98866*log10(d)","Ratuchne (2015)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,2","85,9","0,98","53,7%","0,06222*exp(-0,29985+0,75178*log(d)+0,42765*log(d^2)+0,32104*log(d^3))","Ratuchne (2015)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,2","85,9","0,98","48,7%","6,47920+0,02244*(d^2)*ht","Ratuchne (2015)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,2","85,9","0,98","48,7%","0,02977+0,02126*ht*(d^2)","Ratuchne (2015)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,2","85,9","0,98","47,8%","-237,79+exp(5,07159+0,03326*d+0,01943*ht)","Ratuchne (2015)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","1,1","7,2","0,80","20,0%","exp(-0,9667+1,9425*log(d)-0,2592*log(ht))","Theodorovicz et al. (2016)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","1,1","7,2","0,84","19,4%","exp(-1,2701+1,7821*log(d))","Theodorovicz et al. (2016)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","1,1","7,2","0,90","23,9%","1,0802+0,0162*((d^2)*ht)","Theodorovicz et al. (2016)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","1,1","7,2","0,94","18,5%","0,1766+0,1996*(d^2)","Theodorovicz et al. (2016)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","5,3","82,0","-","-","(0,028726*d^1,675713*ht^1,165411)+(0,003816*(d^2*ht)^1,121684)+(0,014257*(d^2*ht)^0,671907)","Trautenmüller et al. (2021)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,91","32,4%","-103,45609+15,09492*d","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,96","21,7%","-11,83006+0,5917*(d^2)","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,96","21,6%","20,035564+0,01914*(d^3)","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,91","32,5%","-93,9256+15,4711*d-1,04188*ht","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,92","31,6%","-84,833+15,7011*d-3,0313*hf","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,96","23,6%","1,72441+0,028227*(d^2)*ht","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,86","40,7%","5,083135+0,043881*(d^2)*hf","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,88","35,5%","exp(-1,88002+2,37745*log(d))","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,88","35,5%","exp(-1,88002+1,18872*log(d^2))","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,88","35,5%","exp(-1,88002+0,79248*log(d^3))","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,93","27,0%","exp(-2,774881+2,20766*log(d)+0,50275*log(ht))","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,96","20,3%","exp(-2,01898+2,33576*log(d)+0,11354*log(hf))","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,93","27,5%","exp(-3,65315+1,01203*log((d^2)*ht))","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","4,0","28,0","0,96","21,0%","exp(-2,78471+0,95763*log((d^2)*hf))","Urbano (2007)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,90","34,4%","13,338-3,764*d+0,527*(d^2)","Zanette et al. (2017)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,23","82,2%","-13,893+3,982*d+0,047*(d^2)","Zanette et al. (2017)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,87","35,0%","47,339-9,593*d+0,746*(d^2)","Zanette et al. (2017)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,64","48,2%","11,977-2,214*d+0,308*(d^2)","Zanette et al. (2017)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,93","61,9%","112,624-14,323*d+0,688*(d^2)","Zanette et al. (2017)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,81","51,4%","-1,371+0,380*d+0,263*(d^2)","Zanette et al. (2017)"
+"Várias","Mata Atlântica","PR","Acima 
+(tronco+galhos+folhas)","Seco","-","-","0,93","85,8%","79,443-12,130*d+0,655*(d^2)","Zanette et al. (2017)"

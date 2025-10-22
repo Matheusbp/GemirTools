@@ -1,0 +1,13493 @@
+1
+
+Sarah C. S. Calais
+Hassan C. David
+Rodrigo O. V. Miranda
+
+Compêndio de equações de biomassa
+para florestas do Brasil
+Créditos à foto da capa:
+Serviço Florestal Brasileiro
+André Dib
+
+Sarah Cristinne Soares Calais
+Estudante de Engenharia Florestal pela Universidade de Brasília
+
+Hassan Camil David
+Doutor em Engenharia Florestal
+Professor Adjunto C da Universidade Federal Rural da Amazônia
+Agente do Serviço Florestal Brasileiro
+
+Rodrigo Otávio Veiga de Miranda
+Doutor em Engenharia Florestal
+Professor Adjunto C da Universidade Federal de Uberlândia
+
+Dedicamos esta obra à comunidade
+florestal brasileira
+
+SUMÁRIO
+
+GLOSSÁRIO.................................................................................................................................... 1
+PREFÁCIO ...................................................................................................................................... 2
+INTRODUÇÃO ................................................................................................................................ 4
+FLORESTAS NATURAIS .................................................................................................................. 6
+(Equações a nível de árvore individual) ................................................................................... 6
+Campinarana ......................................................................................................................... 7
+Floresta Estacional Decidual (FED) ........................................................................................ 8
+Floresta Estacional Semidecidual (FES) ............................................................................... 10
+Floresta Ombrófila Aberta (FOA) ........................................................................................ 12
+Floresta Ombrófila Densa (FOD) ......................................................................................... 13
+Floresta Ombrófila Mista (FOM) ......................................................................................... 18
+Savana (Cerrado) ................................................................................................................. 21
+Savana Estépica (Caatinga).................................................................................................. 23
+Outros: Ecótono, Formação pioneira etc. ........................................................................... 27
+(Equações a nível de povoamento) ........................................................................................ 31
+Campinarana, Florestas Estacional e Ombrófila, e Savana ................................................. 32
+FLORESTAS PLANTADAS ............................................................................................................. 33
+(Equações a nível de árvore individual) ................................................................................. 33
+Espécies exóticas ................................................................................................................. 34
+Espécies nativas................................................................................................................... 37
+REFERÊNCIAS .............................................................................................................................. 41
+
+4
+
+GLOSSÁRIO
+
+VARIÁVEIS E UNIDADES
+---- nível de árvore individual ---(Essas equações resultam em biomassa em kg)
+cap: circunferência na altura do peito, em cm
+cas: circunferência na altura do solo, em cm
+d*: diâmetro na altura do peito, em cm
+hf: altura do fuste da árvore, em m
+ht: altura total da árvore, em m
+*Variações estão apresentadas no rodapé das tabelas
+---- nível de povoamento ---(Essas equações resultam em biomassa em Mg ha-1)
+BA: área basal, em m² ha-1
+N: número de árvores ha-1
+
+EXPRESSÕES MATEMÁTICAS
+exp: exponencial de Euler
+log: logaritmo na base natural
+log10: logaritmo na base 10
+
+ESTATÍSTICAS DE AVALIAÇÃO DE MODELOS
+R2: coeficiente de determinação
+R2aj: coeficiente de determinação ajustado
+Syx: erro padrão da estimativa
+
+1
+
+PREFÁCIO
+
+Equações compiladas. Este compêndio contempla 663 equações de biomassa, sendo 496 para
+florestas naturais e 167 para florestas plantadas. As equações para florestas naturais estão
+disponíveis para a árvore individual (492) e para o povoamento (4). As equações para florestas
+plantadas são todas para a árvore individual.
+As equações apresentam variáveis de saída para quatro compartimentos, sendo:
+•
+•
+•
+•
+
+Biomassa arbórea acima do solo, incluindo ‘tronco + galhos’
+Biomassa arbórea acima do solo, incluindo ‘tronco + galhos + folhas’
+Biomassa arbórea abaixo do solo, que inclui raízes (com diferentes dimensões)
+Biomassa arbórea total, incluindo compartimentos acima + abaixo do solo
+
+Tipologias (definição pelo IBGE) e espécies florestais. Dentre as 496 equações para florestas
+naturais:
+•
+•
+•
+•
+
+285 equações são para um mix de espécies arbóreas
+206 equações são específicas por espécie ou por gênero
+1 equação é para um mix de espécies de palmeiras
+4 equações são específicas por tipologia florestal, sendo elas ‘Campinarana’, ‘Floresta
+estacional’, ‘Floresta ombrófila’ e ‘Savana’ (Cerrado brasileiro).
+
+Dentre as 167 equações para florestas plantadas:
+•
+•
+•
+•
+•
+•
+
+26 equações são específicas para espécies de pinus
+23 equações são específicas para espécies de acácia
+14 equações são específicas para espécies de bambu
+8 equações são específicas para Araucaria angustifolia
+4 equações são específicas para espécies de eucalipto
+92 equações são específicas para outras espécies
+
+Precauções dos usuários. Recomenda-se que os usuários se atentem às seguintes precauções:
+1) Pelo fato de este compêndio ser fruto de um esforço muito repetitivo e mecânico,
+sempre que se fizer necessário, o usuário deve conferir as equações selecionadas na
+fonte original, para garantir que a especificação e coeficientes das equações foram
+corretamente digitados.
+2) Sempre que possível, é recomendável que o usuário adote duas ou mais equações e
+despreze aquelas que geram valores incompatíveis ou de equações inapropriadas à
+espécie em questão.
+3) Sempre que possível, o usuário deve optar por equações desenvolvidas com uma base
+de dados com número de observações igual ou acima de 30.
+4) Sempre que possível, o usuário deve preferir equações cuja amplitude diamétrica dos
+dados de ajuste inclua o diâmetro das árvores em que a equação será aplicada. O
+intervalo diamétrico da base de dados de ajuste é informado nas tabelas deste
+compêndio, sempre quando informado na fonte de pesquisa.
+
+2
+
+5) Recomenda-se que o usuário busque equações com a maior especificidade possível. Isso
+inclui a busca por equações para o mesmo bioma e/ou tipologia florestal e/ou estado
+da área de estudo do usuário.
+6) Quando o usuário encontrar mais de uma equação apropriada, é interessante o uso de
+um valor médio entre as estimativas destas equações.
+Precauções tomadas pelos autores. As equações deste compêndio foram tabuladas apenas
+após uma conferência automatizada (por meio de um algoritmo escrito em linguagem de
+programação R). Tal conferência consistiu em usar as equações tabuladas para estimar a
+biomassa de árvores com diâmetros dentro do intervalo diamétrico apresentado nos trabalhos
+onde as equações foram consultadas. Quando a variável resposta (biomassa) apresentou valores
+destoantes ou não seguiu um comportamento biológico da biomassa arbórea, os autores foram
+consultados para que conferissem a equação publicada. Algumas equações foram publicadas
+com erros, sendo retificadas pelos autores. Nesses casos, a retificação está informada no rodapé
+das tabelas. Aos autores que não responderam ao contato, as equações (cerca de 200) foram
+eliminadas do banco de dados.
+Instruções de uso do compêndio. As equações variam quanto (i) ao tipo de floresta (natural,
+plantada), (ii) ao nível de resposta (árvore individual ou povoamento), (iii) à especificidade
+(espécie, gênero, tipologia ou mix de espécies, i.e., sem especificidade) e (iv) ao compartimento
+da árvore (biomassa de troncos, galhos, folhas, raízes e total). Para encontrar a equação de
+acordo com a necessidade, os usuários devem seguir as seguintes instruções:
+•
+•
+•
+
+Para encontrar o (i) tipo de floresta e (ii) nível de resposta desejados, dirigir-se ao
+sumário do compêndio.
+Para encontrar a (iii) especificidade desejada, dirigir-se à primeira coluna das tabelas e
+ao cabeçalho da página.
+Para encontrar o (iv) compartimento da árvore, dirigir-se à quarta coluna das tabelas.
+
+Informações adicionais como bioma e estado da área de coleta dos dados usados no ajuste da
+equação, bem como o intervalo diamétrico dos dados, também estão apresentados nas tabelas
+deste compêndio.
+
+3
+
+INTRODUÇÃO
+
+Estudos com biomassa florestal têm sido conduzidos com diferentes finalidades, cujo
+direcionamento varia conforme uma série de fatores e necessidade. Biomassa é uma variável
+indicadora da produtividade de um local mediante diferentes condições edafoclimáticas; é uma
+variável útil na quantificação da ciclagem de nutrientes, sobretudo na mudança ocorrida em
+uma área após a exploração; quantificação de material combustível e sua associação com o
+potencial de ocorrência de incêndios em uma floresta.
+Pesquisas em biomassa objetivam a quantificação de material e potencial energético de
+diferentes espécies ou materiais genéticos, principalmente àqueles voltados à produção de
+carvão vegetal. Também, pesquisas em biomassa representam a base de informação para
+pesquisas de sequestro de carbono, assim como para a predição de mudanças do clima e a base
+do cálculo de créditos de carbono.
+Mesmo para resultados mais amplos, as principais metodologias para obtenção de
+estimativas de biomassa em áreas florestais estão associadas ao inventário florestal. Essas
+metodologias de quantificação da biomassa florestal podem ser agrupadas em métodos diretos
+e métodos indiretos. Os métodos diretos abordam as metodologias voltadas à obtenção de
+determinações dos valores de biomassa, compreendo em sua maioria o abate de árvores. Estes
+métodos são conhecidos como métodos destrutivos, justamente pela necessidade da derrubada
+das árvores e medição ou pesagem dos componentes de interesse, desde o fuste principal aos
+galhos, folhas, frutos e raízes.
+Em contrapartida, os métodos indiretos são responsáveis pela geração de estimativas
+de biomassa sem a necessidade do abate de árvores. Essa categoria envolve a utilização de
+fatores ou modelos estatísticos para o fornecimento das estimativas de biomassa.
+Comparativamente, a utilização dos métodos indiretos é mais prática e rápida, uma vez que não
+envolve as etapas necessárias dos métodos diretos, as quais compreendem, em suma, a seleção
+representativa de árvores de uma floresta; a medição de variáveis dendrométricas; abate de
+árvores; pesagem de componentes de árvores; e envio de subamostras para o laboratório.
+A partir destas determinações de biomassa e medição de variáveis dendrométricas,
+relações estatísticas são estabelecidas permitindo o desenvolvimento de equações para a
+estimativa de biomassa para as demais árvores da floresta. Contudo, os métodos diretos nem
+sempre podem ser conduzidos, seja por limitação de recursos humanos, materiais, custos,
+tempo ou por impedimentos legais. Nestas situações, a utilização de equações de biomassa
+previamente definidas e corretamente selecionadas se torna uma opção viável, conforme
+vantagens mencionadas.
+Em geral, essas equações são relações alométricas entre biomassa e variáveis biofísicas
+da árvore, como o diâmetro, altura e volume. Ou, ainda, relações com a área basal ou número
+de árvores, quando as estimativas são para o povoamento. A observância de alguns aspectos é
+essencial para gerar equações de biomassa. Dentre esses, tem-se o número de árvores utilizadas
+no desenvolvimento da equação; a amplitude de variação das variáveis dendrométricas
+utilizadas nos modelos; representatividade da amostra em relação à população; espécie,
+material genético ou tipologia florestal; idade, espaçamento e tratos silviculturais em florestas
+4
+
+plantadas; análise dos parâmetros estatísticos de avaliação de tendências e erros preditivos da
+equação; e amplitude das estimativas geradas pela equação.
+A busca por equações apropriadas para determinada espécie, ou tipologia, ou outras
+condições específicas é um trabalho exaustivo. Isso requer dispêndio de tempo na busca por
+publicações em periódicos especializados. Havendo necessidade de pesquisas desta natureza, a
+compilação de equações em um único local promove a otimização deste processo de busca, que
+se torna mais ampla, com consequente redução do tempo, favorecendo a averiguação de
+equações de diferentes fontes e a sua correta seleção.
+
+5
+
+FLORESTAS NATURAIS
+(Equações a nível de árvore individual)
+
+6
+
+Campinarana
+Campinarana
+
+Espécie Bioma
+Estado Compartimento
+Várias
+Amazônia
+AM
+Abaixo (raízes)
+Várias
+Amazônia
+AM
+Abaixo (raízes)
+Várias
+Amazônia
+AM
+Abaixo (raízes)
+Várias
+Amazônia
+AM
+Abaixo (raízes)
+Várias
+Amazônia
+AM
+Acima (tronco+galhos+folhas)
+Várias
+Amazônia
+AM
+Acima (tronco+galhos+folhas)
+Várias
+Amazônia
+AM
+Acima (tronco+galhos+folhas)
+Várias
+Amazônia
+AM
+Acima (tronco+galhos+folhas)
+Várias
+Amazônia
+AM
+Total (abaixo+acima)
+Várias
+Amazônia
+AM
+Total (abaixo+acima)
+Várias
+Amazônia
+AM
+Total (abaixo+acima)
+Várias
+Amazônia
+AM
+Total (abaixo+acima)
+Várias
+Amazônia
+RR
+Acima (tronco+galhos+folhas)
+Várias
+Amazônia
+RR
+Acima (tronco+galhos+folhas)
+Várias
+Amazônia
+RR
+Acima (tronco+galhos+folhas)
+Várias
+Amazônia
+RR
+Acima (tronco+galhos+folhas)
+¹ cas - circunferência na altura do solo
+
+Peso
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Seco
+Seco
+Seco
+Seco
+
+d mín.
+5,0
+5,0
+10,0
+10,0
+5,0
+5,0
+10,0
+10,0
+5,0
+5,0
+10,0
+10,0
+1,6
+1,6
+1,6
+1,6
+
+d máx.
+15,0
+15,0
+15,0
+15,0
+
+R2/R2aj
+0,94
+0,94
+0,89
+0,89
+0,98
+0,98
+0,96
+0,96
+0,98
+0,98
+0,96
+0,96
+0,93
+0,93
+0,93
+0,89
+
+Syx
+6,5%
+6,3%
+6,1%
+6,2%
+4,3%
+4,3%
+4,5%
+4,4%
+4,5%
+4,4%
+4,4%
+4,4%
+30,6%
+30,4%
+30,9%
+33,2%
+
+Equação
+exp(-3,268+2,428*log(d))
+exp(-2,988+2,528*log(d)+0,192*log(ht))
+exp(-3,471+2,499*log(d))
+exp(-3,587+2,466*log(d)+0,071*log(ht))
+exp(-1,553+2,567*log(d))
+exp(-2,246+2,319*log(d)+0,476*log(ht))
+exp(-1,523+2,557*log(d))
+exp(-2,250+2,350*log(d)+0,446*log(ht))
+exp(-1,373+2,546*log(d))
+exp(-1,938+2,344*log(d)+0,388*log(ht))
+exp(-1,374+2,546*log(d))
+exp(-2,001+2,368*log(d)+0,385*log(ht))
+exp(-3,9041+0,4658*log(cas^2*ht)+0,0458*(log(cas^2*ht)^2))
+exp(-5,0170+0,8707*log((cas^2)*ht)+0,0309*cas)
+exp(-5,4920+1,0141*log((cas^2)*ht))
+-0,3789+0,0054*((cas^2)*ht)
+
+Autor
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Woortmann et al. (2018)
+Barbosa e Ferreira (2004)¹
+Barbosa e Ferreira (2004)¹
+Barbosa e Ferreira (2004)¹
+Barbosa e Ferreira (2004)¹
+
+7
+
+Floresta Estacional Decidual (FED)
+Floresta Estacional Decidual (FED)
+
+Espécie
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+
+Bioma
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+
+Estado
+BA
+BA
+BA
+BA
+BA
+BA
+BA
+
+Compartimento
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+
+Peso
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+d mín.
+3,5
+3,5
+3,5
+3,5
+3,5
+3,5
+3,5
+
+d máx.
+35,0
+35,0
+35,0
+35,0
+35,0
+35,0
+35,0
+
+R2/R2aj
+91,84
+92,55
+91,92
+93,53
+92,25
+93,58
+92,34
+
+Syx
+42,8%
+42,7%
+42,6%
+44,9%
+41,7%
+46,1%
+41,4%
+
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+Cerrado
+
+BA
+BA
+BA
+BA
+GO
+GO
+GO
+GO
+GO
+GO
+GO
+GO
+GO
+GO
+GO
+GO
+MG
+
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+
+Seco
+Seco
+Seco
+Seco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+3,5
+3,5
+3,5
+3,5
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+
+35,0
+35,0
+35,0
+35,0
+65,0
+65,0
+65,0
+65,0
+65,0
+65,0
+65,0
+65,0
+65,0
+65,0
+65,0
+65,0
+40,0
+
+93,32
+91,92
+92,19
+92,63
+97,57
+98,50
+97,47
+98,49
+97,50
+97,64
+86,98
+96,22
+85,94
+94,68
+86,88
+87,63
+98,48
+
+41,5%
+42,6%
+41,9%
+40,6%
+42,9%
+33,7%
+43,5%
+34,0%
+43,5%
+42,3%
+99,3%
+51,6%
+99,1%
+75,3%
+99,3%
+96,4%
+12,3%
+
+Várias
+
+Cerrado
+
+MG
+
+Acima (tronco+galhos+folhas)
+
+Seco
+
+5,0
+
+40,0
+
+88,42
+
+49,4%
+
+Várias
+Várias
+
+Mata Atlântica
+Mata Atlântica
+
+PR
+PR
+
+Acima (tronco+galhos)
+Acima (tronco+galhos+folhas)
+
+Seco
+Seco
+
+5,3
+5,3
+
+82,0
+82,0
+
+-
+
+-
+
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+3,2
+15,6
+15,6
+5,1
+15,6
+15,6
+15,6
+5,0
+
+55,0
+79,3
+79,3
+79,3
+79,3
+79,3
+79,3
+79,3
+
+0,98
+0,96
+0,81
+0,96
+0,97
+0,94
+0,94
+0,97
+
+8,0%
+29,1%
+55,0%
+40,5%
+27,5%
+37,3%
+35,8%
+41,0%
+
+Várias
+Várias
+Várias
+
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+
+RS
+RS
+RS
+
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+
+Seco
+Seco
+Seco
+
+5,0
+15,6
+15,6
+
+14,7
+79,3
+79,3
+
+0,66
+0,94
+0,97
+
+48,2%
+35,6%
+27,9%
+
+Equação
+14,305-4,104*d+0,406*(d^2)
+exp(-3,684+2,692*log(d)+1,6366*(1/d))
+0,550+0,041*((d^2)*ht)
+exp(-3,086+2,027*log(d)+0,852*log(ht))
+3,135+0,0985*(d^2)+0,029*((d^2)*ht)-2,2380*ht
+exp(-3,078+0,976*log((d^2)*ht))
+-1,176-2,9743*(d)+0,2670*(d^2)0,2671*(d*ht)+0,0196*((d^2)*ht)+5,7833*(ht)
+(d^2)/1,032+17,503*(1/ht)
+((d^2)*ht)/(25,443-0,037*d)
+(d^2)*(0,057+0,032*ht)
+0,044*(d^2,287)*(ht^0,461)
+-12,262204+0,076572*((d^2)*ht)
+(d^2)*(-0,361026+0,106658*ht)
+0,075648*(d^2)*ht
+0,030309*(d^1,989540)*(ht^1,382197)
+0,058864*(((d^2)*ht)^1,025326)
+((d^2)*ht)/(11,549165+0,039451*d)
+0,899014*(d^1,973865)
+0,002997*(d^1,770156)*(ht^2,309705)
+3,290125+0,029838*((d^2)*ht)
+(d^2)*(-0,561393+0,082749*ht)
+0,030087*(d^2)*ht
+0,087741*(((d^2)*ht)^0,891162)
+exp(10,1966777197+2,4240650757*log(d)+0,5413156008*log(ht))*1000
+exp(10,5940591011+1,602721969*log(d)+1,5878967963*log(ht))*1000
+(0,028726*d^1,675713*ht^1,165411)+(0,003816*(d^2*ht)^1,121684)
+(0,028726*d^1,675713*ht^1,165411)+(0,003816*(d^2*ht)^1,121684)+
+(0,014257*(d^2*ht)^0,671907)
+10^(-0,882390231+2,409594057*log10(d))
+1054,19-98,860*d+3,216*(d^2)+0,067*(d*(ht^2))-0,073*((d^2)*ht)
+-1191,98+64,263*d
+126,964-18,780*d+1,043*(d^2)
+-137,231+0,092*(d^2)+0,064*((d^2)*ht)-0,137*(d*(ht^2))+2,677*(ht^2)
+-160,733+0,813*(d^2)
+17,240+0,032*((d^2)*ht)
+-196,649-6,764*d+0,954*(d^2)1,872*(d*ht)+0,017*((d^2)*ht)+41,967*ht
+-2,308+0,119*(d^2)+0,022*((d^2)*ht)-0,004*(d*(ht^2))+0,114*(ht^2)
+203,223-14,019*ht+0,050*(d^2)+0,032*((d^2)*ht)
+-246,08-18,187*d+1,336*(d^2)2,404*(d*ht)+0,011*((d^2)*ht)+66,471*ht
+
+Autor
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Oliveira et al. (2019)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Rocha (2011)
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Trautenmüller et al. (2021)
+Trautenmüller et al. (2021)
+Vogel et al. (2006)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+
+¹ peso seco inclui apenas galhos >=3cm.
+
+8
+
+Floresta Estacional Decidual (FED)
+Espécie
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+
+Bioma
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+
+Estado
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+
+Compartimento
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+
+Peso
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+d mín.
+5,0
+5,0
+5,0
+5,0
+15,6
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+
+d máx.
+14,7
+14,7
+14,7
+79,3
+79,3
+14,7
+14,7
+79,3
+14,7
+79,3
+79,3
+14,7
+
+R2/R2aj
+0,58
+0,68
+0,57
+0,95
+0,96
+0,57
+0,66
+0,97
+0,67
+0,96
+0,95
+0,66
+
+Syx
+53,7%
+46,7%
+54,3%
+49,0%
+29,9%
+54,3%
+48,2%
+39,9%
+47,6%
+46,1%
+49,4%
+48,4%
+
+Várias
+
+Mata Atlântica
+
+RS
+
+Acima (tronco+galhos+folhas)
+
+Seco
+
+5,0
+
+14,7
+
+0,76
+
+48,9%
+
+Várias
+
+Mata Atlântica
+
+RS
+
+Acima (tronco+galhos+folhas)
+
+Seco
+
+15,6
+
+79,3
+
+0,83
+
+31,1%
+
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+RS
+
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+Acima (tronco+galhos+folhas)
+
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+15,6
+5,0
+5,0
+15,6
+15,6
+5,0
+5,0
+5,1
+5,0
+
+79,3
+14,7
+79,3
+79,3
+79,3
+14,7
+14,7
+79,3
+79,3
+
+0,78
+0,70
+0,92
+0,84
+0,83
+0,77
+0,77
+0,94
+0,93
+
+36,0%
+53,9%
+47,2%
+47,2%
+50,6%
+46,6%
+48,4%
+48,7%
+51,3%
+
+Várias
+
+Mata Atlântica
+
+RS
+
+Acima (tronco+galhos+folhas)
+
+Seco
+
+5,0
+
+79,3
+
+0,95
+
+44,0%
+
+Equação
+-3,200+0,396*(d^2)
+3,532+0,035*((d^2)*ht)
+-34,846+7,423*d
+48,751-6,204*ht+0,215*(d^2)+0,025*((d^2)*ht)
+577,956-42,864*d+1,301*(d^2)
+-6,0731+0,663*d+0,361*(d^2)
+-6,100+2,070*d-0,081*(d^2)+0,002*(d*(ht^2))+0,030*((d^2)*ht)
+-74,934+0,107*(d^2)+0,056*((d^2)*ht)-0,103*(d*(ht^2))+1,793*(ht^2)
+-8,010+1,596*ht+0,093*(d^2)+0,022*((d^2)*ht)
+83,764-10,718*d+0,647*(d^2)-0,009*(d*(ht^2))+0,015*((d^2)*ht)
+9,697+0,033*((d^2)*ht)
+93,949-23,795*d+1,408*(d^2)+2,859*(d*ht)-0,131*((d^2)*ht)11,045*ht
+exp(0,1450,162*log(d^2)+0,444*(log(d)^2)+0,508*log(ht)+0,121*(log(ht)^2))
+exp(1,037-0,560*log(d^2)+0,413*(log(d)^2)+2,101*log(ht)0,218*(log(ht)^2))
+exp(-1,233+2,194*log(d))
+exp(-1,490+2,154*log(d))
+exp(-2,006+2,414*log(d))
+exp(-2,124+0,869*log((d^2)*ht))
+exp(-2,151+1,698*log(d)+0,927*log(ht))
+exp(-2,298+0,852*log((d^2)*ht))
+exp(-2,414+1,546*log(d)+1,071*log(ht))
+exp(-2,864+1,830*log(d)+1,013*log(ht))
+exp(-2,900+0,760*log(d^2)+0,056*(log(d)^2)+1,383*log(ht)0,075*(log(ht)^2))
+-32,5607+0,022835*(d^3)+6,063571*ht-0,00044*((d^3)*ht)
+
+Autor
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Trautenmüller (2015)
+Balbinot et al. (2018)
+
+9
+
+Floresta Estacional Semidecidual (FES)
+Espécie
+Bioma
+Anadenanthera colubrina Mata Atlântica
+(Vell.) Brenan
+Anadenanthera colubrina Mata Atlântica
+(Vell.) Brenan
+Guadua chacoensis
+Mata Atlântica
+(Rojas) Londoño
+Guadua chacoensis
+Mata Atlântica
+(Rojas) Londoño
+Guadua chacoensis
+Mata Atlântica
+(Rojas) Londoño
+Guadua chacoensis
+Mata Atlântica
+(Rojas) Londoño
+Guadua chacoensis
+Mata Atlântica
+(Rojas) Londoño
+Guadua chacoensis
+Mata Atlântica
+(Rojas) Londoño
+Guadua chacoensis
+Mata Atlântica
+(Rojas) Londoño
+Guadua chacoensis
+Mata Atlântica
+(Rojas) Londoño
+Kielmeyera coriacea
+Cerrado
+Mart. & Zucc.
+Kielmeyera coriacea
+Cerrado
+Mart. & Zucc.
+Kielmeyera 10oriácea
+Cerrado
+Mart. & Zucc.
+Kielmeyera coriacea
+Cerrado
+Mart. & Zucc.
+Kielmeyera coriacea
+Cerrado
+Mart. & Zucc.
+Kielmeyera coriacea
+Cerrado
+Mart. & Zucc.
+Kielmeyera coriacea
+Cerrado
+Mart. & Zucc.
+Kielmeyera coriacea
+Cerrado
+Mart. & Zucc.
+Kielmeyera coriacea
+Cerrado
+Mart. & Zucc.
+Kielmeyera coriacea
+Cerrado
+Mart. & Zucc.
+Leucaena leucocephala
+Mata Atlântica
+(Lam.) de Wit
+¹ peso seco inclui apenas galhos >=3cm
+² cap - circunferência a altura do peito
+
+Estado Compartimento
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+PR
+Acima
+(tronco+galhos+folhas)
+PR
+Acima
+(tronco+galhos+folhas)
+PR
+Acima
+(tronco+galhos+folhas)
+PR
+Acima
+(tronco+galhos+folhas)
+PR
+Acima
+(tronco+galhos+folhas)
+PR
+Acima
+(tronco+galhos+folhas)
+PR
+Acima
+(tronco+galhos+folhas)
+PR
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+MG
+Acima
+(tronco+galhos+folhas)
+PR
+Total (abaixo+acima)
+
+Peso d mín.
+Seco 10,0
+
+d máx.
+40,0
+
+Autor
+Scolforo et al. (2008)¹
+
+14,0
+
+R2/R2aj Syx
+Equação
+95,37
+32,0% exp(10,429926397+2,3703560196*log(d)+0,7048908784*log(ht))*1000
+94,50
+28,8% exp(9,341381587+2,27623091*log(d)+0,3954337202*log(ht))*1000
+0,87
+19,7% -19,27046+3,15377*ht
+
+Seco 10,0
+
+40,0
+
+Seco 5,6
+Seco 5,6
+
+14,0
+
+0,83
+
+22,5% -28,09540+5,90368*d
+
+Mognon et al. (2014)
+
+Seco 5,6
+
+14,0
+
+0,84
+
+22,4% -1,70418+0,30633*(d^2)
+
+Mognon et al. (2014)
+
+Seco 5,6
+
+14,0
+
+0,92
+
+15,8% 6,9623+0,00776*(d*(ht^2))
+
+Mognon et al. (2014)
+
+Seco 5,6
+
+14,0
+
+0,93
+
+15,0% -27,53382+2,80989*d+1,91081*ht
+
+Mognon et al. (2014)
+
+Seco 5,6
+
+14,0
+
+0,86
+
+20,5% exp(0,62186+0,35049*log(ht^2))
+
+Mognon et al. (2014)
+
+Seco 5,6
+
+14,0
+
+0,83
+
+22,7% exp(-1,66543+2,16569*log(d))
+
+Mognon et al. (2014)
+
+Seco 5,6
+
+14,0
+
+0,83
+
+22,8% -30,53017+(8,51517*(d^0,5)*log(d))
+
+Mognon et al. (2014)
+
+Seco 5,0
+
+25,0
+
+97,64
+
+Scolforo et al. (2008)¹
+
+Seco 5,0
+
+25,0
+
+91,00
+
+Seco 5,0
+
+25,0
+
+96,09
+
+Seco 5,0
+
+25,0
+
+98,11
+
+Seco 5,0
+
+25,0
+
+93,55
+
+Seco 5,0
+
+25,0
+
+91,19
+
+Seco 5,0
+
+25,0
+
+95,21
+
+Seco 5,0
+
+25,0
+
+56,25
+
+Seco 5,0
+
+25,0
+
+93,23
+
+Seco 5,0
+
+25,0
+
+90,36
+
+12,7% exp(10,454935288+2,1243668209*log(d)+0,4846364811*log(ht))*1000
+28,9% exp(11,131420131+2,7809202201*log(d)+0,1607924005*log(ht))*1000
+21,2% exp(11,2626907253+2,428844827*log(d)+0,8160943744*log(ht))*1000
+16,8% exp(11,240733240+2,1478860499*log(d)+1,2256819954*log(ht))*1000
+15,4% exp(9,9024961214+1,8386525322*log(d)+0,8826336654*log(ht))*1000
+17,1% exp(9,9172024926+1,7980764189*log(d)+0,8570052692*log(ht))*1000
+12,4% exp(10,450166419+2,1184324516*log(d)+0,9437181178*log(ht))*1000
+31,8% exp(9,5840753965+1,4473363882*log(d)+1,2694519160*log(ht))*1000
+19,2% exp(9,4099752305+1,4178739454*log(d)+1,3497746854*log(ht))*1000
+24,0% exp(-10,6053+2,20772*log(d)+0,726309*log(ht))*1000
+
+Seco 1,3
+
+15,0
+
+0,89
+
+-
+
+Aleixo et al. (2008)²
+
+(7281,6-7207,5*ht-1308,9*hf+4400,7*cap)/1000
+
+Scolforo et al. (2008)¹
+Mognon et al. (2014)
+
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+
+Floresta Estacional Semidecidual (FES)
+
+10
+
+Floresta Estacional Semidecidual (FES)
+Espécie
+Leucaena leucocephala
+(Lam.) de Wit
+Leucaena leucocephala
+(Lam.) de Wit
+Leucaena leucocephala
+(Lam.) de Wit
+Leucaena leucocephala
+(Lam.) de Wit
+Várias
+
+Bioma
+Mata Atlântica
+
+Estado Compartimento
+PR
+Total (abaixo+acima)
+
+Peso d mín.
+Seco 1,3
+
+d máx.
+15,0
+
+R2/R2aj Syx
+0,89
+-
+
+Equação
+(6779,1-7965,5*ht+4462,4*cap)/1000
+
+Autor
+Aleixo et al. (2008)²
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco 1,3
+
+15,0
+
+0,82
+
+-
+
+(-29139,1+2832,8*cap)/1000
+
+Aleixo et al. (2008)²
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco 1,3
+
+15,0
+
+0,94
+
+-
+
+exp(3,4756+0,22*ht-0,028*hf+1,4425*log(cap))/1000
+
+Aleixo et al. (2008)²
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco 1,3
+
+15,0
+
+0,57
+
+-
+
+(-83092,2-1825,5*ht+45613,24*log(cap))/1000
+
+Aleixo et al. (2008)²
+
+Cerrado
+
+MG
+
+Seco 5,0
+
+40,0
+
+96,75
+
+Cerrado
+
+MG
+
+Seco 5,0
+
+40,0
+
+95,71
+
+Várias
+
+Cerrado
+
+MG
+
+Seco 5,0
+
+40,0
+
+96,71
+
+Várias
+
+Cerrado
+
+MG
+
+Seco 5,0
+
+40,0
+
+96,37
+
+Várias
+
+Cerrado
+
+MG
+
+Seco 5,0
+
+40,0
+
+93,36
+
+Várias
+
+Mata Atlântica
+
+MG
+
+Seco -
+
+-
+
+95,63
+
+46,3% exp(10,439791707+2,1182873001*log(d)+0,8339834928*log(ht))*1000
+41,7% exp(10,9532786932+2,5464820134*log(d)+0,4667754371*log(ht))*1000
+21,4% exp(9,7244062219+2,2048968123*log(d)+0,5515240994*log(ht))*1000
+55,2% exp(10,2622957616+2,1516946479*log(d)+0,7265663432*log(ht))*1000
+67,3% exp(10,4843366195+1,6816091448*log(d)+1,4063159347*log(ht))*1000
+22,6% 0,0334430*(d^2,3979902)*(hf^0,426536)
+
+Scolforo et al. (2008)¹
+
+Várias
+
+Várias
+
+Mata Atlântica
+
+MG
+
+Seco -
+
+-
+
+94,93
+
+24,2% 0,028135*(d^2,306505)*(hf*0,557845)
+
+Amaro et al. (2013)
+
+Várias
+Várias
+Várias
+Várias
+
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+
+SP
+SP
+SP
+SP
+
+Seco
+Seco
+Seco
+Seco
+
+5,0
+5,0
+5,0
+5,0
+
+36,0
+36,0
+36,0
+15,0
+
+0,86
+0,87
+0,88
+0,87
+
+15,3%
+12,3%
+12,2%
+-
+
+Rasera (2019)
+Rasera (2019)
+Rasera (2019)
+Lacerda et al. (2009)³
+
+Várias
+
+Mata Atlântica
+
+SP
+
+Seco 5,0
+
+36,0
+
+0,75
+
+56,3% exp(-1,4309+2,0158*log(d))
+
+Rasera (2019)
+
+Várias
+
+Mata Atlântica
+
+SP
+
+Seco 5,0
+
+36,0
+
+0,78
+
+51,1% exp(-2,6925+0,8610*log((d^2)*ht))
+
+Rasera (2019)
+
+Várias
+
+Mata Atlântica
+
+SP
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Seco 5,0
+
+36,0
+
+0,78
+
+49,7% exp(-3,2369+1,5467*log(d)+1,2860*log(ht))
+
+Rasera (2019)
+
+exp(-2,68610+2,08390*log(d))
+exp(-3,79570+1,76660*log(d)+0,82990*log(ht))
+exp(-3,84890+0,87380*log((d^2)*ht))
+exp(-1,19829+1,98391*log(d))
+
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Amaro et al. (2013)
+
+¹ peso seco inclui apenas galhos >=3cm
+² cap - circunferência a altura do peito
+³ tronco + galhada
+
+11
+
+Floresta Ombrófila Aberta (FOA)
+Floresta Ombrófila Aberta (FOA)
+
+Espécie
+Guadua weberbaueri Pilg.
+Guadua weberbaueri Pilg.
+Guadua weberbaueri Pilg.
+Guadua weberbaueri Pilg.
+Guadua weberbaueri Pilg.
+Rhizophora mangle L.
+Rhizophora mangle L.
+Rhizophora mangle L.
+Rhizophora mangle L.
+Várias
+
+Bioma
+Estado Compartimento
+Peso d mín.
+Amazônia
+AC
+Acima (tronco+galhos+folhas) Seco 3,5
+Amazônia
+AC
+Acima (tronco+galhos+folhas) Seco 3,5
+Amazônia
+AC
+Acima (tronco+galhos+folhas) Seco 3,5
+Amazônia
+AC
+Acima (tronco+galhos+folhas) Seco 3,5
+Amazônia
+AC
+Acima (tronco+galhos+folhas) Seco 3,5
+Mata Atlântica SE
+Abaixo (raízes)
+Seco 1,0
+Mata Atlântica SE
+Abaixo (raízes)
+Seco 1,0
+Mata Atlântica SE
+Acima (tronco+galhos+folhas) Seco 1,0
+Mata Atlântica SE
+Total (abaixo+acima)
+Seco 1,0
+Amazônia
+RO
+Acima (tronco+galhos+folhas) Seco 10,0
+
+d máx.
+6,2
+6,2
+6,2
+6,2
+6,2
+39,2
+39,2
+39,2
+39,2
+-
+
+R2/R2aj
+0,75
+0,81
+0,73
+0,76
+0,68
+0,95
+0,96
+0,99
+0,99
+0,94
+
+Syx
+55,5%
+49,4%
+27,4%
+28,1%
+-
+
+Equação
+0,2254*ht+4,969*d-20,171
+2,928*(d^3)-37,554*(d^2)+161,23*d-226,54
+5,4922*d-19,516
+0,172*ht+1,18*d-4,478
+0,2756*exp(0,5122*d)
+exp(3,604243+2,511704*log(d))/1000
+exp(2,939739+0,934209*log(d^2*ht))/1000
+exp(5,360943+2,380682*log(d))/1000
+exp(5,534244+2,404770*log(d))/1000
+0,0326*(d^2)*ht
+
+Autor
+Torezan e Silveira (2000)
+Torezan e Silveira (2000)
+Torezan e Silveira (2000)
+Torezan e Silveira (2000)
+Torezan e Silveira (2000)
+Santos et al. (2017)
+Santos et al. (2017)
+Santos et al. (2017)
+Santos et al. (2017)
+Brown et al. (1995)
+
+12
+
+Floresta Ombrófila Densa (FOD)
+Floresta Ombrófila Densa (FOD)
+
+Espécie
+Avicennia schaueriana
+Stapf & Leechm. ex Moldenke
+Avicennia schaueriana
+Stapf & Leechm. ex Moldenke
+Avicennia schaueriana
+Stapf & Leechm. ex Moldenke
+Banara guianensis Aubl.
+
+Bioma
+Mata Atlântica
+
+Estado
+RJ
+
+Mata Atlântica
+
+RJ
+
+Mata Atlântica
+
+RJ
+
+Amazônia
+
+PA
+
+Bellucia spp.
+
+Amazônia
+
+AM
+
+Bellucia spp.
+
+Amazônia
+
+AM
+
+Bellucia spp.
+
+Amazônia
+
+AM
+
+Bellucia spp.
+
+Amazônia
+
+AM
+
+Cecropia glaziovii Snethl.
+
+Mata Atlântica
+
+SC
+
+Cecropia sciadophylla Mart.
+
+Amazônia
+
+AM
+
+Cecropia spp.
+
+Amazônia
+
+PA
+
+Croton matourensis Aubl.
+
+Amazônia
+
+AM
+
+Croton matourensis Aubl.
+
+Amazônia
+
+AM
+
+Cyathea delgadii Sternb.
+
+Mata Atlântica
+
+SC
+
+Euterpe edulis Mart.
+
+Mata Atlântica
+
+SC
+
+Goupia glabra Aubl.
+
+Amazônia
+
+AM
+
+Goupia glabra Aubl.
+
+Amazônia
+
+AM
+
+Laetia procera (Poepp.) Eichler
+
+Amazônia
+
+AM
+
+Laetia procera (Poepp.) Eichler
+
+Amazônia
+
+AM
+
+Solanum crinitum Lam.
+
+Amazônia
+
+PA
+
+Solanum rugosum Dunal
+
+Amazônia
+
+PA
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+0,7
+
+d máx.
+37,3
+
+R2/R2aj
+0,99
+
+Syx
+18,7%
+
+Equação
+123,8716*(d^2,5282)/1000
+
+Autor
+Estrada et al. (2014)
+
+Seco
+
+0,7
+
+37,3
+
+0,99
+
+17,4%
+
+68,8881*((d^2)*ht)^0,9397/1000
+
+Estrada et al. (2014)
+
+Seco
+
+0,7
+
+37,3
+
+0,99
+
+-
+
+exp(4,8017+2,5282*log(d))/1000
+
+Estrada et al. (2014)
+
+Seco
+
+10,0
+
+-
+
+0,99
+
+-
+
+exp(-1,90+1,11*log(d^2)+0,05*log(ht))
+
+Uhl et al. (1988)¹
+
+Seco
+
+1,2
+
+26,8
+
+0,97
+
+-
+
+0,1591*(d^2,37)
+
+Nelson et al. (1999)
+
+Seco
+
+1,2
+
+26,8
+
+0,99
+
+-
+
+exp(-1,8158+2,37*log(d))
+
+Nelson et al. (1999)
+
+Seco
+
+1,2
+
+26,8
+
+1,00
+
+-
+
+exp(-2,4387+2,0751*log(d)+0,5360*log(ht))
+
+Nelson et al. (1999)
+
+Seco
+
+1,2
+
+26,8
+
+0,91
+
+-
+
+exp(-5,8514+3,8980*log(ht))
+
+Nelson et al. (1999)
+
+Seco
+
+7,7
+
+33,9
+
+0,98
+
+7,7 kg
+
+295,6/(1+exp(6,1366-0,1161*d-0,1522*ht))
+
+Uller et al. (2021)²
+
+Seco
+
+5,1
+
+38,2
+
+0,98
+
+-
+
+exp(-2,5118+2,4257*log(d))
+
+Nelson et al. (1999)
+
+Seco
+
+10,0
+
+-
+
+0,98
+
+-
+
+exp(-3,78+0,95*log(d^2)+1,00*log(ht))
+
+Uhl et al. (1988)¹
+
+Seco
+
+2,3
+
+25,3
+
+0,99
+
+-
+
+exp(-2,7009+2,5996*log(d))
+
+Nelson et al. (1999)
+
+Seco
+
+2,3
+
+25,3
+
+0,99
+
+-
+
+exp(-3,4630+2,2885*log(d)+0,5906*log(ht))
+
+Nelson et al. (1999)
+
+Seco
+
+6,3
+
+19,5
+
+0,92
+
+3,6 kg
+
+0,1523*d^1,1254*ht^1,0338
+
+Uller et al. (2021)
+
+Seco
+
+3,9
+
+15,8
+
+0,84
+
+7,1 kg
+
+0,0175*d^1,5288*ht^1,66
+
+Uller et al. (2021)
+
+Seco
+
+1,5
+
+12,2
+
+0,99
+
+-
+
+exp(-1,7972+2,4206*log(d))
+
+Nelson et al. (1999)
+
+Seco
+
+1,5
+
+12,2
+
+1,00
+
+-
+
+exp(-2,4990+2,1283*log(d)+0,5508*log(ht))
+
+Nelson et al. (1999)
+
+Seco
+
+1,6
+
+24,8
+
+0,99
+
+-
+
+exp(-2,2244+2,5105*log(d))
+
+Nelson et al. (1999)
+
+Seco
+
+1,6
+
+24,8
+
+1,00
+
+-
+
+exp(-2,6385+2,1976*log(d)+0,4565*log(ht))
+
+Nelson et al. (1999)
+
+Seco
+
+10,0
+
+-
+
+1,00
+
+-
+
+exp(-2,95+1,02*log(d^2)+0,83*log(ht))
+
+Uhl et al. (1988)¹
+
+Seco
+
+10,0
+
+-
+
+0,96
+
+-
+
+exp(-3,06+0,89*log(d^2)+1,11*log(ht))
+
+Uhl et al. (1988)¹
+
+¹ árvore em pasto abandonado
+² d - diâmetro acima da raiz aérea
+
+13
+
+Floresta Ombrófila Densa (FOD)
+Espécie
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Tabebuia cassinoides
+(Lam.) DC.
+Várias
+
+Bioma
+Mata Atlântica
+
+Estado
+PR
+
+Compartimento
+Total (abaixo+acima)
+
+Peso
+Seco
+
+d mín.
+8,0
+
+d máx.
+15,9
+
+R2/R2aj
+0,21
+
+Syx
+34,6%
+
+Equação
+-13,398+3,672*ht
+
+Autor
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,96
+
+7,9%
+
+-25,095+4,858*d
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,90
+
+12,4%
+
+6,506+0,016*d^2*ht
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,96
+
+8,2%
+
+-25,016+4,862*d-0,011*ht
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,93
+
+10,1%
+
+exp(-1,445+1,985*log(d))
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,80
+
+17,3%
+
+exp(1,890+0,022*log(d^2*ht))
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,90
+
+12,6%
+
+1,165+0,267*(d^0,5)*log(d)
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,95
+
+8,3%
+
+-31,539+5,946*d-0,024*(d^2)-0,002*(d^2*ht)
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,96
+
+8,1%
+
+-29,005+5,480*d-0,002*(d^2*ht)
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,93
+
+10,3%
+
+exp(-1,569+1,953*log(d)+0,085*log(ht))
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,88
+
+13,3%
+
+exp(1,729+0,113*log(d^3))
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,95
+
+8,5%
+
+Melo et al. (2014)
+
+Mata Atlântica
+
+PR
+
+Total (abaixo+acima)
+
+Seco
+
+8,0
+
+15,9
+
+0,90
+
+12,0%
+
+329,366-125,944*(d)+17,719*(d^2)1,043*(d^3)+0,022*(d^4)
+11,399+0,011*(d^3)
+
+Amazônia
+
+AC
+
+Seco
+
+50,4
+
+149,9
+
+0,62
+
+169,6%
+
+Amazônia
+
+AC
+
+Seco
+
+50,4
+
+149,9
+
+-
+
+167,9%
+
+exp(9,16151+1,52337*log(d)+1,35403*log(hf))*1000
+0,0002996*d^1,367517*hf^1,254061*1000
+
+Romero et al. (2020)
+
+Várias
+Várias
+
+Amazônia
+
+AM
+
+Fresco
+
+5,0
+
+-
+
+0,97
+
+-
+
+Amazônia
+
+AM
+
+Seco
+
+5,0
+
+-
+
+0,97
+
+-
+
+Várias
+
+Amazônia
+
+AM
+
+Seco
+
+10,0
+
+-
+
+0,95
+
+-
+
+exp(-1,335+1,551*log(d)+0,415*log(d^2)0,053*log(d^3))
+exp(-0,370+0,333*log(d)+0,933*log(d)^20,122*log(d)^3)
+exp(-4,898+4,512*log(d)-0,319*log(d)^2)
+
+Chambers et al. (2001)3
+
+Várias
+
+Várias
+
+Amazônia
+
+AM
+
+Seco
+
+5,0
+
+60,0
+
+0,97
+
+-
+
+Amazônia
+
+AM
+
+Seco
+
+5,0
+
+20,0
+
+0,92
+
+43 kg
+
+exp(0,720-1,042*log(d)+1,467*log(d)^20,188*log(d)^3)
+exp(-1,754+2,665*log(d))
+
+Chambers et al. (2001)3
+
+Várias
+Várias
+
+Amazônia
+
+AM
+
+Seco
+
+20,0
+
+120,0
+
+0,90
+
+2035 kg
+
+exp(-0,151+2,170*log(d))
+
+Higuchi et al. (1998)
+
+Várias
+
+Amazônia
+
+AM
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Seco
+
+5,0
+
+120,0
+
+0,97
+
+1729 kg
+
+exp(-1,497+2,548*log(d))
+
+Higuchi et al. (1998)
+
+Melo et al. (2014)
+
+Romero et al. (2020)
+
+Chambers et al. (2001)3
+Chambers et al. (2001)3
+
+Higuchi et al. (1998)
+
+³ d - diâmetro na altura da base do tronco
+
+14
+
+Floresta Ombrófila Densa (FOD)
+Espécie
+Várias
+
+Bioma
+Amazônia
+
+Estado
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+Várias
+
+Amazônia
+Amazônia
+
+AM
+PA
+
+Várias
+
+Amazônia
+
+PA
+
+Várias
+
+Amazônia
+
+PA
+
+Várias
+
+Amazônia
+
+PA
+
+Várias
+
+Amazônia
+
+PA
+
+Várias
+
+Amazônia
+
+PA
+
+Várias
+
+Amazônia
+
+PA
+
+Várias
+
+Amazônia
+
+PA
+
+Várias
+
+Amazônia
+
+PA
+
+Várias
+
+Amazônia
+
+PA
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Total (abaixo+acima)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+5,0
+
+d máx.
+20,0
+
+R2/R2aj
+0,95
+
+Syx
+35 kg
+
+Equação
+exp(-2,668+2,081*log(d)+0,852*log(ht))
+
+Autor
+Higuchi et al. (1998)
+
+Seco
+
+20,0
+
+120,0
+
+0,91
+
+1497 kg
+
+exp(-2,088+1,837*log(d)+0,939*log(ht))
+
+Higuchi et al. (1998)
+
+Seco
+
+5,0
+
+120,0
+
+0,98
+
+812 kg
+
+exp(-2,694+2,038*log(d)+0,902*log(ht))
+
+Higuchi et al. (1998)
+
+Seco
+
+5,0
+
+20,0
+
+0,94
+
+34 kg
+
+0,0056+0,621*((d/100)^2)*ht*1000
+
+Higuchi et al. (1998)
+
+Seco
+
+20,0
+
+120,0
+
+0,86
+
+1508 kg
+
+0,393+0,473*((d/100)^2)*ht*1000
+
+Higuchi et al. (1998)
+
+Seco
+
+5,0
+
+120,0
+
+0,90
+
+716 kg
+
+0,077+0,492*((d/100)^2)*ht*1000
+
+Higuchi et al. (1998)
+
+Seco
+
+5,0
+
+20,0
+
+0,94
+
+31 kg
+
+0,0336*(d^2,171)*(ht^1,038)
+
+Higuchi et al. (1998)
+
+Seco
+
+20,0
+
+120,0
+
+0,92
+
+1159 kg
+
+0,0009*(d^1,585)*(ht^2,651)
+
+Higuchi et al. (1998)
+
+Seco
+
+5,0
+
+120,0
+
+0,94
+
+540 kg
+
+0,001*(d^1,579)*(ht^2,621)
+
+Higuchi et al. (1998)
+
+Seco
+
+1,0
+
+5,0
+
+96,20
+
+-
+
+exp(-1,7689+2,3770*log(d))
+
+Seco
+
+1,2
+
+28,6
+
+0,98
+
+-
+
+exp(-1,9968+2,4128*log(d))
+
+Nascimento e Laurance
+(2002)
+Nelson et al. (1999)
+
+Seco
+
+1,2
+
+28,6
+
+0,99
+
+-
+
+exp(-2,5202+2,14*log(d)+0,4644*log(ht))
+
+Nelson et al. (1999)
+
+Seco
+Fresco
+
+5,0
+10,0
+
+124,0
+138,0
+
+0,96
+0,87
+
+30,6%
+-
+
+exp(-1,716+2,413*log(d))
+4,06*(d^1,76)
+
+Nogueira et al. (2008)
+Araújo et al. (1999)
+
+Fresco
+
+10,0
+
+138,0
+
+0,88
+
+-
+
+400,32+39,99*d+0,97*(d^2)
+
+Araújo et al. (1999)
+
+Fresco
+
+10,0
+
+138,0
+
+0,90
+
+-
+
+318,09+38,12*d+0,03*(d^2)*ht
+
+Araújo et al. (1999)
+
+Fresco
+
+10,0
+
+138,0
+
+0,88
+
+-
+
+175,83+0,79*(d^2)+0,07*(d^2)*ht
+
+Araújo et al. (1999)
+
+Fresco
+
+10,0
+
+138,0
+
+0,82
+
+-
+
+533,26+130,22*d+51*ht
+
+Araújo et al. (1999)
+
+Fresco
+
+10,0
+
+138,0
+
+0,92
+
+-
+
+0,026*(d^1,529)*(ht^1,747)
+
+Araújo et al. (1999)
+
+Fresco
+
+5,0
+
+20,0
+
+0,97
+
+24,5%
+
+Higuchi et al. (1994)
+
+Fresco
+
+20,0
+
+-
+
+0,92
+
+37,3%
+
+Seco
+
+1,0
+
+21,4
+
+0,97
+
+68,0%
+
+exp(2,4768+2,2301*log(d/100)+0,6518*log(ht))*1000
+exp(3,8102+1,4631*log(d/100)+1,8190*log(ht))*1000
+0,2237*(d^2,260)
+
+Seco
+
+1,0
+
+21,4
+
+0,94
+
+98,0%
+
+0,0985*(d^1,879)*(ht^0,7355)
+
+Ducey et al. (2009)
+
+Higuchi et al. (1994)
+Ducey et al. (2009)
+
+15
+
+Floresta Ombrófila Densa (FOD)
+Espécie
+Várias
+
+Bioma
+Amazônia
+
+Estado
+PA
+
+Peso
+Seco
+
+d mín.
+10,0
+
+d máx.
+-
+
+R2/R2aj
+0,96
+
+Syx
+-
+
+Equação
+exp(-2,17+1,02*log(d^2)+0,39*log(ht))
+
+Autor
+Uhl et al. (1988)¹
+
+Seco
+
+50,0
+
+-
+
+0,53
+
+2,0%
+
+Lima et al. (2019)4
+
+Seco
+
+5,0
+
+40,0
+
+97,34
+
+30,8%
+
+Seco
+
+5,0
+
+40,0
+
+97,81
+
+32,0%
+
+Seco
+
+5,0
+
+40,0
+
+97,66
+
+35,0%
+
+Seco
+
+5,4
+
+56,0
+
+0,86
+
+33,9 kg
+
+23182,772-506,494*(d)+3,434*d^2+0,123*(d*hf)0,002*d^2*hf
+exp(-10,9240874854+2,1188422024*
+log(d)+0,9848179885*log(ht))*1000
+exp(-10,5678122652+2,0679586507*
+log(d)+0,8722223725*log(ht))*1000
+exp(-10,6409194002+2,1533324963*
+log(d)+0,8248143766*log(ht))*1000
+25,9310+0,0258*(d^2)*ht
+
+Seco
+
+5,4
+
+56,0
+
+0,88
+
+22,3 kg
+
+-48,4365+0,6467*(d^2)
+
+Uller et al. (2019)
+
+Seco
+
+5,4
+
+56,0
+
+0,87
+
+27,3 kg
+
+exp(-2,3702+2,5179*log(d))
+
+Uller et al. (2019)
+
+Seco
+
+5,4
+
+56,0
+
+0,86
+
+30,6 kg
+
+Uller et al. (2019)6
+
+Seco
+
+5,4
+
+56,0
+
+0,86
+
+33,6 kg
+
+exp(3,078059+1,068174*log(d^2)+0,661610*log(ht))
+exp(-3,4062+0,9774*log((d^2)*ht))
+
+SP
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Abaixo (raízes)
+
+Várias
+
+Amazônia
+
+PA
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Mata Atlântica
+
+SC
+
+Várias
+
+Mata Atlântica
+
+SC
+
+Várias
+
+Mata Atlântica
+
+SC
+
+Várias
+
+Mata Atlântica
+
+SC
+
+Várias
+
+Mata Atlântica
+
+SC
+
+Várias
+
+Mata Atlântica
+
+Seco
+
+2,0
+
+33,3
+
+-
+
+-
+
+exp(-2,960+1,072*log(d^2))
+
+Mata Atlântica
+
+SP
+
+Abaixo (raízes)
+
+Seco
+
+2,0
+
+33,3
+
+-
+
+-
+
+exp(-3,535+0,832*log((d^2)*ht))
+
+Várias
+
+Mata Atlântica
+
+SP
+
+Seco
+
+5,4
+
+68,5
+
+0,94
+
+-
+
+exp(-2,245+2,388*log(d))
+
+Várias
+
+Mata Atlântica
+
+SP
+
+Seco
+
+2,0
+
+33,3
+
+-
+
+-
+
+-13,127+0,428*(d^2)
+
+Várias
+
+Mata Atlântica
+
+SP
+
+Seco
+
+2,0
+
+33,3
+
+-
+
+-
+
+exp(-1,890+1,127*log(d^2))
+
+Várias
+
+Mata Atlântica
+
+SP
+
+Seco
+
+2,0
+
+33,3
+
+-
+
+-
+
+exp(-2,541+0,883*log((d^2)*ht))
+
+Várias
+
+Mata Atlântica
+
+SP
+
+Seco
+
+2,1
+
+67,8
+
+0,94
+
+11,3%
+
+exp(-2,052+0,801*log(d^2*ht))
+
+Vismia cayennensis
+(Jacq.) Pers.
+Vismia cayennensis
+(Jacq.) Pers.
+Vismia cayennensis
+(Jacq.) Pers.
+Vismia guianensis
+(Aubl.) Choisy
+Vismia japurensis Reichardt
+
+Amazônia
+
+AM
+
+Seco
+
+1,6
+
+21,8
+
+0,99
+
+-
+
+exp(-2,3706+2,5392*log(d))
+
+Nogueira Júnior et al.
+(2014)
+Nogueira Júnior et al.
+(2014)
+Nogueira Júnior et al.
+(2014)
+Moreira-Burguer e Delitti
+(2010)7
+Nelson et al. (1999)
+
+Amazônia
+
+AM
+
+Seco
+
+1,6
+
+21,8
+
+0,99
+
+-
+
+exp(-2,4240+2,4855*log(d)+0,0738*log(ht))
+
+Nelson et al. (1999)
+
+Amazônia
+
+AM
+
+Seco
+
+1,6
+
+21,8
+
+0,99
+
+-
+
+exp(-2,0762+0,4759*log((d^4,6)*ht))
+
+Nelson et al. (1999)
+
+Amazônia
+
+PA
+
+Seco
+
+10,0
+
+-
+
+1,00
+
+-
+
+exp(-3,54+1,13*log(d^2)+0,77*log(ht))
+
+Uhl et al. (1988)¹
+
+Amazônia
+
+AM
+
+Seco
+
+1,5
+
+28,6
+
+0,99
+
+-
+
+exp(-1,7829+2,3651*log(d))
+
+Nelson et al. (1999)
+
+Vismia japurensis Reichardt
+
+Amazônia
+
+AM
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Nogueira Júnior et al.
+(2014)
+Nogueira Júnior et al.
+(2014)
+Colmanetti et al. (2018)
+
+Várias
+
+Seco
+
+1,5
+
+28,6
+
+0,99
+
+-
+
+exp(-2,0118+2,2337*log(d)+0,1877*log(ht))
+
+Nelson et al. (1999)
+
+Scolforo et al. (2008)5
+Scolforo et al. (2008)5
+Scolforo et al. (2008)5
+Uller et al. (2019)
+
+Uller et al. (2019)
+
+16
+
+Floresta Ombrófila Densa (FOD)
+Espécie
+Vismia japurensis Reichardt
+
+Bioma
+Amazônia
+
+Estado
+AM
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+1,5
+
+d máx.
+28,6
+
+R2/R2aj
+0,99
+
+Syx
+-
+
+Equação
+exp(-2,3362+0,4560*log((d^4,6)*ht))
+
+Autor
+Nelson et al. (1999)
+
+¹ árvore em pasto abandonado
+4
+fórmula redigitada após errata do autor
+5
+peso seco inclui apenas galhos >=3cm
+6
+eq. 6 da Tabela 6 com errata fornecida pelo autor
+7
+floresta baixa de restinga
+
+17
+
+Floresta Ombrófila Mista (FOM)
+Floresta Ombrófila Mista (FOM)
+
+Espécie
+Ateleia glazioveana Baill.
+
+Bioma
+Mata Atlântica
+
+Estado
+RS
+
+Mimosa scabrella Benth.
+Mimosa scabrella Benth.
+Nectandra grandiflora Nees
+Nectandra grandiflora Nees
+Nectandra grandiflora Nees
+Nectandra grandiflora Nees
+Nectandra grandiflora Nees
+Nectandra grandiflora Nees
+Nectandra grandiflora Nees
+Nectandra grandiflora Nees
+Nectandra grandiflora Nees
+Nectandra grandiflora Nees
+Phyllostachys aurea
+Rivière & C. Rivière.
+Phyllostachys aurea
+Rivière & C. Rivière.
+Phyllostachys aurea
+Rivière & C. Rivière.
+Phyllostachys aurea
+Rivière & C. Rivière.
+Pimenta pseudocaryophyllus
+(Gomes) Landrum
+Pimenta pseudocaryophyllus
+(Gomes) Landrum
+Pimenta pseudocaryophyllus
+(Gomes) Landrum
+Pimenta pseudocaryophyllus
+(Gomes) Landrum
+Pimenta pseudocaryophyllus
+(Gomes) Landrum
+Pimenta pseudocaryophyllus
+(Gomes) Landrum
+Várias
+
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Abaixo (raízes)
+Total (abaixo+acima)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima (tronco+galhos)
+
+Peso
+Seco
+
+d mín.
+2,0
+
+d máx.
+16,7
+
+R2/R2aj
+0,85
+
+Syx
+31,4%
+
+Equação
+-5,6260+1,2986*log(d^2*ht)
+
+Autor
+Fontoura et al. (2017)
+
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+4,3
+4,3
+9,0
+9,0
+9,0
+9,0
+9,0
+9,0
+9,0
+9,0
+9,0
+9,0
+1,4
+
+23,0
+23,0
+35,0
+35,0
+35,0
+35,0
+35,0
+35,0
+35,0
+35,0
+35,0
+35,0
+4,6
+
+0,96
+0,99
+70,76
+85,95
+79,00
+80,08
+96,33
+86,33
+97,36
+94,58
+95,73
+98,44
+0,63
+
+1,7%
+0,2%
+77,5%
+53,7%
+65,4%
+63,9%
+27,4%
+40,7%
+17,9%
+19,7%
+22,7%
+13,7%
+31,3%
+
+exp(-3,23191+2,881863*log(d)-0,63720*log(ht))
+-0,49361+0,034865*(d^2)*ht
+-28,3918+2,62445*d
+15,6056-1,9267*d+0,00716883*(d^2)*ht
+exp(-4,30406+2,37326*log(d))
+exp(-3,8414+3,275*log(d)-0,366626*log(d^2*ht))
+exp(-0,395587+0,132527*d+0,0519405*log(d^2*ht))
+-159,96+16,065*d
+46,1634-5,25673*d+0,0335853*(d^2)*ht
+exp(-2,26388+2,38201*log(d))
+exp(-3,10478+0,743088*log(d)+0,666342*log(d^2*ht))
+exp(-2,08721+0,0364642*d+0,71874*log(d^2*ht))
+(-650,820+77,754*d*10)/1000
+
+Mello et al. (2012)
+Mello et al. (2012)
+Barbeiro et al. (2009)
+Barbeiro et al. (2009)
+Barbeiro et al. (2009)
+Barbeiro et al. (2009)
+Barbeiro et al. (2009)
+Barbeiro et al. (2009)
+Barbeiro et al. (2009)
+Barbeiro et al. (2009)
+Barbeiro et al. (2009)
+Barbeiro et al. (2009)
+Monastier et al. (2015)
+
+Seco
+
+1,4
+
+4,6
+
+0,65
+
+30,2%
+
+(572,612+0,155*((d*10)^2)*ht)/1000
+
+Monastier et al. (2015)
+
+Seco
+
+1,4
+
+4,6
+
+0,60
+
+30,7%
+
+exp(2,188+1,293*log(d*10)+0,393*log(ht))/1000
+
+Monastier et al. (2015)
+
+Seco
+
+1,4
+
+4,6
+
+0,61
+
+31,0%
+
+exp(2,552+1,412*log(d*10))/1000
+
+Monastier et al. (2015)
+
+Seco
+
+6,0
+
+12,0
+
+0,55
+
+30,2%
+
+5,092633+1,830661*d
+
+Girard (2005)
+
+Seco
+
+6,0
+
+12,0
+
+0,58
+
+29,0%
+
+3,423637+0,994122*d+2,130317*hf
+
+Girard (2005)
+
+Seco
+
+6,0
+
+12,0
+
+0,96
+
+8,9%
+
+Girard (2005)
+
+Seco
+
+6,0
+
+12,0
+
+0,06
+
+44,0%
+
+0,003297+1,730917*d+6,253*hf+0,165655*d^20,03107*(d^2*hf)-0,6033*(d*hf)
+13,15335+0,019166*((d^2)*hf)
+
+Seco
+
+6,0
+
+12,0
+
+0,98
+
+5,7%
+
+Girard (2005)
+
+Seco
+
+6,0
+
+12,0
+
+0,97
+
+8,2%
+
+0,08562+5,147161*hf+0,364603*(d^2)0,08531*((d^2)*hf)
+hf*(0,077154+5,875792*d-0,37259*(d^2))
+
+Seco
+
+5,3
+
+82,0
+
+-
+
+-
+
+Trautenmüller et al. (2021)
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Seco
+
+5,4
+
+105,7
+
+0,95
+
+47,9%
+
+(0,028726*d^1,675713*ht^1,165411)+(0,003816*(d^2
+*ht)^1,121684)
+0,317*(d^2) + 0,009*((d^2)*ht)
+
+Seco
+
+5,4
+
+105,7
+
+0,95
+
+46,7%
+
+0,340*(d^2)-0,122*(ht^2)+0,008*((d^2)*ht)
+
+Ratuchne (2010)
+
+Seco
+
+5,4
+
+105,7
+
+0,96
+
+47,2%
+
+-3,025*d+0,425*(d^2)+0,006*((d^2)*ht)
+
+Ratuchne (2010)
+
+Seco
+
+5,4
+
+105,7
+
+0,95
+
+46,5%
+
+4,268*d-0,114*(d^2)+0,013*(d^3)-(0,0000722)*(d^4)
+
+Ratuchne (2010)
+
+Girard (2005)
+
+Girard (2005)
+
+Ratuchne (2010)
+
+18
+
+Floresta Ombrófila Mista (FOM)
+Espécie
+Várias
+
+Bioma
+Mata Atlântica
+
+Estado
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+4,2
+
+d máx.
+85,9
+
+R2/R2aj
+0,98
+
+Syx
+53,0%
+
+Equação
+exp(-3,07697+2,57018*log(d))
+
+Autor
+Ratuchne (2015)
+
+Seco
+
+4,2
+
+85,9
+
+0,98
+
+52,3%
+
+0,03232*d^2,64923+15,98866*log10(d)
+
+Ratuchne (2015)
+
+Seco
+
+4,2
+
+85,9
+
+0,98
+
+53,7%
+
+Ratuchne (2015)
+
+Seco
+
+4,2
+
+85,9
+
+0,98
+
+48,7%
+
+0,06222*exp(-0,29985+0,75178*log(d)+0,42765*
+log(d^2)+0,32104*log(d^3))
+6,47920+0,02244*(d^2)*ht
+
+Seco
+
+4,2
+
+85,9
+
+0,98
+
+48,7%
+
+0,02977+0,02126*ht*(d^2)
+
+Ratuchne (2015)
+
+Seco
+
+4,2
+
+85,9
+
+0,98
+
+47,8%
+
+-237,79+exp(5,07159+0,03326*d+0,01943*ht)
+
+Ratuchne (2015)
+
+Seco
+
+1,1
+
+7,2
+
+0,80
+
+20,0%
+
+exp(-0,9667+1,9425*log(d)-0,2592*log(ht))
+
+Theodorovicz et al. (2016)
+
+Seco
+
+1,1
+
+7,2
+
+0,84
+
+19,4%
+
+exp(-1,2701+1,7821*log(d))
+
+Theodorovicz et al. (2016)
+
+Seco
+
+1,1
+
+7,2
+
+0,90
+
+23,9%
+
+1,0802+0,0162*((d^2)*ht)
+
+Theodorovicz et al. (2016)
+
+Seco
+
+1,1
+
+7,2
+
+0,94
+
+18,5%
+
+0,1766+0,1996*(d^2)
+
+Theodorovicz et al. (2016)
+
+Seco
+
+5,3
+
+82,0
+
+-
+
+-
+
+Trautenmüller et al. (2021)
+
+Seco
+
+4,0
+
+28,0
+
+0,91
+
+32,4%
+
+(0,028726*d^1,675713*ht^1,165411)+(0,003816*(d^2
+*ht)^1,121684)+(0,014257*(d^2*ht)^0,671907)
+-103,45609+15,09492*d
+
+Seco
+
+4,0
+
+28,0
+
+0,96
+
+21,7%
+
+-11,83006+0,5917*(d^2)
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,96
+
+21,6%
+
+20,035564+0,01914*(d^3)
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,91
+
+32,5%
+
+-93,9256+15,4711*d-1,04188*ht
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,92
+
+31,6%
+
+-84,833+15,7011*d-3,0313*hf
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,96
+
+23,6%
+
+1,72441+0,028227*(d^2)*ht
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,86
+
+40,7%
+
+5,083135+0,043881*(d^2)*hf
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,88
+
+35,5%
+
+exp(-1,88002+2,37745*log(d))
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,88
+
+35,5%
+
+exp(-1,88002+1,18872*log(d^2))
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,88
+
+35,5%
+
+exp(-1,88002+0,79248*log(d^3))
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,93
+
+27,0%
+
+exp(-2,774881+2,20766*log(d)+0,50275*log(ht))
+
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,96
+
+20,3%
+
+exp(-2,01898+2,33576*log(d)+0,11354*log(hf))
+
+Urbano (2007)
+
+Ratuchne (2015)
+
+Urbano (2007)
+
+19
+
+Floresta Ombrófila Mista (FOM)
+Espécie
+Várias
+
+Bioma
+Mata Atlântica
+
+Estado
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Várias
+
+Mata Atlântica
+
+PR
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+4,0
+
+d máx.
+28,0
+
+R2/R2aj
+0,93
+
+Syx
+27,5%
+
+Equação
+exp(-3,65315+1,01203*log((d^2)*ht))
+
+Autor
+Urbano (2007)
+
+Seco
+
+4,0
+
+28,0
+
+0,96
+
+21,0%
+
+exp(-2,78471+0,95763*log((d^2)*hf))
+
+Urbano (2007)
+
+Seco
+
+-
+
+-
+
+0,90
+
+34,4%
+
+13,338-3,764*d+0,527*(d^2)
+
+Zanette et al. (2017)
+
+Seco
+
+-
+
+-
+
+0,23
+
+82,2%
+
+-13,893+3,982*d+0,047*(d^2)
+
+Zanette et al. (2017)
+
+Seco
+
+-
+
+-
+
+0,87
+
+35,0%
+
+47,339-9,593*d+0,746*(d^2)
+
+Zanette et al. (2017)
+
+Seco
+
+-
+
+-
+
+0,64
+
+48,2%
+
+11,977-2,214*d+0,308*(d^2)
+
+Zanette et al. (2017)
+
+Seco
+
+-
+
+-
+
+0,93
+
+61,9%
+
+112,624-14,323*d+0,688*(d^2)
+
+Zanette et al. (2017)
+
+Seco
+
+-
+
+-
+
+0,81
+
+51,4%
+
+-1,371+0,380*d+0,263*(d^2)
+
+Zanette et al. (2017)
+
+Seco
+
+-
+
+-
+
+0,93
+
+85,8%
+
+79,443-12,130*d+0,655*(d^2)
+
+Zanette et al. (2017)
+
+20
+
+Savana (Cerrado)
+Savana (Cerrado)
+
+Espécie
+Anadenanthera colubrina
+(Vell.) Brenan
+Anadenanthera colubrina
+(Vell.) Brenan
+Diptychandra aurantiaca Tul.
+
+Bioma
+Cerrado
+
+Estado
+MG
+
+Cerrado
+
+MG
+
+Pantanal
+
+MS
+
+Eremanthus erythropappus
+(DC.) MacLeish
+Eremanthus erythropappus
+(DC.) MacLeish
+Eremanthus erythropappus
+(DC.) MacLeish
+Licania minutiflora
+(Sagot) Fritsch
+Magonia pubescens A.St.-Hil.
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Pantanal
+
+MS
+
+Pantanal
+
+MS
+
+Protium heptaphyllum
+(Aubl.) Marchand
+Stryphnodendron adstringens
+(Mart.) Coville
+Stryphnodendron adstringens
+(Mart.) Coville
+Stryphnodendron adstringens
+(Mart.) Coville
+Stryphnodendron adstringens
+(Mart.) Coville
+Stryphnodendron adstringens
+(Mart.) Coville
+Stryphnodendron adstringens
+(Mart.) Coville
+Stryphnodendron adstringens
+(Mart.) Coville
+Stryphnodendron adstringens
+(Mart.) Coville
+Stryphnodendron adstringens
+(Mart.) Coville
+Stryphnodendron adstringens
+(Mart.) Coville
+Terminalia argentea
+Mart. & Zucc.
+Várias
+Várias
+
+Pantanal
+
+MS
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Pantanal
+
+MS
+
+Cerrado
+Cerrado
+
+DF
+DF
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima (tronco+galhos)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+10,0
+
+d máx.
+40,0
+
+R2/R2aj
+94,99
+
+Syx
+21,2%
+
+Autor
+Scolforo et al. (2008)¹
+
+-
+
+Equação
+exp(-9,995149073+2,4884117855*log(d)+0,3203838261*
+log(ht))*1000
+exp(-5,1733249886+2,8278563823*log(d)2,0882060533*log(ht))*1000
+exp(-2,119+2,38*log(d))
+
+Seco
+
+10,0
+
+40,0
+
+91,93
+
+24,3%
+
+Seco
+
+5,0
+
+35,0
+
+0,99
+
+Seco
+
+5,0
+
+35,0
+
+98,48
+
+20,7%
+
+exp(-3,6776993+1,0141433*log((d^2)*ht))
+
+Scolforo et al. (2008)¹
+
+Seco
+
+5,0
+
+35,0
+
+98,05
+
+23,2%
+
+exp(-3,695112+1,0221402*log((d^2)*ht))
+
+Scolforo et al. (2008)¹
+
+Seco
+
+5,0
+
+35,0
+
+98,40
+
+27,6%
+
+exp(-3,513087+1,0109135*log((d^2)*ht))
+
+Scolforo et al. (2008)¹
+
+Seco
+
+10,0
+
+36,0
+
+0,91
+
+-
+
+exp(-2,265+2,386*log(d))
+
+Salis et al. (2006)
+
+Seco
+
+7,0
+
+35,0
+
+0,99
+
+-
+
+exp(-2,888+2,795*log(d))
+
+Salis et al. (2006)
+
+Seco
+
+8,0
+
+36,0
+
+0,97
+
+-
+
+exp(-2,083+2,536*log(d))
+
+Salis et al. (2006)
+
+Seco
+
+5,0
+
+25,0
+
+98,89
+
+15,3%
+
+Scolforo et al. (2008)¹
+
+Seco
+
+5,0
+
+25,0
+
+98,83
+
+16,4%
+
+Seco
+
+5,0
+
+25,0
+
+98,79
+
+11,4%
+
+Seco
+
+5,0
+
+25,0
+
+96,14
+
+20,2%
+
+Seco
+
+5,0
+
+25,0
+
+98,68
+
+10,8%
+
+Seco
+
+5,0
+
+25,0
+
+99,11
+
+13,0%
+
+Seco
+
+5,0
+
+25,0
+
+94,63
+
+27,0%
+
+Seco
+
+5,0
+
+25,0
+
+91,91
+
+21,4%
+
+Seco
+
+5,0
+
+25,0
+
+96,17
+
+17,5%
+
+Seco
+
+5,0
+
+25,0
+
+96,48
+
+24,0%
+
+Seco
+
+6,0
+
+31,0
+
+0,99
+
+-
+
+exp(-11,4879612502+2,6267435633*log(d)+0,6604363613*
+log(ht))*1000
+exp(-11,5069953299+2,2647527215*log(d)+1,1946244031*
+log(ht))*1000
+exp(-11,3752699505+2,2058967302*log(d)+1,1811942644*
+log(ht))*1000
+exp(-11,1540582423+2,8732588246*log(d)+0,0690784938*
+log(ht))*1000
+exp(-11,3841308978+2,9100586552*log(d)+0,1989771767*
+log(ht))*1000
+exp(-10,4209629465+2,2735797216*log(d)+0,5710190938*
+log(ht))*1000
+exp(-10,5503679996+2,4360021855*log(d)+0,3995511285*
+log(ht))*1000
+exp(-10,1723567144+2,1419819825*log(d)+0,4862440445*
+log(ht))*1000
+exp(-10,4633765888+2,4542495475*log(d)+0,1955518745*
+log(ht))*1000
+exp(-11,2875746052+2,3822964052*log(d)+0,9086217316*
+log(ht))*1000
+exp(-1,915+2,409*log(d))
+
+Seco
+Seco
+
+5,0
+5,6
+
+32,3
+37,4
+
+98,60
+-
+
+26,0%
+44,7%
+
+0,0288*d^2*ht
+0,0468*(d^1,8294)*(ht^0,9410)
+
+Rezende et al. (2006)²
+Souza (2020)³
+
+Scolforo et al. (2008)¹
+Salis et al. (2006)
+
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Salis et al. (2006)
+
+¹ peso seco inclui apenas galhos >=3cm
+² d - diâmetro a 0,3m do solo
+³ mata de galeria
+
+21
+
+Savana (Cerrado)
+Espécie
+Várias
+
+Bioma
+Cerrado
+
+Estado
+DF
+
+Várias
+
+Cerrado
+
+DF
+
+Várias
+
+Cerrado
+
+DF
+
+Várias
+
+Cerrado
+
+DF
+
+Várias
+
+Cerrado
+
+DF
+
+Várias
+
+Cerrado
+
+GO
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+MG
+
+Várias
+
+Cerrado
+
+TO
+
+Várias
+
+Pantanal
+
+MS
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+5,0
+
+d máx.
+39,0
+
+R2/R2aj
+-
+
+Syx
+51,2%
+
+Equação
+0,0033*(d^1,4989)*(ht^2,6094)
+
+Autor
+Souza (2020)4
+
+Seco
+
+5,3
+
+49,0
+
+-
+
+32,6%
+
+0,1061*(d^2,3253)*(ht^0,3352)
+
+Souza (2020)5
+
+Seco
+
+5,0
+
+32,3
+
+-
+
+32,5%
+
+0,0272*(d^2,5825)*(ht^0,5174)
+
+Souza (2020)6
+
+Seco
+
+5,0
+
+49,0
+
+-
+
+60,8%
+
+0,0237*(d^2,3733)*(ht^0,7464)
+
+Souza (2020)7
+
+Seco
+
+5,0
+
+49,0
+
+-
+
+79,7%
+
+0,0049*(d^2,5019)*(ht^1,1310)
+
+Souza (2020)8
+
+Seco
+
+5,0
+
+-
+
+0,69
+
+13,6%
+
+0,21220*(d^2,01655)*(ht^0,18081)
+
+Santana et al. (2021)
+
+Seco
+
+5,0
+
+27,6
+
+0,88
+
+39,4%
+
+exp(-3,9336+2,9171*log(d))
+
+Ribeiro et al. (2011)
+
+Seco
+
+5,0
+
+40,0
+
+96,22
+
+34,3%
+
+Scolforo et al. (2008)¹
+
+Seco
+
+5,0
+
+40,0
+
+97,26
+
+48,3%
+
+Seco
+
+5,0
+
+40,0
+
+96,95
+
+44,2%
+
+Seco
+
+5,0
+
+40,0
+
+97,15
+
+63,5%
+
+Seco
+
+5,0
+
+40,0
+
+97,14
+
+55,5%
+
+Seco
+
+5,0
+
+40,0
+
+96,13
+
+56,6%
+
+Seco
+
+5,0
+
+40,0
+
+97,07
+
+48,2%
+
+Seco
+
+5,0
+
+40,0
+
+98,73
+
+16,6%
+
+Seco
+
+5,0
+
+40,0
+
+97,33
+
+38,9%
+
+Seco
+
+5,0
+
+40,0
+
+94,19
+
+49,8%
+
+Seco
+
+5,0
+
+60,0
+
+0,97
+
+28,0%
+
+exp(-10,6778434551+2,4312156091*log(d)+0,6690995709*
+log(ht))*1000
+exp(-10,0494414912+2,3529732141*log(d)+0,4522175499*
+log(ht))*1000
+exp(-10,3446328162+2,4830156359*log(d)+0,4337627498*
+log(ht))*1000
+exp(-10,2250784897+2,0204541469*log(d)+0,9297685811*
+log(ht))*1000
+exp(-10,2276863236+2,4684541946*log(d)+0,4000186998*
+log(ht))*1000
+exp(-10,1024202605+2,4038079403*log(d)+0,479410187*
+log(ht))*1000
+exp(-10,2342711188+2,4593429847*log(d)+0,4107891746*
+log(ht))*1000
+exp(-10,366838857+2,2457934972*log(d)+0,637840619*
+log(ht))*1000
+exp(-11,3710317049+2,433521972*log(d)+0,8433902218*
+log(ht))*1000
+exp(-12,2999911901+2,6961223975*log(d)+0,8094354054*
+log(ht))*1000
+0,0123307*d^1,79593*ht^1,54701
+
+Seco
+
+6,0
+
+27,0
+
+0,91
+
+-
+
+exp(-2,566+2,533*log(d))
+
+Salis et al. (2006)
+
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Scolforo et al. (2008)¹
+Miguel et al. (2017)
+
+¹ peso seco inclui apenas galhos >=3cm
+4
+mata seca
+5
+cerradão
+6
+cerrado sensu stricto
+7
+abrange mata de galeria, mata seca, cerrado sensu stricto e cerradão
+8
+abrange mata de galeria, mata Seca e cerradão
+
+22
+
+Savana Estépica (Caatinga)
+Savana Estépica (Caatinga)
+
+Espécie
+Anadenanthera colubrina
+(Vell.) Brenan
+Anadenanthera colubrina
+(Vell.) Brenan
+Anadenanthera colubrina
+(Vell.) Brenan
+Anadenanthera colubrina
+(Vell.) Brenan
+Anadenanthera colubrina
+(Vell.) Brenan
+Anadenanthera colubrina
+(Vell.) Brenan
+Anadenanthera colubrina
+(Vell.) Brenan
+Anadenanthera colubrina
+var. cebil (Griseb.) Altschul
+Aspidosperma pyrifolium
+Mart. & Zucc.
+Aspidosperma pyrifolium
+Mart. & Zucc.
+Aspidosperma pyrifolium
+Mart. & Zucc.
+Aspidosperma pyrifolium
+Mart. & Zucc.
+Aspidosperma pyrifolium
+Mart. & Zucc.
+Astronium urundeuva
+(M. Allemão) Engl.
+Bauhinia cheilantha
+(Bong.) Steud.
+Bauhinia cheilantha
+(Bong.) Steud.
+Bauhinia cheilantha
+(Bong.) Steud.
+Bauhinia cheilantha
+(Bong.) Steud.
+Bauhinia cheilantha
+(Bong.) Steud.
+Bauhinia cheilantha
+(Bong.) Steud.
+Bauhinia forficata Link
+
+Bioma
+Caatinga
+
+Estado
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Pantanal
+
+MS
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+CE
+
+Cenostigma bracteosum
+(Tul.) E. Gagnon & G.P. Lewis
+Cenostigma bracteosum
+(Tul.) E. Gagnon & G.P. Lewis
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Fresco
+
+d mín.
+3,0
+
+d máx.
+26,0
+
+R2/R2aj
+91,99
+
+Syx
+16,7%
+
+Equação
+54,92921*((1-exp(-0,178713*d))^2,490494)
+
+Autor
+Abreu et al. (2016)
+
+Fresco
+
+3,0
+
+26,0
+
+93,45
+
+15,1%
+
+51,63157/(1+16,05867*exp(-0,362138*d))
+
+Abreu et al. (2016)
+
+Seco
+
+1,9
+
+9,5
+
+0,89
+
+20,7%
+
+48,7255∗(1-exp(-0,1435∗d))^2,4096
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,86
+
+22,9%
+
+1,7527*(d^1,1265)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,86
+
+22,9%
+
+1,7531*(d^2)^0,5632
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,84
+
+24,8%
+
+1,4905*((d^2)*ht)^0,4069
+
+Dalla Lana et al. (2018)
+
+Seco
+
+6,0
+
+27,0
+
+0,97
+
+-
+
+-76,809+14,899*d
+
+Padilha (2011)
+
+Seco
+
+2,0
+
+50,0
+
+0,94
+
+-
+
+0,2482*(d^2,1628)
+
+Sampaio e Silva (2005)
+
+Seco
+
+1,9
+
+9,5
+
+0,74
+
+27,0%
+
+0,7271*(d^0,8176)*(ht^0,6229)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,71
+
+28,3%
+
+1,0110*(d^1,1361)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,71
+
+28,3%
+
+1,0109*(d^2)^0,5681
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,75
+
+26,6%
+
+0,7858*((d^2)*ht)^0,4550
+
+Dalla Lana et al. (2018)
+
+Seco
+
+2,0
+
+50,0
+
+0,85
+
+-
+
+0,3675*(d^1,8355)
+
+Sampaio e Silva (2005)
+
+Seco
+
+2,0
+
+50,0
+
+0,98
+
+-
+
+0,1397*(d^2,4659)
+
+Sampaio e Silva (2005)
+
+Seco
+
+1,9
+
+9,5
+
+0,97
+
+12,1%
+
+0,0699*(d^2,2115)*(ht^0,8155)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,94
+
+65,1%
+
+exp(-2,7776+2,1672*log(d)+0,9313*log(ht))
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,94
+
+64,4%
+
+exp(-2,8746+1,0523*log((d^2)*ht))
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,94
+
+17,9%
+
+0,1543*(d^2,4831)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,94
+
+17,9%
+
+0,1543*(d^2)^1,2416
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,97
+
+12,5%
+
+0,0568*((d^2)*ht)^1,0531
+
+Dalla Lana et al. (2018)
+
+Seco
+
+-
+
+-
+
+0,95
+
+-
+
+10^(-2,480+0,9270*log10(d^2*ht))
+
+Schacht et al. (1988)
+
+Seco
+
+1,9
+
+9,5
+
+0,83
+
+24,4%
+
+0,6221*(d^1,1061)*(ht^0,6840)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,85
+
+23,4%
+
+6,6205+0,0341*((d^2)*ht)
+
+Dalla Lana et al. (2018)
+
+23
+
+Savana Estépica (Caatinga)
+Espécie
+Cenostigma bracteosum
+(Tul.) E. Gagnon & G.P. Lewis
+Cenostigma bracteosum
+(Tul.) E. Gagnon & G.P. Lewis
+Cenostigma bracteosum
+(Tul.) E. Gagnon & G.P. Lewis
+Cenostigma pyramidale
+(Tul.) E. Gagnon & G.P. Lewis
+Cenostigma pyramidale
+(Tul.) E. Gagnon & G.P. Lewis
+Cenostigma pyramidale
+(Tul.) E. Gagnon & G.P. Lewis
+Cenostigma pyramidale
+(Tul.) E. Gagnon & G.P. Lewis
+Cereus jamacaru DC.
+
+Bioma
+Caatinga
+
+Estado
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+CE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Cnidoscolus quercifolius Pohl
+
+Caatinga
+
+PE
+
+Cnidoscolus quercifolius Pohl
+
+Caatinga
+
+PE
+
+Cnidoscolus quercifolius Pohl
+
+Caatinga
+
+PE
+
+Cnidoscolus quercifolius Pohl
+
+Caatinga
+
+PE
+
+Cnidoscolus quercifolius Pohl
+
+Caatinga
+
+PE
+
+Coccoloba guaranitica Hassler
+
+Pantanal
+
+MS
+
+Cordia oncocalyx Allemão
+
+Caatinga
+
+CE
+
+Croton heliotropiifolius Kunth
+
+Caatinga
+
+PE
+
+Croton heliotropiifolius Kunth
+
+Caatinga
+
+PE
+
+Croton heliotropiifolius Kunth
+
+Caatinga
+
+PE
+
+Croton heliotropiifolius Kunth
+
+Caatinga
+
+PE
+
+Croton heliotropiifolius Kunth
+
+Caatinga
+
+PE
+
+Croton hemiargyreus Müll.Arg.
+
+Caatinga
+
+CE
+
+Croton jacobinensis Baill.
+
+Caatinga
+
+PE
+
+Croton jacobinensis Baill.
+
+Caatinga
+
+PE
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+1,9
+
+d máx.
+9,5
+
+R2/R2aj
+0,75
+
+Syx
+30,1%
+
+Equação
+0,9765*(d^1,5126)
+
+Autor
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,75
+
+30,1%
+
+0,9767*(d^2)^0,7563
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,84
+
+24,1%
+
+0,6173*((d^2)*ht)^0,5957
+
+Dalla Lana et al. (2018)
+
+Seco
+
+-
+
+-
+
+0,99
+
+-
+
+0,0626*(d^2)*ht
+
+Schacht et al. (1988)
+
+Seco
+
+2,0
+
+50,0
+
+0,82
+
+-
+
+0,2365*(d^2,1928)
+
+Sampaio e Silva (2005)
+
+Seco
+
+2,0
+
+19,0
+
+0,68
+
+-
+
+0,3129*(d^1,8838)
+
+Sampaio et al. (2010)
+
+Seco
+
+2,0
+
+19,0
+
+0,69
+
+-
+
+0,0904*(d*(ht^1,3904))
+
+Sampaio et al. (2010)
+
+Seco
+
+2,0
+
+50,0
+
+0,70
+
+-
+
+0,0010*(d^3,2327)
+
+Sampaio e Silva (2005)
+
+Seco
+
+1,9
+
+9,5
+
+0,79
+
+27,2%
+
+3,9444+0,0186*((d^2)*ht)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,72
+
+17,5%
+
+exp(-0,6664+0,5237*log((d^2)*ht))
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,82
+
+25,5%
+
+0,6064*(d^1,4216)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,82
+
+25,5%
+
+0,6064*(d^2)^0,7108
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,82
+
+25,8%
+
+0,4896*((d^2)*ht)^0,5387
+
+Dalla Lana et al. (2018)
+
+Seco
+
+5,0
+
+24,0
+
+0,99
+
+-
+
+6,717*exp(d*0,139)
+
+Padilha (2011)
+
+Seco
+
+-
+
+-
+
+0,98
+
+-
+
+8,730+0,0414*((d^2)*ht)
+
+Schacht et al. (1988)
+
+Seco
+
+1,9
+
+9,5
+
+0,76
+
+19,0%
+
+0,1868*(d^1,2764)*(ht^0,9401)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,71
+
+31,8%
+
+exp(-1,6887+1,2224*log(d)+0,9761*log(ht))
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,76
+
+19,2%
+
+0,6522+0,0582*((d^2)*ht)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,70
+
+32,2%
+
+exp(-1,5518+0,7158*log((d^2)*ht))
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,76
+
+19,1%
+
+0,2219*((d^2)*ht)^0,7065
+
+Dalla Lana et al. (2018)
+
+Seco
+
+-
+
+-
+
+0,97
+
+-
+
+0,886+0,0484*((d^2)*ht)
+
+Schacht et al. (1988)
+
+Seco
+
+2,0
+
+50,0
+
+0,84
+
+-
+
+0,3569*(d^1,8565)
+
+Sampaio e Silva (2005)
+
+Seco
+
+2,0
+
+13,0
+
+0,62
+
+-
+
+0,4171*(d^1,5601)
+
+Sampaio et al. (2010)
+
+24
+
+Savana Estépica (Caatinga)
+Espécie
+Croton jacobinensis Baill.
+
+Bioma
+Caatinga
+
+Estado
+PE
+
+Dalbergia cearensis Ducke
+
+Caatinga
+
+CE
+
+Dalbergia cearensis Ducke
+
+Caatinga
+
+CE
+
+Dalbergia cearensis Ducke
+
+Caatinga
+
+CE
+
+Dalbergia cearensis Ducke
+
+Caatinga
+
+CE
+
+Dalbergia cearensis Ducke
+
+Caatinga
+
+CE
+
+Diplokeleba floribunda N.E.Br.
+
+Pantanal
+
+MS
+
+Jatropha mollissima
+(Pohl) Baill.
+Mimosa caesalpiniifolia Benth.
+
+Caatinga
+
+PE
+
+Caatinga
+
+CE
+
+Mimosa hostilis (Mart.) Benth.
+
+Caatinga
+
+PE
+
+Mimosa ophthalmocentra
+Mart. ex Benth.
+Mimosa ophthalmocentra
+Mart. ex Benth.
+Mimosa ophthalmocentra
+Mart. ex Benth.
+Mimosa ophthalmocentra
+Mart. ex Benth.
+Mimosa ophthalmocentra
+Mart. ex Benth.
+Mimosa ophthalmocentra
+Mart. ex Benth.
+Mimosa ophthalmocentra
+Mart. ex Benth.
+Mimosa tenuiflora (Willd.) Poir.
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Caatinga
+
+PE
+
+Mimosa tenuiflora (Willd.) Poir.
+
+Caatinga
+
+PE
+
+Mimosa tenuiflora (Willd.) Poir.
+
+Caatinga
+
+PE
+
+Mimosa tenuiflora (Willd.) Poir.
+
+Caatinga
+
+PE
+
+Mimosa tenuiflora (Willd.) Poir.
+
+Caatinga
+
+PE
+
+Mimosa tenuiflora (Willd.) Poir.
+
+Caatinga
+
+PE
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+2,0
+
+d máx.
+13,0
+
+R2/R2aj
+0,67
+
+Syx
+-
+
+Equação
+0,0867*(d*(ht^1,2852))
+
+Autor
+Sampaio et al. (2010)
+
+Seco
+
+5,0
+
+20,1
+
+0,67
+
+-
+
+exp(-3,710+1,878*log(d*ht))
+
+Nogueira et al. (2021)
+
+Seco
+
+5,0
+
+20,1
+
+0,66
+
+-
+
+exp(-4,135+1,713*log(d)+2,325*log(ht))
+
+Nogueira et al. (2021)
+
+Seco
+
+5,0
+
+20,1
+
+0,64
+
+-
+
+exp(-2,763+1,055*log(d^2*ht))
+
+Nogueira et al. (2021)
+
+Seco
+
+5,0
+
+20,1
+
+0,57
+
+-
+
+exp(-1,249+2,280*log(d))
+
+Nogueira et al. (2021)
+
+Seco
+
+5,0
+
+20,1
+
+0,42
+
+-
+
+exp(-3,676+4,252*log(ht))
+
+Nogueira et al. (2021)
+
+Seco
+
+7,0
+
+27,0
+
+0,98
+
+-
+
+0,306*(d^2,145)
+
+Padilha (2011)
+
+Seco
+
+2,0
+
+50,0
+
+0,83
+
+-
+
+0,1970*(d^1,8145)
+
+Sampaio e Silva (2005)
+
+Seco
+
+-
+
+-
+
+0,95
+
+-
+
+4,020+0,339*((d^2)*ht)
+
+Schacht et al. (1988)
+
+Seco
+
+2,0
+
+50,0
+
+0,96
+
+-
+
+0,3127*(d^2,1183)
+
+Sampaio e Silva (2005)
+
+Seco
+
+1,9
+
+9,5
+
+0,90
+
+19,8%
+
+6,0137*(d^1,7250)*(ht^-1,338)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,88
+
+9,0%
+
+exp(1,1118+1,7371*log(d)-0,9536*log(ht))
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,75
+
+32,0%
+
+43,6748∗(1-exp(-0,2103∗d))^2,9584
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,71
+
+34,2%
+
+2,2018*(d^1,1066)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,71
+
+34,2%
+
+2,2016*(d^2)^0,5533
+
+Dalla Lana et al. (2018)
+
+Seco
+
+2,0
+
+24,0
+
+0,81
+
+-
+
+0,4369*(d^1,8493)
+
+Sampaio et al. (2010)
+
+Seco
+
+2,0
+
+24,0
+
+0,73
+
+-
+
+0,0893*(d*(ht^1,4322))
+
+Sampaio et al. (2010)
+
+Seco
+
+1,9
+
+9,5
+
+0,89
+
+22,1%
+
+3,0407+0,0458*((d^2)*ht)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,92
+
+10,6%
+
+exp(-1,6100+0,7850*log((d^2)*ht))
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,94
+
+16,8%
+
+0,5084*(d^1,7121)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,94
+
+16,8%
+
+0,5084*(d^2)^0,8561
+
+Dalla Lana et al. (2018)
+
+Seco
+
+2,0
+
+34,0
+
+0,70
+
+-
+
+0,3344*(d^1,9648)
+
+Sampaio et al. (2010)
+
+Seco
+
+2,0
+
+34,0
+
+0,64
+
+-
+
+0,4138*(d^1,7718)
+
+Sampaio et al. (2010)
+
+25
+
+Savana Estépica (Caatinga)
+Espécie
+Mimosa tenuiflora (Willd.) Poir.
+
+Bioma
+Caatinga
+
+Estado
+PE
+
+Mimosa tenuiflora (Willd.) Poir.
+
+Caatinga
+
+PE
+
+Monteverdia rigida (Mart.) Biral
+
+Caatinga
+
+PE
+
+Phyllostylon rhamnoides
+(Poiss.) Taub.
+Schinopsis brasiliensis Engl.
+
+Pantanal
+
+MS
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Caatinga
+
+PE
+
+Várias
+
+Pantanal
+
+MS
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+2,0
+
+d máx.
+34,0
+
+R2/R2aj
+0,69
+
+Syx
+-
+
+Equação
+0,0710*(d*(ht^1,5120))
+
+Autor
+Sampaio et al. (2010)
+
+Seco
+
+2,0
+
+34,0
+
+0,66
+
+-
+
+0,0798*(d*(ht^1,4591))
+
+Sampaio et al. (2010)
+
+Seco
+
+2,0
+
+50,0
+
+0,95
+
+-
+
+0,3460*(d^2,0231)
+
+Sampaio e Silva (2005)
+
+Seco
+
+6,0
+
+28,0
+
+1,00
+
+-
+
+5,886*exp(d*0,127)
+
+Padilha (2011)
+
+Seco
+
+2,0
+
+50,0
+
+0,97
+
+-
+
+0,2274*(d^2,2710)
+
+Sampaio e Silva (2005)
+
+Seco
+
+1,9
+
+9,5
+
+0,74
+
+47,6%
+
+0,8905*(d^1,2189)*(ht^0,2333)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,85
+
+23,5%
+
+exp(-1,2884+1,6102*log(d)+0,4343*log(ht))
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,84
+
+23,7%
+
+exp(-1,4991+0,7290*log((d^2)*ht))
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,74
+
+47,1%
+
+55,8948*(1-exp(-0,1176*d))^2,2982
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,73
+
+48,1%
+
+0,9867*(d^1,3692)
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,73
+
+48,1%
+
+0,9867*(d^2)^0,6846
+
+Dalla Lana et al. (2018)
+
+Seco
+
+1,9
+
+9,5
+
+0,73
+
+48,4%
+
+0,8471*((d^2)*ht)^0,5034
+
+Dalla Lana et al. (2018)
+
+Seco
+
+2,0
+
+30,0
+
+0,95
+
+-
+
+0,0612*(d*ht)^1,5811
+
+Sampaio e Silva (2005)
+
+Seco
+
+2,0
+
+30,0
+
+0,92
+
+-
+
+0,1730*(d^2,2950)
+
+Sampaio e Silva (2005)
+
+Seco
+
+2,0
+
+30,0
+
+0,82
+
+-
+
+0,2627*(d^1,9010)
+
+Sampaio e Silva (2005)
+
+Seco
+
+2,0
+
+30,0
+
+0,95
+
+-
+
+0,2368*(d^2,2219)
+
+Sampaio e Silva (2005)¹
+
+Seco
+
+6,0
+
+25,0
+
+0,98
+
+-
+
+0,188*(d^2,266)
+
+Padilha (2011)²
+
+¹ espécies pequenas
+² espécies grandes
+
+26
+
+Outros: Ecótono, Formação pioneira etc.
+Outros: Ecótono, Formação pioneira etc.
+
+Espécie
+Attalea phalerata
+Mart. ex Spreng.
+Avicennia schaueriana
+Stapf & Leechm. ex Moldenke
+Avicennia schaueriana
+Stapf & Leechm. ex Moldenke
+Euterpe precatoria Mart.
+
+Bioma
+Outro
+
+Estado
+Outro
+
+Mata Atlântica
+
+PE
+
+Mata Atlântica
+
+PE
+
+Outro
+
+Outro
+
+Iriartea deltoidea Ruiz & Pav.
+
+Outro
+
+Outro
+
+Laguncularia racemosa
+(L.) C.F.Gaertn.
+Laguncularia racemosa
+(L.) C.F.Gaertn.
+Mauritia flexuosa L.f.
+Mauritia flexuosa L.f.
+
+Mata Atlântica
+
+PE
+
+Mata Atlântica
+
+PE
+
+Outro
+Outro
+
+Outro
+Outro
+
+Mauritiella aculeata
+(Kunth) Burret
+Oenocarpus bataua Mart.
+
+Outro
+
+Outro
+
+Outro
+
+Outro
+
+Palmeiras (várias)
+
+Outro
+
+Outro
+
+Rhizophora mangle L.
+
+Mata Atlântica
+
+PE
+
+Rhizophora mangle L.
+
+Mata Atlântica
+
+PE
+
+Socratea exorrhiza
+(Mart.) H.Wendl.
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+
+Outro
+
+Outro
+
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+
+AM
+AM
+AM
+AM
+AM
+AM
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Abaixo (raízes)
+Acima
+(tronco+galhos+folhas)
+Abaixo (raízes)
+
+Peso
+Seco
+
+d mín.
+17,0
+
+d máx.
+50,0
+
+R2/R2aj
+0,86
+
+Syx
+-
+
+Equação
+exp(3,2579+1,1249*log(hf+1))
+
+Autor
+Goodman et al. (2013)
+
+Seco
+
+3,4
+
+10,2
+
+0,78
+
+-
+
+0,2309*(d^2,0685)
+
+Medeiros e Sampaio (2008)
+
+Seco
+
+3,4
+
+10,2
+
+0,84
+
+-
+
+0,1327*((d^2)*ht)^0,8298
+
+Medeiros e Sampaio (2008)
+
+Seco
+
+12,0
+
+19,0
+
+0,97
+
+-
+
+-108,81+13,589*hf
+
+Goodman et al. (2013)
+
+Seco
+
+6,0
+
+33,0
+
+0,97
+
+-
+
+exp(-3,483+0,94371*log((d^2)*hf))
+
+Goodman et al. (2013)
+
+Seco
+
+2,1
+
+17,8
+
+0,96
+
+-
+
+0,1442*(d^2,325)
+
+Medeiros e Sampaio (2008)
+
+Seco
+
+2,1
+
+17,8
+
+0,97
+
+-
+
+0,1214*((d^2)*ht)^0,8615
+
+Medeiros e Sampaio (2008)
+
+Seco
+Seco
+
+19,0
+19,0
+
+36,0
+36,0
+
+0,93
+0,90
+
+-
+
+exp(-0,3688+2,0106*log(hf))
+exp(2,4647+1,3777*log(hf))
+
+Goodman et al. (2013)
+Goodman et al. (2013)
+
+Seco
+
+8,0
+
+15,0
+
+0,95
+
+-
+
+exp(1,0945+0,11086*hf)
+
+Goodman et al. (2013)
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Seco
+
+21,0
+
+41,0
+
+0,78
+
+-
+
+exp(4,5496+0,1387*hf)
+
+Goodman et al. (2013)
+
+Seco
+
+-
+
+-
+
+0,89
+
+-
+
+exp(-6,3789-0,877*log(1/d^2)+2,151*log(ht))
+
+Saldarriaga et al. (1988)¹
+
+Seco
+
+2,5
+
+20,7
+
+0,92
+
+-
+
+0,2938*(d^2,384)
+
+Medeiros e Sampaio (2008)
+
+Seco
+
+2,5
+
+20,7
+
+0,94
+
+-
+
+0,2752*((d^2)*ht)^0,8529
+
+Medeiros e Sampaio (2008)
+
+Seco
+
+4,0
+
+24,0
+
+0,98
+
+-
+
+exp(-3,7965+1,0029*log((d^2)*hf))
+
+Goodman et al. (2013)
+
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+
+138,0
+138,0
+138,0
+138,0
+138,0
+138,0
+138,0
+
+0,89
+0,90
+0,90
+0,74
+0,73
+0,73
+0,94
+
+15,2%
+13,7%
+12,7%
+11,0%
+11,0%
+11,1%
+8,4%
+
+exp(-3,881+2,406*log(d))
+exp(-4,494+2,119*log(d)+0,499*log(ht))
+exp(3,572+0,929*log((d/100)^2*ht))
+0,320*(d^1,636)
+0,320*(d^1,636)*(ht^0,000)
+50,60*((d/100)^2*ht)^0,690
+exp(-2,025+2,459*log(d))
+
+Lima et al. (2012)
+Lima et al. (2012)
+Lima et al. (2012)
+Lima et al. (2012)
+Lima et al. (2012)
+Lima et al. (2012)
+Lima et al. (2012)
+
+Seco
+
+5,0
+
+138,0
+
+0,96
+
+6,6%
+
+exp(-3,372+1,830*log(d)+1,097*log(ht))
+
+Lima et al. (2012)
+
+Seco
+
+5,0
+
+138,0
+
+0,96
+
+6,6%
+
+exp(5,604+0,957*log((d/100)^2*ht))
+
+Lima et al. (2012)
+
+Seco
+
+5,0
+
+138,0
+
+0,93
+
+5,6%
+
+0,488*(d^2,083)
+
+Lima et al. (2012)
+
+¹ florestas tropicais úmidas
+
+27
+
+Outros: Ecótono, Formação pioneira etc.
+Espécie
+Várias
+
+Bioma
+Amazônia
+
+Estado
+AM
+
+Várias
+
+Amazônia
+
+AM
+
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+Várias
+
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Cerrado
+
+AM
+AM
+AM
+AM
+AM
+AM
+SP
+
+Várias
+
+Cerrado
+
+SP
+
+Várias
+
+Mata Atlântica
+
+PE
+
+Várias
+
+Mata Atlântica
+
+PE
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+5,0
+
+d máx.
+138,0
+
+R2/R2aj
+0,93
+
+Syx
+5,6%
+
+Equação
+0,488*(d^2,083)*(ht^0,000)
+
+Autor
+Lima et al. (2012)
+
+Seco
+
+5,0
+
+138,0
+
+0,92
+
+6,2%
+
+316,7*((d/100)^2*ht)^0,861
+
+Lima et al. (2012)
+
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+5,0
+5,0
+5,0
+5,0
+5,0
+5,0
+2,5
+
+138,0
+138,0
+138,0
+138,0
+138,0
+138,0
+25,0
+
+0,95
+0,96
+0,96
+0,92
+0,92
+0,91
+0,77
+
+8,9%
+6,9%
+7,0%
+5,9%
+5,9%
+6,3%
+-
+
+exp(-1,868+2,452*log(d))
+exp(-3,106+1,874*log(d)+1,008*log(ht))
+exp(5,739+0,954*log((d/100)^2*ht))
+0,700*(d^2,018)
+0,700*(d^2,018)*(ht^0,000)
+369,01*((d/100)^2*ht)^0,838
+207,11*exp(0,977*ht)/1000
+
+Lima et al. (2012)
+Lima et al. (2012)
+Lima et al. (2012)
+Lima et al. (2012)
+Lima et al. (2012)
+Lima et al. (2012)
+Delitti et al. (2006)²
+
+Seco
+
+2,5
+
+25,0
+
+0,88
+
+-
+
+32,86*d^2,47/1000
+
+Delitti et al. (2006)²
+
+Seco
+
+2,1
+
+20,7
+
+0,89
+
+-
+
+0,1346*(d^2,525)
+
+Medeiros e Sampaio (2008)
+
+Seco
+
+2,1
+
+20,7
+
+0,90
+
+-
+
+0,1129*((d^2)*ht)^0,9241
+
+Medeiros e Sampaio (2008)
+
+Fresco
+
+5,0
+
+148,0
+
+0,84
+
+-
+
+42,69-12,800*d+1,242*(d^2)
+
+Brown (1997)
+
+Fresco
+
+5,0
+
+148,0
+
+0,97
+
+-
+
+exp(-2,134+2,530*log(d))
+
+Brown (1997)
+
+Fresco
+
+10,0
+
+-
+
+0,83
+
+-
+
+38,49-11,788*d+1,193*(d^2)
+
+Brown e Iverson (1992)
+
+Fresco
+
+10,0
+
+-
+
+0,83
+
+-
+
+1,276+0,034*((d^2)*ht)
+
+Brown e Iverson (1992)
+
+Fresco
+
+5,0
+
+130,0
+
+0,78
+
+-
+
+38,4703-11,7883*d+1,1926*(d^2)
+
+Brown et al. (1989)³
+
+Fresco
+
+5,0
+
+130,0
+
+0,97
+
+-
+
+exp(-2,4090+0,9522*log((d^2)*ht))
+
+Brown et al. (1989)³
+
+Seco
+
+6,0
+
+40,0
+
+0,80
+
+-
+
+exp(-3,3488+2,7483*log(d))
+
+Goodman et al. (2013)
+
+Seco
+
+6,0
+
+200,0
+
+0,99
+
+-
+
+exp(-1,232+2,178*log(d))
+
+Basuki et al. (2009)4
+
+Seco
+
+6,0
+
+200,0
+
+0,99
+
+-
+
+exp(-1,813+2,339*log(d))
+
+Basuki et al. (2009)4
+
+Seco
+
+6,0
+
+200,0
+
+0,98
+
+-
+
+exp(-1,098+2,142*log(d))
+
+Basuki et al. (2009)4
+
+Seco
+
+6,0
+
+200,0
+
+0,98
+
+-
+
+exp(-2,193+2,371*log(d))
+
+Basuki et al. (2009)4
+
+Seco
+
+6,0
+
+200,0
+
+0,98
+
+-
+
+exp(-1,498+2,234*log(d))
+
+Basuki et al. (2009)4
+
+² altura do diâmetro não foi informada
+³ florestas tropicais
+4
+florestas tropicais úmidas de terras-baixas – dipterocarpus
+
+28
+
+Outros: Ecótono, Formação pioneira etc.
+Espécie
+Várias
+
+Bioma
+Outro
+
+Estado
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+6,0
+
+d máx.
+200,0
+
+R2/R2aj
+0,96
+
+Syx
+-
+
+Equação
+exp(-1,201+2,196*log(d))
+
+Autor
+Basuki et al. (2009)4
+
+Seco
+
+5,0
+
+40,0
+
+0,89
+
+-
+
+exp(-1,996+2,32*log(d))
+
+Brown (1997)
+
+Seco
+
+4,0
+
+112,0
+
+0,92
+
+-
+
+21,297-6,953*d+0,740*(d^2)
+
+Brown (1997)
+
+Seco
+
+10,0
+
+-
+
+0,67
+
+-
+
+34,47-8,068*d+0,659*(d^2)
+
+Brown e Iverson (1992)
+
+Seco
+
+10,0
+
+-
+
+0,97
+
+-
+
+exp(-3,375+0,948*log(d^2*ht))
+
+Brown e Iverson (1992)
+
+Seco
+
+10,0
+
+-
+
+0,92
+
+-
+
+21,297022-6,952649*(d)+0,7403*(d^2)
+
+Brown e Iverson (1992)
+
+Seco
+
+5,0
+
+40,0
+
+0,67
+
+-
+
+34,4703-8,0671*d+0,6589*(d^2)
+
+Brown et al. (1989)³
+
+Seco
+
+5,0
+
+130,0
+
+0,90
+
+-
+
+13,2579-4,8945*(d)+0,6713*(d^2)
+
+Brown et al. (1989)³
+
+Seco
+
+5,0
+
+130,0
+
+0,90
+
+-
+
+exp(-3,3012+0,9439*log((d^2)*ht))
+
+Brown et al. (1989)³
+
+Seco
+
+10,0
+
+140,0
+
+0,97
+
+-
+
+exp(-2,00+2,42*log(d))
+
+Chave et al. (2001)
+
+Seco
+
+1,0
+
+10,0
+
+0,91
+
+-
+
+exp(-1,8967+2,1135*log(d))
+
+Djomo et al. (2010)5
+
+Seco
+
+1,0
+
+79,0
+
+0,96
+
+-
+
+exp(-2,1079+2,3278*log(d))
+
+Djomo et al. (2010)5
+
+Seco
+
+1,0
+
+79,0
+
+0,96
+
+-
+
+exp(-3,0788+0,9066*log((d^2)*ht))
+
+Djomo et al. (2010)5
+
+Seco
+
+4,9
+
+87,7
+
+0,93
+
+38,7%
+
+0,10419*d^2,491453
+
+Huy et al. (2016)6
+
+Seco
+
+4,9
+
+87,7
+
+0,89
+
+35,8%
+
+25,15789-7,717925*d+0,82106*(d^2)
+
+Huy et al. (2016)6
+
+Seco
+
+4,9
+
+87,7
+
+0,93
+
+37,1%
+
+Huy et al. (2016)6
+
+Seco
+
+4,9
+
+87,7
+
+0,95
+
+31,6%
+
+15,901674,926814*d+0,59812*(d^2)+0,00409*(d^3)
+266,858*((d/100)^2*ht)^0,972330
+
+Seco
+
+4,9
+
+87,7
+
+0,94
+
+32,7%
+
+0,05054*(d^2,126979)*(ht^0,64600)
+
+Huy et al. (2016)6
+
+Seco
+
+1,0
+
+44,1
+
+0,99
+
+-
+
+0,1525*(d^2,34)
+
+Kenzo et al. (2009)7
+
+Seco
+
+2,0
+
+44,2
+
+0,99
+
+-
+
+0,1083*(((d^2)*ht)^0,80)
+
+Kenzo et al. (2009)7
+
+Seco
+
+3,0
+
+44,3
+
+0,97
+
+-
+
+0,0558*(ht^2,53)
+
+Kenzo et al. (2009)7
+
+Huy et al. (2016)6
+
+³ florestas tropicais
+4
+florestas tropicais úmidas de terras-baixas – dipterocarpus
+5
+florestas tropicais úmidas de terras-baixas
+6
+florestas decíduas de folhosas
+7
+floresta tropical
+
+29
+
+Outros: Ecótono, Formação pioneira etc.
+Espécie
+Várias
+
+Bioma
+Outro
+
+Estado
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Várias
+
+Outro
+
+Outro
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+7,6
+
+d máx.
+48,1
+
+R2/R2aj
+0,95
+
+Syx
+-
+
+Equação
+0,066*(d^2,59)
+
+Autor
+Ketterings et al. (2001)
+
+Seco
+
+3,8
+
+57,5
+
+0,99
+
+-
+
+10^(-1,247+2,663*log10(d))
+
+Martin et al. (1998)
+
+Seco
+
+8,1
+
+100,0
+
+0,90
+
+39,4%
+
+0,465*(d^2,202)
+
+Overman et al. (1994)8
+
+Seco
+
+8,1
+
+100,0
+
+0,94
+
+62,8%
+
+1,120*(d^2)
+
+Overman et al. (1994)8
+
+Seco
+
+8,1
+
+100,0
+
+0,97
+
+25,6%
+
+exp(-1,966+1,242*log(d^2))
+
+Overman et al. (1994)8
+
+Seco
+
+8,1
+
+100,0
+
+0,97
+
+24,3%
+
+exp(-3,843+1,035*log(d^2*ht))
+
+Overman et al. (1994)8
+
+Seco
+
+8,1
+
+45,0
+
+0,81
+
+42,8%
+
+0,749*(d^2,011)
+
+Overman et al. (1994)8
+
+Seco
+
+8,1
+
+45,0
+
+0,93
+
+43,5%
+
+0,780*(d^2)
+
+Overman et al. (1994)8
+
+Seco
+
+8,1
+
+45,0
+
+0,93
+
+27,5%
+
+exp(-2,059+1,1256*log(d^2))
+
+Overman et al. (1994)8
+
+Seco
+
+8,1
+
+45,0
+
+0,94
+
+26,3%
+
+exp(-3,555+1,002*log(d^2*ht))
+
+Overman et al. (1994)8
+
+Seco
+
+-
+
+-
+
+0,57
+
+43,7%
+
+-0,060+0,227*(d^2)+0,002*ht
+
+Sah et al. (2004)
+
+Seco
+
+1,0
+
+5,0
+
+0,93
+
+-
+
+-0,292+0,369*d-0,087*ht
+
+Saldarriaga et al. (1988)¹
+
+Seco
+
+60,0
+
+105,0
+
+0,71
+
+21,0%
+
+exp(0,76+0,00015*d^2)*1000
+
+Segura e Kanninen (2005)¹
+
+Seco
+
+60,0
+
+105,0
+
+0,71
+
+21,2%
+
+exp(-7,27+2,07*log(d))*1000
+
+Segura e Kanninen (2005)¹
+
+Seco
+
+60,0
+
+105,0
+
+0,66
+
+158,0%
+
+(-7,45+0,17*d)*1000
+
+Segura e Kanninen (2005)¹
+
+Seco
+
+60,0
+
+105,0
+
+0,64
+
+162,2%
+
+(-54,13+13,86*log(d))*1000
+
+Segura e Kanninen (2005)¹
+
+Seco
+
+60,0
+
+105,0
+
+0,87
+
+14,0%
+
+Segura e Kanninen (2005)¹
+
+Seco
+
+4,5
+
+105,0
+
+0,99
+
+-
+
+exp(6,93+1,86*log(d)+0,0045*log(d)*ht)*1000
+2,903*10^-2*((d^2)*ht)^0,9813
+
+Yamakura et al. (1986)5
+
+¹ florestas tropicais úmidas
+5
+florestas tropicais úmidas de terras-baixas
+8
+florestas ombrófila madura
+
+30
+
+FLORESTAS NATURAIS
+(Equações a nível de povoamento)
+
+31
+
+Campinarana, Florestas Estacional e Ombrófila,
+e Savana
+Campinarana, Florestas Estacional e Ombrófila, e Savana
+
+Tipologia
+Campinarana
+Floresta estacional
+
+Bioma
+Estado Compartimento
+Amazônia
+RR
+Acima (tronco+galhos+folhas)
+Amazônia e
+Vários
+Acima (tronco+galhos+folhas)
+Mata Atlântica
+Floresta ombrófila
+Amazônia e
+Vários
+Acima (tronco+galhos+folhas)
+Mata Atlântica
+Savana
+Cerrado
+Vários
+Acima (tronco+galhos+folhas)
+¹ d - diâmetro na altura do solo; BA - área basal na altura do solo
+
+Peso
+Seco
+Seco
+
+d mín.
+1,5
+5,0
+
+d máx.
+10,0
+80,0
+
+R2/R2aj
+-
+
+Syx
+-
+
+Equação
+exp(+2,54009 + 1,27946*ln(BA) - 0,26904*ln(N))
+exp(+2,35855 + 1,18178*ln(BA) - 0,18365*ln(N))
+
+Autor
+David et al. (2022)1
+David et al. (2022)
+
+Seco
+
+5,0
+
+138,0
+
+-
+
+-
+
+exp(+2,48782 + 1,18620*ln(BA) - 0,16660*ln(N))
+
+David et al. (2022)
+
+Seco
+
+1,4
+
+31,3
+
+-
+
+-
+
+exp(+3,02331 + 1,44062*ln(BA) - 0,42550*ln(N))
+
+David et al. (2022)
+
+32
+
+FLORESTAS PLANTADAS
+(Equações a nível de árvore individual)
+
+33
+
+Espécies exóticas
+Espécies exóticas
+
+Espécie
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mangium Willd.
+
+Bioma
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+
+Estado
+RR
+RR
+RR
+RR
+RR
+RR
+RR
+
+Acacia mangium Willd.
+
+Amazônia
+
+RR
+
+Acacia mangium Willd.
+
+Amazônia
+
+RR
+
+Acacia mangium Willd.
+
+Amazônia
+
+RR
+
+Acacia mangium Willd.
+
+Amazônia
+
+RR
+
+Acacia mangium Willd.
+
+Amazônia
+
+RR
+
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mangium Willd.
+Acacia mearnsii De Wild.
+Acacia mearnsii De Wild.
+Acacia mearnsii De Wild.
+
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Pampa
+Pampa
+Pampa
+
+RR
+RR
+RR
+RR
+RR
+RR
+RS
+RS
+RS
+
+Acacia mearnsii De Wild.
+
+Pampa
+
+RS
+
+Acacia mearnsii De Wild.
+Bambusa oldhamii Munro
+
+Pampa
+Mata Atlântica
+
+RS
+SP
+
+Bambusa oldhamii Munro
+
+Mata Atlântica
+
+SP
+
+Bambusa oldhamii Munro
+
+Mata Atlântica
+
+SP
+
+Bambusa oldhamii Munro
+
+Mata Atlântica
+
+SP
+
+Bambusa oldhamii Munro
+
+Mata Atlântica
+
+SP
+
+Bambusa oldhamii Munro
+
+Mata Atlântica
+
+SP
+
+Compartimento
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Abaixo (raízes)
+Abaixo (raízes)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Total (abaixo+acima)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+
+d mín.
+8,0
+8,0
+8,0
+8,0
+8,0
+8,0
+8,0
+
+d máx.
+30,0
+30,0
+30,0
+30,0
+30,0
+30,0
+30,0
+
+R2/R2aj
+0,91
+0,91
+0,91
+0,91
+0,85
+0,86
+0,96
+
+Syx
+2,9%
+3,0%
+3,0%
+2,9%
+3,7%
+3,7%
+1,8%
+
+Equação
+0,045404*(d^2,388124)
+-6,40565-0,44868*(d^2)
+-6,40565-0,44868*d+0,18296*(d^2)
+0,048504*(d^2,464056)*(hf^-0,11171)
+7,312124+0,00858*((d^2)*hf)
+0,034423*(((d^2)*hf)^0,860268)
+0,365953*(d^2,322782)
+
+Autor
+Gomes (2017)¹
+Gomes (2017)¹
+Gomes (2017)¹
+Gomes (2017)¹
+Gomes (2017)¹
+Gomes (2017)¹
+Gomes (2017)
+
+Fresco
+
+8,0
+
+30,0
+
+0,96
+
+1,9%
+
+-50,9254+1,127341*(d^2)
+
+Gomes (2017)
+
+Fresco
+
+8,0
+
+30,0
+
+0,96
+
+1,8%
+
+106,2327-17,5133*d+1,565445*(d^2)
+
+Gomes (2017)
+
+Fresco
+
+8,0
+
+30,0
+
+0,96
+
+1,8%
+
+0,356584*(d^2,293789)*(hf^0,042882)
+
+Gomes (2017)
+
+Fresco
+
+8,0
+
+30,0
+
+0,92
+
+2,5%
+
+55,75248+0,055382*((d^2)*hf)
+
+Gomes (2017)
+
+Fresco
+
+8,0
+
+30,0
+
+0,92
+
+2,6%
+
+0,262875*(((d^2)*hf)^0,843795)
+
+Gomes (2017)
+
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Seco
+Seco
+Seco
+
+8,0
+8,0
+8,0
+8,0
+8,0
+8,0
+5,1
+3,6
+5,1
+
+30,0
+30,0
+30,0
+30,0
+30,0
+30,0
+26,0
+19,6
+26,0
+
+0,96
+0,96
+0,96
+0,97
+0,92
+0,92
+0,93
+0,97
+0,99
+
+1,7%
+1,8%
+1,7%
+1,7%
+2,6%
+2,6%
+25,9%
+18,0%
+10,7%
+
+0,4103*(d^2,3315)
+-60,7206+1,3039*(d^2)
+120,9697-20,9697*d+1,8104*(d^2)
+0,4049*(d^2,3166)*(hf^0,0221)
+63,0646+0,0640*((d^2)*hf)
+0,2968*(((d^2)*hf)^0,8460)
+exp(-2,796042+2,085428*log(d))
+10^(-2,2681+2,282014*log10(d))
+exp(-1,575087+2,388265*log(d))
+
+Gomes (2017)
+Gomes (2017)
+Gomes (2017)
+Gomes (2017)
+Gomes (2017)
+Gomes (2017)
+Barichello et al. (2005)
+Caldeira et al. (2011)
+Barichello et al. (2005)
+
+Seco
+
+-
+
+-
+
+0,95
+
+-
+
+exp(-4,6341+1,9310*log(d)+1,4545*log(ht))
+
+Behling et al. (2012)
+
+Seco
+Seco
+
+3,6
+5,6
+
+19,6
+10,3
+
+0,99
+0,50
+
+3,4%
+21,8%
+
+10^(-1,2874+2,80262*log10(d))
+-11,3316+1,7578*ht
+
+Caldeira et al. (2011)
+Sanquetta et al. (2015a)
+
+Seco
+
+5,6
+
+10,3
+
+0,78
+
+14,6%
+
+-13,4200+3,9572*d
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,6
+
+10,3
+
+0,78
+
+14,7%
+
+6,1342+0,0109*((d^2)*ht)
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,6
+
+10,3
+
+0,77
+
+14,8%
+
+-15,2078+3,4891*d+0,3369*ht
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,6
+
+10,3
+
+0,76
+
+23,6%
+
+exp(-0,9677+1,8521*log(d))
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,6
+
+10,3
+
+0,77
+
+14,7%
+
+-14,3187+6,0518*sqrt(d)*log(d)
+
+Sanquetta et al. (2015a)
+
+¹ apenas as raízes grossas com diâmetro ≥ 2 mm
+
+34
+
+Espécies exóticas
+Espécie
+Bambusa oldhamii Munro
+
+Bioma
+Mata Atlântica
+
+Estado
+SP
+
+Bambusa vulgaris
+Schrad. ex J.C.Wendl.
+Bambusa vulgaris
+Schrad. ex J.C.Wendl.
+Bambusa vulgaris
+Schrad. ex J.C.Wendl.
+Bambusa vulgaris
+Schrad. ex J.C.Wendl.
+Bambusa vulgaris
+Schrad. ex J.C.Wendl.
+Bambusa vulgaris
+Schrad. ex J.C.Wendl.
+Bambusa vulgaris
+Schrad. ex J.C.Wendl.
+Cryptomeria japonica
+(Thunb. Ex L.f.) D.Don
+Cryptomeria japonica
+(Thunb. Ex L.f.) D.Don
+Cryptomeria japonica
+(Thunb. Ex L.f.) D.Don
+Eucalyptus camaldulensis
+Dehnh.
+Eucalyptus camaldulensis
+Dehnh.
+
+Mata Atlântica
+
+SP
+
+Mata Atlântica
+
+SP
+
+Mata Atlântica
+
+SP
+
+Mata Atlântica
+
+SP
+
+Mata Atlântica
+
+SP
+
+Mata Atlântica
+
+SP
+
+Mata Atlântica
+
+SP
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Mata Atlântica
+
+PR
+
+Cerrado
+
+MG
+
+Cerrado
+
+MG
+
+Eucalyptus grandis W.Hill
+
+Cerrado
+
+MG
+
+Eucalyptus grandis W.Hill
+
+Cerrado
+
+MG
+
+Pinus caribaea var. hondurensis
+(Sénécl.) W. H. Barrett & Golfari
+Pinus caribaea var. hondurensis
+(Sénécl.) W. H. Barrett & Golfari
+Pinus caribaea var. hondurensis
+(Sénécl.) W. H. Barrett & Golfari
+Pinus caribaea var. hondurensis
+(Sénécl.) W. H. Barrett & Golfari
+Pinus caribaea var. hondurensis
+(Sénécl.) W. H. Barrett & Golfari
+Pinus caribaea var. hondurensis
+(Sénécl.) W. H. Barrett & Golfari
+Pinus caribaea var. hondurensis
+(Sénécl.) W. H. Barrett & Golfari
+
+Mata Atlântica
+
+BA
+
+Mata Atlântica
+
+BA
+
+Mata Atlântica
+
+BA
+
+Mata Atlântica
+
+BA
+
+Mata Atlântica
+
+BA
+
+Mata Atlântica
+
+BA
+
+Mata Atlântica
+
+BA
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Peso
+Seco
+
+d mín.
+5,6
+
+d máx.
+10,3
+
+R2/R2aj
+0,44
+
+Syx
+23,1%
+
+Equação
+-14,3187+(6,0518*(d^0,5))*log(d)
+
+Autor
+Sanquetta et al. (2015a)
+
+Seco
+
+5,7
+
+10,0
+
+0,48
+
+24,0%
+
+-8,4429+1,8657*ht
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,7
+
+10,0
+
+0,73
+
+17,4%
+
+-21,7880+5,1622*d
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,7
+
+10,0
+
+0,76
+
+16,5%
+
+4,9887+0,0144*((d^2)*ht)
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,7
+
+10,0
+
+0,74
+
+17,1%
+
+-23,0656+4,2613*d+0,5638*ht
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,7
+
+10,0
+
+0,71
+
+23,6%
+
+exp(-1,6425+2,2003*log(d))
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,7
+
+10,0
+
+0,74
+
+17,0%
+
+exp(-2,0124+0,7204*log((d^2)*ht))
+
+Sanquetta et al. (2015a)
+
+Seco
+
+5,7
+
+10,0
+
+0,72
+
+17,5%
+
+-22,3139+7,1274*(d^0,5)*log(d)
+
+Sanquetta et al. (2015a)
+
+Seco
+
+14,7
+
+35,4
+
+0,93
+
+14,7%
+
+-337,67366+24,02437*d
+
+Coutinho et al. (2017)
+
+Seco
+
+14,7
+
+35,4
+
+0,94
+
+13,5%
+
+-408,53074+20,99843*d+6,61730*ht
+
+Coutinho et al. (2017)
+
+Seco
+
+14,7
+
+35,4
+
+0,96
+
+11,1%
+
+5,81707+0,01679*d^2*ht
+
+Coutinho et al. (2017)
+
+Seco
+
+5,0
+
+20,0
+
+0,97
+
+14,2%
+
+exp(-9,609445+2,63942*log(d))
+
+Franco (1996)
+
+Seco
+
+5,0
+
+20,0
+
+0,97
+
+11,5%
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Seco
+
+10,0
+
+18,7
+
+-
+
+6,8%
+
+0,002222Franco (1996)
+0,000062*(d^2)+0,00002*(d^2*ht)+0,000001405*(d*
+ht^2)
+0,0192*(d^1,8766)*(ht^1,0980)
+Ribeiro et al. (2015)
+
+Seco
+
+10,0
+
+18,7
+
+-
+
+6,7%
+
+0,0249*(((d^2)*ht)^0,9679)
+
+Ribeiro et al. (2015)
+
+Seco
+
+5,8
+
+23,8
+
+87,44
+
+29,4%
+
+exp(-2,47+2,51*log(d))
+
+Lima et al. (2016)
+
+Seco
+
+5,8
+
+23,8
+
+88,88
+
+31,3%
+
+exp(5,87-24,05*1/d)
+
+Lima et al. (2016)
+
+Seco
+
+5,8
+
+23,8
+
+80,50
+
+28,9%
+
+11,90-2,85*d+0,47*(d^2)
+
+Lima et al. (2016)
+
+Seco
+
+5,8
+
+23,8
+
+76,34
+
+30,9%
+
+-49,17+8,31*d
+
+Lima et al. (2016)
+
+Seco
+
+5,8
+
+23,8
+
+84,42
+
+25,6%
+
+5,19+0,03*((d^2)*ht)
+
+Lima et al. (2016)
+
+Seco
+
+5,8
+
+23,8
+
+86,94
+
+26,6%
+
+-17,36+0,09*(d^2)+0,02*((d^2)*ht)+2,37*ht
+
+Lima et al. (2016)
+
+Seco
+
+5,8
+
+23,8
+
+90,46
+
+27,5%
+
+exp(-4,02 +1,83*log(d)+1,36*log(ht))
+
+Lima et al. (2016)
+
+35
+
+Espécies exóticas
+Espécie
+Pinus caribaea var. hondurensis
+(Sénécl.) W. H. Barrett & Golfari
+Pinus caribaea var. hondurensis
+(Sénécl.) W. H. Barrett & Golfari
+Pinus spp.
+Pinus spp.
+Pinus spp.
+Pinus spp.
+Pinus spp.
+Pinus spp.
+Pinus spp.
+Pinus spp.
+Pinus taeda L.
+Pinus taeda L.
+Pinus taeda L.
+Pinus taeda L.
+Pinus taeda L.
+Pinus taeda L.
+Pinus taeda L.
+Pinus taeda L.
+
+Bioma
+Mata Atlântica
+
+Estado
+BA
+
+Mata Atlântica
+
+BA
+
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+Mata Atlântica
+
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+PR
+RS
+RS
+
+Pinus taeda L.
+Platanus x acerifolia
+Platanus x acerifolia
+Syzygium cumini (L.) Skeels
+Syzygium cumini (L.) Skeels
+Syzygium cumini (L.) Skeels
+Syzygium cumini (L.) Skeels
+Syzygium cumini (L.) Skeels
+Syzygium cumini (L.) Skeels
+Syzygium cumini (L.) Skeels
+Syzygium cumini (L.) Skeels
+
+Mata Atlântica
+Pampa
+Pampa
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+
+RS
+RS
+RS
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Abaixo (raízes)
+Acima
+(tronco+galhos+folhas)
+Total (abaixo+acima)
+Abaixo (raízes)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+
+Peso
+Seco
+
+d mín.
+5,8
+
+d máx.
+23,8
+
+R2/R2aj
+74,47
+
+Syx
+32,0%
+
+Equação
+-55,88+12,50*(d^0,5)*log(d)
+
+Autor
+Lima et al. (2016)
+
+Seco
+
+5,8
+
+23,8
+
+91,28
+
+26,4%
+
+Lima et al. (2016)
+
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Fresco
+Seco
+Seco
+
+3,6
+3,6
+3,6
+3,6
+3,6
+3,6
+3,6
+3,6
+18,1
+18,1
+
+35,9
+35,9
+35,9
+35,9
+35,9
+35,9
+35,9
+35,9
+50,8
+50,8
+
+0,82
+0,82
+0,82
+0,83
+0,96
+0,97
+0,97
+0,84
+43,64
+49,85
+33,54
+43,97
+34,28
+45,47
+0,98
+0,98
+
+29,3%
+29,5%
+28,9%
+28,3%
+17,7%
+15,4%
+15,5%
+37,2%
+22,8%
+21,2%
+21,9%
+22,4%
+24,3%
+25,2%
+3,0%
+1,5%
+
+-161,18+14,65*d-0,11*(d^2)2,99*(d*ht)+0,10*((d^2)*ht)+26,00*ht
+-9,3709+1,2439*d+0,0122*(d^2)
+-11,8026+1,5909*d+0,0001*(d^2)*ht
+-3,0203+0,0729*(d^2)-0,0011*(d^2)*ht
+-10,2883+0,6824*d+1,3065*ht
+109,4775-20,1123*d+1,0041*(d^2)
+-12,9265+1,4294*d+0,0185*(d^2)*ht
+12,1156-2,5386*d+0,1702*(d^2)+0,0156*(d^2)*ht
+-297,2604+15,5684*d+11,5991*ht
+162,0559-9,2412*d+0,2393*(d^2)
+263,0526-14,4282*d+0,0124*((d^2)*ht)
+256,8161-13,6711*d-0,0801*(d^2)+0,0151*d^2*ht
+39,5338-0,1705*(d^2)+0,0106*((d^2)*ht)
+-40,3714+6,8804*d-1,9488*ht
+-0,4656+(d^1,0870)+(ht^0,6888)
+exp(6,334737-73,401781*(d^-1))
+exp(7,854652-63,900403*(d^-1))
+
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+18,1
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+
+50,8
+23,0
+23,0
+23,0
+23,0
+23,0
+23,0
+23,0
+23,0
+
+0,98
+0,81
+0,95
+0,87
+0,87
+0,87
+0,89
+0,87
+0,92
+0,90
+0,92
+
+1,5%
+11,5%
+7,0%
+-
+
+exp(8,051060-65,107266*(d^-1))
+10^(1,841753-9,680439*(d^-1))
+10^(-1,161443+0,913291*log10((d^2)*ht))
+-185,219+19,884*d
+-16,366+0,061*((d^2)*ht)
+-183,248+19,934*d-0,312*ht
+0,098*(d^2,569)
+0,017*(((d^2)*ht)^1,144)
+exp(-2,450+2,607*log(d))
+exp(-4,396+01,851*log(d*ht))
+exp(-2,298+2,575*log(d)+0,105*log(hf/ht))
+
+Witschoreck (2008)
+Hoppe et al. (2006)
+Hoppe et al. (2006)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+
+Schikowski et al. (2013)
+Schikowski et al. (2013)
+Schikowski et al. (2013)
+Schikowski et al. (2013)
+Schikowski et al. (2013)
+Schikowski et al. (2013)
+Schikowski et al. (2013)
+Schikowski et al. (2013)
+Sanquetta et al. (2003)
+Sanquetta et al. (2003)
+Sanquetta et al. (2003)
+Sanquetta et al. (2003)
+Sanquetta et al. (2003)
+Sanquetta et al. (2003)
+Witschoreck (2008)
+Witschoreck (2008)
+
+36
+
+Espécies nativas
+Espécies nativas
+
+Espécie
+Anadenanthera peregrina
+(L.) Speg.
+Anadenanthera peregrina
+(L.) Speg. var. peregrina
+Anadenanthera peregrina
+(L.) Speg. var. peregrina
+Anadenanthera peregrina
+(L.) Speg. var. peregrina
+Aniba rosiodora Ducke
+
+Bioma
+Mata Atlântica
+
+Estado
+ES
+
+Mata Atlântica
+
+ES
+
+Mata Atlântica
+
+ES
+
+Mata Atlântica
+
+ES
+
+Amazônia
+
+AM
+
+Aniba rosiodora Ducke
+
+Amazônia
+
+AM
+
+Aniba rosiodora Ducke
+
+Amazônia
+
+AM
+
+Aniba rosiodora Ducke
+
+Amazônia
+
+AM
+
+Aniba rosiodora Ducke
+
+Amazônia
+
+AM
+
+Aniba rosiodora Ducke
+
+Amazônia
+
+AM
+
+Aniba rosiodora Ducke
+
+Amazônia
+
+AM
+
+Aniba rosiodora Ducke
+
+Amazônia
+
+AM
+
+Aniba rosiodora Ducke
+
+Amazônia
+
+AM
+
+Aniba rosiodora Ducke
+
+Amazônia
+
+AM
+
+Araucaria angustifolia
+Mata Atlântica
+PR
+(Bertol.) Kuntze
+Araucaria angustifolia
+Mata Atlântica
+PR
+(Bertol.) Kuntze
+Araucaria angustifolia
+Mata Atlântica
+PR
+(Bertol.) Kuntze
+Araucaria angustifolia
+Mata Atlântica
+PR
+(Bertol.) Kuntze
+Araucaria angustifolia
+Mata Atlântica
+PR
+(Bertol.) Kuntze
+Araucaria angustifolia
+Mata Atlântica
+PR
+(Bertol.) Kuntze
+Araucaria angustifolia
+Mata Atlântica
+PR
+(Bertol.) Kuntze
+¹ idade: 56 meses
+² espaçamento de plantio: 3m x 3m. Idade: 8,3 anos
+³ espaçamento de plantio: 4m x 4m. Idade: 8,3 anos
+4
+espaçamento de plantio: 5m x 5m. Idade: 8,3 anos
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Abaixo (raízes)
+
+Peso
+Seco
+
+d mín.
+-
+
+d máx.
+-
+
+R2/R2aj
+0,89
+
+Syx
+24,1%
+
+Equação
+3,561821+0,044706*(d^2*ht)
+
+Autor
+Souza (2018)¹
+
+Seco
+
+-
+
+-
+
+0,93
+
+20,4%
+
+396,9-93,24*d+5,715*d^2
+
+Gomes (2022)²
+
+Seco
+
+-
+
+-
+
+0,78
+
+18,0%
+
+-108,1+16,47*d
+
+Gomes (2022)³
+
+Seco
+
+-
+
+-
+
+0,87
+
+13,9%
+
+-541,7+65,84*d-1,3818*d^2
+
+Gomes (2022)4
+
+Fresco
+
+6,0
+
+18,0
+
+0,78
+
+-
+
+12,71452+0,45218*(d^2)
+
+Krainovic et al. (2017)
+
+Fresco
+
+6,0
+
+18,0
+
+0,68
+
+-
+
+5,9292+2,1841*d+0,3686*(d^2)
+
+Krainovic et al. (2017)
+
+Fresco
+
+6,0
+
+18,0
+
+0,81
+
+-
+
+0,31046*(d^1,54806)*(ht^0,78635)
+
+Krainovic et al. (2017)
+
+Fresco
+
+6,0
+
+18,0
+
+0,69
+
+-
+
+1,6607*(d^1,5872)
+
+Krainovic et al. (2017)
+
+Fresco
+
+6,0
+
+18,0
+
+0,81
+
+-
+
+0,319*(((d^2)*ht)^0,77631)
+
+Krainovic et al. (2017)
+
+Seco
+
+6,0
+
+18,0
+
+0,62
+
+-
+
+13,08642+0,26283*(d^2)
+
+Krainovic et al. (2017)
+
+Seco
+
+6,0
+
+18,0
+
+0,62
+
+-
+
+8,6451+0,7148*d+0,2354*(d^2)
+
+Krainovic et al. (2017)
+
+Seco
+
+6,0
+
+18,0
+
+0,80
+
+-
+
+0,14867*(d^1,50003)*(ht^0,93917)
+
+Krainovic et al. (2017)
+
+Seco
+
+6,0
+
+18,0
+
+0,63
+
+-
+
+1,12*(d^1,5415)
+
+Krainovic et al. (2017)
+
+Seco
+
+6,0
+
+18,0
+
+0,80
+
+-
+
+0,17609*(((d^2)*ht)^0,78505)
+
+Krainovic et al. (2017)
+
+Seco
+
+20,0
+
+44,0
+
+0,96
+
+3,4%
+
+exp(-5,38290+2,80408*log(d))
+
+Schumacher et al. (2011)
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Seco
+
+14,3
+
+34,4
+
+0,85
+
+21,2%
+
+-263,52+19,7*d
+
+Oliveira et al. (2018)
+
+Seco
+
+14,3
+
+34,4
+
+0,64
+
+32,3%
+
+-559,89+46,87*ht
+
+Oliveira et al. (2018)
+
+Seco
+
+14,3
+
+34,4
+
+0,84
+
+21,5%
+
+-298,97+18,45*d+3,97*ht
+
+Oliveira et al. (2018)
+
+Seco
+
+14,3
+
+34,4
+
+0,86
+
+19,6%
+
+10^(-1,01+2,38*log10(d))
+
+Oliveira et al. (2018)
+
+Seco
+
+14,3
+
+34,4
+
+0,85
+
+20,3%
+
+10^(-1,57+1,95*log10(d)+0,95*log10(ht))
+
+Oliveira et al. (2018)
+
+Seco
+
+20,0
+
+44,0
+
+0,97
+
+1,9%
+
+exp(-2,09238+2,41141*log(d))
+
+Schumacher et al. (2011)
+
+37
+
+Espécies nativas
+Espécie
+Araucaria angustifolia
+(Bertol.) Kuntze
+Bertholletia excelsa Bonpl.
+
+Bioma
+Mata Atlântica
+
+Estado
+PR
+
+Compartimento
+Total (abaixo+acima)
+
+Peso
+Seco
+
+d mín.
+20,0
+
+d máx.
+44,0
+
+R2/R2aj
+0,97
+
+Syx
+1,7%
+
+Equação
+exp(-2,12394+2,46033*log(d))
+
+Autor
+Schumacher et al. (2011)
+
+Amazônia
+
+AM
+
+Seco
+
+6,0
+
+18,0
+
+0,99
+
+16,8%
+
+-16,5976-3,0772*d+0,7192*(d^2)
+
+Lima (2011)
+
+Bertholletia excelsa Bonpl.
+
+Amazônia
+
+AM
+
+Seco
+
+6,0
+
+18,0
+
+0,99
+
+16,5%
+
+-5,0085*d+0,7694*(d^2)
+
+Lima (2011)
+
+Bertholletia excelsa Bonpl.
+
+Amazônia
+
+AM
+
+Seco
+
+6,0
+
+18,0
+
+0,99
+
+14,8%
+
+-1,919725-0,801731*d+0,031371*d^2*ht
+
+Lima (2011)
+
+Bertholletia excelsa Bonpl.
+
+Amazônia
+
+AM
+
+Seco
+
+6,0
+
+18,0
+
+0,99
+
+13,8%
+
+Amazônia
+
+AM
+
+Seco
+
+6,0
+
+18,0
+
+0,96
+
+29,8%
+
+11,2472163,801515*d+0,301382*d^2+0,020887*d^2*ht
+-185,249+26,312*d-6,091*ht
+
+Lima (2011)
+
+Bertholletia excelsa Bonpl.
+Cedrela odorata L.
+Cedrela odorata L.
+Cedrela odorata L.
+Cedrela odorata L.
+Cedrela odorata L.
+Cedrela odorata L.
+Cedrela odorata L.
+Cedrela odorata L.
+Ceiba speciosa
+(A.St.-Hil.) Ravenna
+Ceiba speciosa
+(A.St.-Hil.) Ravenna
+Ceiba speciosa
+(A.St.-Hil.) Ravenna
+Ceiba speciosa
+(A.St.-Hil.) Ravenna
+Ceiba speciosa
+(A.St.-Hil.) Ravenna
+Ceiba speciosa
+(A.St.-Hil.) Ravenna
+Ceiba speciosa
+(A.St.-Hil.) Ravenna
+Ceiba speciosa
+(A.St.-Hil.) Ravenna
+Croton floribundus Spreng.
+
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+
+23,0
+23,0
+23,0
+23,0
+23,0
+23,0
+23,0
+23,0
+42,0
+
+0,86
+0,79
+0,87
+0,90
+0,79
+0,90
+0,85
+0,90
+0,90
+
+-
+
+-113,5444+12,079*d
+0,191+0,027*((d^2)*ht)
+-89,979+12,693*d-3,203*ht
+0,075*(d^2,475)
+0,032*(((d^2)*ht)^0,982)
+exp(-2,294+2,365*log(d))
+exp(-4,297+1,673*log(d*ht))
+exp(-2,19+2,285*log(d)-0,257*log(hf/ht))
+-26,471+2,745*d
+
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+42,0
+
+0,95
+
+-
+
+10,025+0,006*((d^2)*ht)
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+42,0
+
+0,91
+
+-
+
+-33,106+2,422*d+2,229*ht
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+42,0
+
+0,92
+
+-
+
+0,135*(d^1,749)
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+42,0
+
+0,95
+
+-
+
+0,074*(((d^2)*ht)^0,742)
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+42,0
+
+0,97
+
+-
+
+exp(-1,843+1,701*log(d))
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+42,0
+
+0,97
+
+-
+
+exp(-1,857+1,071*log(d*ht))
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+42,0
+
+0,97
+
+-
+
+exp(-1,840+1,702*log(d)+0,011*log(hf/ht))
+
+Robortella (2010)
+
+Cerrado
+
+SP
+
+Seco
+
+5,0
+
+27,9
+
+0,99
+
+21,0%
+
+exp(-2,7218+2,6172*log(d)-0,2518*log(ht))
+
+Nicodemo et al. (2016)
+
+Croton floribundus Spreng.
+
+Cerrado
+
+SP
+
+Seco
+
+5,0
+
+27,9
+
+0,99
+
+21,0%
+
+exp(-2,7652+2,3953*log(d)+0,0076*d)
+
+Nicodemo et al. (2016)
+
+Croton floribundus Spreng.
+
+Cerrado
+
+SP
+
+Seco
+
+5,0
+
+27,9
+
+0,98
+
+21,9%
+
+exp(-3,3561+0,9666*log((d^2)*ht))
+
+Nicodemo et al. (2016)
+
+Croton floribundus Spreng.
+
+Cerrado
+
+SP
+
+Seco
+
+5,0
+
+27,9
+
+0,98
+
+20,0%
+
+exp(-2,8564+2,4771*log(d))
+
+Nicodemo et al. (2016)
+
+Handroanthus chrysotrichus
+(Mart. ex DC.) Mattos
+
+Amazônia
+
+MT
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Total (abaixo+acima)
+
+Seco
+
+5,0
+
+12,0
+
+0,92
+
+-
+
+-23,873+5,266*d
+
+Robortella (2010)
+
+Lima (2011)
+
+38
+
+Espécies nativas
+Espécie
+Handroanthus chrysotrichus
+(Mart. ex DC.) Mattos
+Handroanthus chrysotrichus
+(Mart. ex DC.) Mattos
+Handroanthus chrysotrichus
+(Mart. ex DC.) Mattos
+Handroanthus chrysotrichus
+(Mart. ex DC.) Mattos
+Handroanthus chrysotrichus
+(Mart. ex DC.) Mattos
+Handroanthus chrysotrichus
+(Mart. ex DC.) Mattos
+Handroanthus chrysotrichus
+(Mart. ex DC.) Mattos
+Mimosa caesalpiniifolia Benth.
+
+Bioma
+Amazônia
+
+Estado
+MT
+
+Compartimento
+Total (abaixo+acima)
+
+Peso
+Seco
+
+d mín.
+5,0
+
+d máx.
+12,0
+
+R2/R2aj
+0,92
+
+Syx
+-
+
+Equação
+6,005+0,029*d^2*ht
+
+Autor
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+5,0
+
+12,0
+
+0,92
+
+-
+
+-24,096+5,184*d+0,151*ht
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+5,0
+
+12,0
+
+0,95
+
+-
+
+0,216*(d^2,102)
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+5,0
+
+12,0
+
+0,92
+
+-
+
+0,217*(d^2*ht)^0,738
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+5,0
+
+12,0
+
+0,96
+
+-
+
+exp(-1,442+2,058*log(d))
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+5,0
+
+12,0
+
+0,88
+
+-
+
+exp(-1,299+1,079*log(d*ht))
+
+Robortella (2010)
+
+Amazônia
+
+MT
+
+Total (abaixo+acima)
+
+Seco
+
+5,0
+
+12,0
+
+0,98
+
+-
+
+exp(-1,888+2,119*log(d)-0,474*log(hf/ht))
+
+Robortella (2010)
+
+Caatinga
+
+RN
+
+Fresco
+
+5,2
+
+8,2
+
+0,47
+
+26,3%
+
+10,768942+0,025453*d^2*ht
+
+Lucena et al. (2020)
+
+Mimosa caesalpiniifolia Benth.
+
+Caatinga
+
+RN
+
+Fresco
+
+5,2
+
+8,2
+
+0,44
+
+27,2%
+
+4,444731+0,340263*(d*ht)
+
+Lucena et al. (2020)
+
+Mimosa caesalpiniifolia Benth.
+
+Caatinga
+
+RN
+
+Fresco
+
+5,2
+
+8,2
+
+0,63
+
+22,3%
+
+7,134411+0,218501*(d^2)
+
+Lucena et al. (2020)
+
+Mimosa caesalpiniifolia Benth.
+
+Caatinga
+
+RN
+
+Fresco
+
+5,2
+
+8,2
+
+0,71
+
+13,7%
+
+exp(-0,119429+log(d)*1,527954)
+
+Lucena et al. (2020)
+
+Mimosa caesalpiniifolia Benth.
+
+Caatinga
+
+RN
+
+Fresco
+
+5,2
+
+8,2
+
+0,47
+
+28,7%
+
+exp(-1,058530+log(d*ht)*1,051996)
+
+Lucena et al. (2020)
+
+Mimosa scabrella Benth.
+
+Mata Atlântica
+
+PR
+
+Seco
+
+3,0
+
+17,1
+
+0,98
+
+17,7%
+
+0,210100*(d^2,249997)
+
+Baggio et al. (1995)
+
+Mimosa scabrella Benth.
+
+Mata Atlântica
+
+PR
+
+Seco
+
+3,0
+
+17,1
+
+0,98
+
+18,8%
+
+0,418376*(d^2)
+
+Baggio et al. (1995)
+
+Mimosa scabrella Benth.
+
+Mata Atlântica
+
+PR
+
+Seco
+
+3,0
+
+17,1
+
+0,97
+
+22,1%
+
+0,030184*((d^2)*ht)
+
+Baggio et al. (1995)
+
+Schinus terebinthifolia Raddi
+Schinus terebinthifolia Raddi
+Schinus terebinthifolia Raddi
+Schinus terebinthifolia Raddi
+Schinus terebinthifolia Raddi
+Schinus terebinthifolia Raddi
+Schinus terebinthifolia Raddi
+Schinus terebinthifolia Raddi
+Schinus terebinthifolia Raddi
+
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Amazônia
+Mata Atlântica
+
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+MT
+PR
+
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+Seco
+
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+10,0
+-
+
+15,0
+15,0
+15,0
+15,0
+15,0
+15,0
+15,0
+15,0
+-
+
+0,63
+0,58
+0,64
+0,67
+0,58
+0,59
+0,42
+0,60
+0,78
+
+25,5%
+
+-107,081+15,890*d
+16,523+0,041*((d^2)*ht)
+-115,015+15,590*d+1,027*ht
+0,253*(d^2,324)
+0,160*(((d^2)*ht)^0,847)
+exp(-0,441+1,951*log(d))
+exp(-0,005+0,906*log(d*ht))
+exp(-0,546+2,027*log(d)+0,117*log(hf/ht))
+-0,325050+0,261156*(d^2)
+
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Robortella (2010)
+Sanquetta et al. (2015b)
+
+Schinus terebinthifolia Raddi
+
+Mata Atlântica
+
+PR
+
+Seco
+
+-
+
+-
+
+0,76
+
+26,0%
+
+1,766874+0,0300107*(d^2)*ht
+
+Sanquetta et al. (2015b)
+
+Schinus terebinthifolia Raddi
+
+Mata Atlântica
+
+PR
+
+Seco
+
+-
+
+-
+
+0,75
+
+26,4%
+
+exp(-1,338270+1,976655*log(d))
+
+Sanquetta et al. (2015b)
+
+Schinus terebinthifolia Raddi
+
+Mata Atlântica
+
+PR
+
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Total (abaixo+acima)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+
+Seco
+
+-
+
+-
+
+0,76
+
+27,6%
+
+exp(-2,364490+1,862581*log(d)+0,626321*log(ht))
+
+Sanquetta et al. (2015b)
+
+39
+
+Espécies nativas
+Espécie
+Bioma
+Estado
+Schizolobium parahyba
+Mata Atlântica
+ES
+var. amazonicum
+Schizolobium parahyba
+Mata Atlântica
+ES
+var. amazonicum
+Schizolobium parahyba
+Mata Atlântica
+ES
+var. amazonicum
+Schizolobium parahyba
+Mata Atlântica
+ES
+var. amazonicum
+Tabebuia aurea (Silva Manso)
+Amazônia
+MT
+Benth. & Hook.f. ex S.Moore
+Tabebuia aurea (Silva Manso)
+Amazônia
+MT
+Benth. & Hook.f. ex S.Moore
+Tabebuia aurea (Silva Manso)
+Amazônia
+MT
+Benth. & Hook.f. ex S.Moore
+Tabebuia aurea (Silva Manso)
+Amazônia
+MT
+Benth. & Hook.f. ex S.Moore
+Tabebuia aurea (Silva Manso)
+Amazônia
+MT
+Benth. & Hook.f. ex S.Moore
+Tabebuia aurea (Silva Manso)
+Amazônia
+MT
+Benth. & Hook.f. ex S.Moore
+Tabebuia aurea (Silva Manso)
+Amazônia
+MT
+Benth. & Hook.f. ex S.Moore
+Tabebuia aurea (Silva Manso)
+Amazônia
+MT
+Benth. & Hook.f. ex S.Moore
+¹ idade: 56 meses
+² espaçamento de plantio: 3m x 3m. Idade: 8,3 anos
+³ espaçamento de plantio: 4m x 4m. Idade: 8,3 anos
+4
+espaçamento de plantio: 5m x 5m. Idade: 8,3 anos
+
+Compartimento
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Acima
+(tronco+galhos+folhas)
+Total (abaixo+acima)
+
+Peso
+Seco
+
+d mín.
+-
+
+d máx.
+-
+
+R2/R2aj
+0,81
+
+Syx
+10,3%
+
+Equação
+-128,9+5,067*d+7,275*ht
+
+Autor
+Oliveira (2022)²
+
+Seco
+
+-
+
+-
+
+0,97
+
+6,3%
+
+11,35+0,0139*(d^2*ht)
+
+Oliveira (2022)³
+
+Seco
+
+-
+
+-
+
+0,93
+
+7,2%
+
+-24,82+0,6791*d^2-0,0160*(d^2*ht)
+
+Oliveira (2022)4
+
+Seco
+
+-
+
+-
+
+0,94
+
+8,6%
+
+-11,323296+0,313999*d^2+0,001973*d^2*ht
+
+Delarmelina (2019)¹
+
+Seco
+
+10,0
+
+20,0
+
+0,95
+
+-
+
+-115,094+13,835*d
+
+Robortella (2010)
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+20,0
+
+0,94
+
+-
+
+11,258+0,035*((d^2)*ht)
+
+Robortella (2010)
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+20,0
+
+0,95
+
+-
+
+-120,35+13,001*d+1,871*ht
+
+Robortella (2010)
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+20,0
+
+0,98
+
+-
+
+0,089*(d^2,538)
+
+Robortella (2010)
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+20,0
+
+0,95
+
+-
+
+0,121*(((d^2)*ht)^0,858)
+
+Robortella (2010)
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+20,0
+
+0,97
+
+-
+
+exp(-2,032+2,397*log(d))
+
+Robortella (2010)
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+20,0
+
+0,91
+
+-
+
+exp(-2,409+1,384*log(d*ht))
+
+Robortella (2010)
+
+Total (abaixo+acima)
+
+Seco
+
+10,0
+
+20,0
+
+0,97
+
+-
+
+exp(-2,265+2,465*log(d)-0,099*log(hf/ht))
+
+Robortella (2010)
+
+40
+
+REFERÊNCIAS
+ABREU, J. C. et al. Ajuste de modelos matemáticos lineares e não lineares para estimativa de
+biomassa e nutrientes de Anadenanthera colubrina var. cebil no semiárido pernambucano.
+Scientia Forestalis, v. 44, n. 111, p. 739–750, 2016.
+ALEIXO, V. et al. Relações Alométricas para Leucaena leucocephala (Lam.) De Wit. Ciência
+Florestal, v. 18, n. 3, p. 329–338, 2008.
+AMARO, M. A. et al. Estoque volumétrico, de biomassa e de carbono em uma floresta
+estacional semidecidual em Viçosa, Minas Gerais. Revista Árvore, v. 37, n. 5, p. 849–857,
+2013.
+ARAÚJO, T. M. et al. Comparison of formulae for biomass content determination in a tropical
+rain forest site in the state of Pará, Brazil. Forest Ecology e Management, v. 117, n. 1–3, p.
+43–52, 1999.
+BAGGIO, A. J. et al. Equações para a estimativa de peso da biomassa aérea de bracatinga
+(Mimosa scabrella Benth.) na idade de corte. Embrapa Florestas. Boletim de Pesquisa
+Florestal, n. 30/31, p. 37–49, 1995.
+BALBINOT, R. et al. Modelling of allometric equations for biomass estimate in deciduous forest.
+Floresta, v. 49, n. 1, p. 143–154, 2018.
+BARBEIRO, L. S. S. et al. Equações para estimativa da biomassa individual de Nectandra
+grandiflora Ness (canela-amarela). Floresta, v. 39, n. 4, p. 833–843, 2009.
+BARBOSA, R. I.; FERREIRA, C. A. C. Biomassa acima do solo de um ecossistema de
+“campina” em Roraima, norte da Amazônia Brasileira. Acta Amazonica, v. 34, n. 4, p. 577–
+586, 2004.
+BARICHELLO, L. R. et al. Quantificação da biomassa de um povoamento de Acacia mearnsii
+De Wild. na região sul do Brasil. Ciência Florestal, v. 15, n. 2, p. 129–135, 2005.
+BASUKI, T. M. et al. Allometric equations for estimating the above-ground biomass in tropical
+lowland Dipterocarp forests. Forest Ecology e Management, v. 257, n. 8, p. 1684–1694, 2009.
+BEHLING, A. et al. Equações simultâneas para estimativa da biomassa em plantios comerciais
+de Acácia-Negra. Enciclopédia Biosfera, v. 8, n. 15, p. 853–860, 2012.
+BROWN, I. F. et al. Uncertainty in the biomass of Amazonian forests: An example from
+Rondonia, Brazil. Forest Ecology e Management, v. 75, p. 175–189, 1995.
+BROWN, S. Estimating Biomass and Biomass Change of Tropical Forests: A Primer
+Estimating Biomass e Biomass Change of Tropical Forests: a Primer. Food & Agriculture
+Org., 1997.
+BROWN, S. et al. Biomass Estimation Methods for Tropical Forests with Applications to Forest
+Inventory Data. Forest Science, v. 35, n. 4, p. 881–902, 1989.
+BROWN, S.; IVERSON, L. R. Biomass estimates for tropical forests. World Resource Review,
+v. 4, n. 3, p. 366–384, 1992.
+CALDEIRA, M. V. W. et al. Biomassa de povoamento de Acacia mearnsii De Wild., Rio Grande
+do Sul, Brasil. Scientia Forestalis, v. 39, n. 90, p. 133–141, 2011.
+
+41
+
+CHAMBERS, J. Q. et al. Tree damage, allometric relationships, e above-ground net primary
+production in central Amazon forest. Forest Ecology e Management, v. 152, p. 73–84, 2001.
+CHAVE, J. et al. Estimation of biomass in a neotropical forest of French Guiana: Spatial e
+temporal variability. Journal of Tropical Ecology, v. 17, n. 1, p. 79–96, 2001.
+COLMANETTI, M. A. A. et al. Aboveground biomass e carbon of the highly diverse Atlantic
+Forest in Brazil: comparison of alternative individual tree modeling e prediction strategies.
+Carbon Management, v. 9, n. 4, p. 383–397, 2018.
+COUTINHO, V. M. et al. Equações tradicionais e simultâneas para biomassa de
+compartimentos aéreos de Cryptomeria japonica (L.F.) D. DON. Brazilian Journal of
+Biometrics, v. 35, n. 1, p. 58–75, 2017.
+DALLA LANA, M. et al. Biomass equations for caatinga species. Nativa, v. 6, n. 5, p. 517, 2018.
+DAVID, H. C. et al. The tropical biomass & carbon project–An application for forest biomass e
+carbon estimates. Ecological Modelling, v. 472, 2022.
+DELARMELINA, W. M. Biomassa e carbono em plantios de Schizolobium parahyba var.
+amazonicum sob diferentes espaçamentos em área de pastagem. Universidade Federal do
+Espírito Santo, 2019.
+DELITTI, W. B. C. et al. G. Biomass e mineralmass estimates in a “cerrado” ecosystem.
+Revista Brasil, v. 29, n. 4, p. 531–540, 2006.
+DJOMO, A. N. et al. Allometric equations for biomass estimations in Cameroon e pan moist
+tropical equations including biomass data from Africa. Forest Ecology e Management, v. 260,
+n. 10, p. 1873–1885, 2010.
+DUCEY, M. J. et al. Biomass equations for forest regrowth in the eastern Amazon using
+randomized branch sampling. Acta Amazonica, v. 39, n. 2, p. 349–360, 2009.
+ESTRADA, G. C. D. et al. Allometric models for aboveground biomass estimation of the
+mangrove Avicennia schaueriana. Hydrobiologia, v. 734, n. 1, p. 171–185, 2014.
+FONTOURA, M. R. et al. Modelos alométricos para estimativa de biomassa em área de
+regeneração natural de Ateleia glazioviana Baill. Floresta, v. 47, n. 4, p. 469–478, 2017.
+FRANCO, E. J. Estudo dos métodos estimativos de volume, biomassa e níveis de
+produtividade para eucalyptus camaldulensis. Universidade Federal de Lavras, 1996.
+GIRARD, E. A. Volume, biomassa e rendimento de óleos essenciais do craveiro (Pimenta
+pseudocaryophyllus (Gomes) Landrum) em floresta ombrófila mista. Universidade Federal
+do Paraná, 2005.
+GOMES, J. P. Equações de volume e biomassa para plantios de Acacia mangium Willd.
+em área de savana, em Roraima. Universidade Federal do Amazonas, 2017.
+GOMES, R. Carbono e nutrientes na biomassa e no solo em povoamentos de
+Anadenanthera peregrina (L.) Speg. var. peregrina em diferentes espaçamentos.
+Universidade Federal do Espírito Santo, 2022.
+GOODMAN, R. C. et al. Amazon palm biomass e allometry. Forest Ecology e Management, v.
+310, p. 994–1004, 15 dez. 2013.
+HIGUCHI, N. et al. Biomassa da parte aérea da vegetação da floresta tropical úmida de terrafirme da Amazônia brasileira. Acta Amazonica, v. 28, n. 2, p. 153–166, 1998.
+
+42
+
+HIGUCHI, N. et al. Aboveground biomass estimate for Amazonian dense tropical moist forests.
+Mem. Fac. Agric. Kogoshima Univ., v. 30, p. 43–54, 1994.
+HOPPE, J. M. et al. Estimativa de biomassa em povoamento de Platanus x acerifolia (Aiton)
+Willd. estabelecido no município de Dom Feliciano, RS. Ciência Florestal, v. 16, n. 4, p. 463–
+471, 2006.
+HUY, B. et al. Aboveground biomass equations for evergreen broadleaf forests in South Central
+Coastal ecoregion of Viet Nam: Selection of eco-regional or pantropical models. Forest
+Ecology e Management, v. 376, p. 276–283, 2016.
+NOGUEIRA JÚNIOR, L. R. et al. Equações alométricas para estimativa da biomassa arbórea
+em plantios mistos com espécies nativas na restauração da Mata Atlântica. Biota Neotropica,
+v. 14, n. 2, p. 9, 2014.
+KENZO, T. et al. Allometric equations for accurate estimation of above-ground biomass in
+logged-over tropical rainforests in Sarawak, Malaysia. Journal of Forest Research, v. 14, n. 6,
+p. 365–372, 2009.
+KETTERINGS, Q. M. et al. Reducing uncertainty in the use of allometric biomass equations for
+predicting above-ground tree biomass in mixed secondary forests. Forest Ecology e
+Management, v. 146, p. 199–209, 2001.
+KRAINOVIC, P. et al. New allometric equations to support sustainable plantation management
+of rosewood (Aniba rosaeodora Ducke) in the central Amazon. Forests, v. 8, n. 9, p. 327, 2017.
+LACERDA, J. S. et al. Estimativa da biomassa e carbono em áreas restauradas com plantio de
+essências nativas. METRVM, n. 5, p. 23, 2009.
+LIMA, A. J. N. et al. Allometric models for estimating above- e below-ground biomass in
+Amazonian forests at São Gabriel da Cachoeira in the upper Rio Negro, Brazil. Forest Ecology
+e Management, v. 277, p. 163–172, 2012.
+LIMA, M. C. D. et al. Biomass e carbon stock from Pinus caribaea var. hondurensis under
+homogenous stands in southwest Bahia, Brazil. Ciência Rural, v. 46, p. 957-962, 2016.
+LIMA, R. M. B. Estimativa da biomassa aérea de castanha-do-Brasil (Bertholletia excelsa
+Humb.e Bonpl.) em plantios homogêneos no estado do Amazonas. Embrapa Amazônia
+Ocidental, n. 1, p. 57–61, 2011.
+LIMA, R. C. et al. Equações para estimativa de volume, biomassa e carbono para três espécies
+nativas da Amazônia, cupiúba (Goupia glabra Aubl), angelim vermelho (Dinizia excelsa Ducke)
+e mandioqueira escamosa (Qualea paraenis Ducke). Revista Arquivos Científicos (IMMES),
+v. 2, n. 2, p. 74–82, 2019.
+LUCENA, M. S. et al. Estimativas de biomassa aérea e volume lenhoso de Sabiá (Mimosa
+caesalpiniifolia Benth.) em povoamento com 12 anos de idade. Gaia Scientia, v. 14, n. 3, p.
+108–127, 2020.
+MARTIN, J. G. et al. Aboveground biomass e nitrogen allocation of ten deciduous southern
+Appalachian tree species. Canadian Journal of Forest Research, v. 28, n. 11, p. 1648–1659,
+1998.
+MEDEIROS, T. C. C.; SAMPAIO, E. V. S. B. Allometry of aboveground biomasses in mangrove
+species in Itamaracá, Pernambuco, Brazil. Wetlands Ecology e Management, v. 16, n. 4, p.
+323–330, 2008.
+MELLO, A. A. et al. Individual Biomass e Carbon Equations for Mimosa scabrella Benth.
+(Bracatinga) in Southern Brazil. Silva Fennica, v. 46, n. 3, p. 333–343, 2012.
+
+43
+
+MELO, L. C. et al. Estimativa de biomassa e carbono total para árvores de caixeta no Paraná.
+Pesquisa Florestal Brasileira, v. 34, n. 77, p. 21–29, 2014.
+MIGUEL, E. P. et al. Floristic, structural, e allometric equations to estimate arboreal volume e
+biomass in a cerradão site. Semina:Ciencias Agrarias, v. 38, n. 4, p. 1691–1702, 2017.
+MOGNON, F. et al. Estimativas de biomassa para plantas de bambu do gênero Guadua.
+Revista Ceres, v. 61, n. 6, p. 900–906, 2014.
+MONASTIER, S. H. et al. Modelagem da biomassa individual de Phyllostachys aurea Carr. ex
+A.& C. Rivi’re. Enciclopédia Biosfera, v. 11, n. 21, p. 1290–1297, 2015.
+MOREIRA-BURGER, D.; DELITTI, W. B. C. Modelos preditores da fitomassa aérea da Floresta
+Baixa de Restinga. Revista Brasil, v. 33, n. 1, p. 143–153, 2010.
+NASCIMENTO, H. E. M.; LAURANCE, W. F. Total aboveground biomass in central Amazonian
+rainforests: a landscape-scale study. Forest Ecology e Management, v. 168, p. 311–321,
+2002.
+NELSON, B. W. et al. Allometric regressions for improved estimate of secondary forest biomass
+in the central Amazon. Forest Ecology e Management, v. 117, p. 149–167, 1999.
+NICODEMO, M. L. F. et al. Modelos alométricos para estimação de biomassa aérea e alocação
+de biomassa de capixingui (Croton floribundus Spreng.) em um sistema silviagrícola. Revista
+Árvore, v. 40, n. 2, p. 279–288, 2015.
+NOGUEIRA, E. M. et al. Estimates of forest biomass in the Brazilian Amazon: New allometric
+equations e adjustments to biomass from wood-volume inventories. Forest Ecology e
+Management, v. 256, n. 11, p. 1853–1867, 2008.
+NOGUEIRA, F. C. B. et al. Allometric equations to estimate aboveground biomass of Dalbergia
+cearensis species in the Brazilian seasonally dry tropical forest. Forest Ecology e
+Management, v. 484, p. 11, 2021.
+OLIVEIRA, C. P. et al. Comparison of statistical models for the estimation of tree biomass e for
+the estimation of carbon stock above the soil in the Cerrado Biome. Ciência Florestal, v. 29, n.
+1, p. 255–269, 2019.
+OLIVEIRA, F. S. Biomassa, carbono e nutrientes em povoamento de Schizolobium
+parahyba var. amazonicum em diferentes espaçamentos. Universidade Federal do Espírito
+Santo, 2022.
+OLIVEIRA, T. W. G. et al. Ajuste simultâneo na predição de biomassa aérea em Araucaria
+angustifolia (Bertol.) Kuntze. BIOFIX Scientific Journal, v. 3, n. 1, p. 137, 2018.
+OVERMAN, J. P. M. et al. Evaluation of regression models for above-ground biomass
+determination in Amazon rainforest. Journal of Tropical Ecology, v. 10, n. 2, p. 207–218,
+1994.
+PADILHA, D. R. C. Fitossociologia e estimativas da biomassa aérea e de carbono em
+chaco florestado no Brasil. Universidade Federal de Mato Grosso do Sul, 2011.
+RASERA, S. Biomassa e carbono no estrato arbóreo em área restaurada de Mata
+Atlântica. Universidade de São Paulo, 2019.
+RATUCHNE, C. L. Equações alométricas para a estimativa de biomassa, carbono e
+nutrientes em uma floresta ombrófila mista. Universidade Estadual do Centro-Oeste, 2010.
+RATUCHNE, L. C. Biomassa e carbono: equações e dinâmica em fragmentos de floresta
+ombrófila mista no Paraná. Universidade Federal do Paraná, 2015.
+
+44
+
+REZENDE, A. V. et al. Comparação de modelos matemáticos para estimativa do volume,
+biomassa e estoque de carbono da vegetação lenhosa de um cerrado sensu stricto em Brasília,
+DF. Scientia Forestalis, n. 71, p. 65–76, 2006.
+RIBEIRO, S. C. et al. Above- e belowground biomass in a Brazilian Cerrado. Forest Ecology e
+Management, v. 262, n. 3, p. 491–499, 2011.
+RIBEIRO, S. C. et al. Biomassa acima e abaixo do solo e estimativas de carbono para um
+plantio clonal de eucalipto no Sudeste do Brasil. Revista Árvore, v. 39, n. 2, p. 353–363, 2015.
+ROBORTELLA, H. S. Equações de biomassa e estoques de carbono de seis espécies em
+plantios mistos no noroeste do Mato Grosso. Instituto Nacional de Pesquisas da Amazônia,
+2010.
+ROCHA, C. C. C. Estimativa de volume, biomassa e carbono da vegetação lenhosa de
+floresta estacional no estado de Goiás. Universidade de Brasília, 2011.
+ROMERO, F. M. B. et al. Allometric equations for volume, biomass, e carbon in commercial
+stems harvested in a managed forest in the southwestern amazon: A case study. Forests, v.
+11, n. 8, p. 874, 2020.
+SAH, J. P. et al. Estimating aboveground biomass of broadleaved woody plants in the
+understory of Florida Keys pine forests. Forest Ecology e Management, v. 203, n. 1–3, p.
+319–329, 2004.
+SALDARRIAGA, J. G. et al. Long-term chronosequence of forest succession in the upper Rio
+Negro of Colombia e Venezuela. Journal of Ecology, v. 76, n. 4, p. 938–958, 1988.
+SALIS, S. M. et al. Estimating the aboveground biomass e wood volume of savanna woodlands
+in Brazil’s Pantanal wetlands based on allometric correlations. Forest Ecology e Management,
+v. 228, n. 1–3, p. 61–68, 2006.
+SAMPAIO, E. et al. Tree biomass estimation in regenerating areas of tropical dry vegetation in
+northeast Brazil. Forest Ecology e Management, v. 259, n. 6, p. 1135–1140, 2010.
+SAMPAIO, E. V. S. B.; SILVA, G. C. Biomass equations for Brazilian semiarid caatinga plants.
+Acta Botanica Brasilica, v. 19, n. 4, p. 935–943, 2005.
+SANQUETTA, C. R. et al. Relações individuais de biomassa e conteúdo de carbono em
+plantações de Araucaria angustifolia e Pinus taeda no sul estado do Paraná, Brasil. Revista
+Acadêmica: ciências agrárias e ambientais, v. 1, n. 3, p. 33–40, 2003.
+SANQUETTA, C. R. et al. Biomassa Individual De Bambusa oldhamii Munro E Bambusa
+vulgaris Schrad. Ex J.C. Wendl. Cerne, v. 21, n. 1, p. 151–159, 2015a.
+SANQUETTA, M. N. I. et al. Equações de biomassa para aroeira-pimenteira (Schinus
+terebinthifolius RADDI). Enciclopédia Biosfera, v. 11, n. 22, p. 3604–3612, 2015b.
+SANTANA, G. M. et al. Ajuste independente e simultâneo para estimar biomassa acima do solo
+no Cerrado, fitofisionomia Parque Cerrado. Revista em Agronegocio e Meio Ambiente, v. 14,
+n. 3, 2021.
+SANTOS, H. V. S. et al. Allometric models for estimating the aboveground biomass of the
+mangrove Rhizophora mangle. Brazilian Journal of Oceanography, v. 65, n. 1, p. 44–53,
+2017.
+SCHACHT, W. H. et al. Above-Ground Production in Cleared e Thinned Stands of Semiarid
+Tropical Woodland, Brazil. Forest Ecology e Management, v. 23, p. 201–214, 1988.
+
+45
+
+SCHIKOWSKI, A. B. et al. Modelagem do crescimento e de biomassa individual de Pinus.
+Pesquisa Florestal Brasileira, v. 33, n. 75, p. 269-278, 2013.
+SCHUMACHER, M. V. et al. Produção de biomassa no corte raso em plantio de Araucaria
+angustifolia (Bertol.) Kuntze de 27 anos de idade em quedas do Iguaçu, PR. Ciência Florestal,
+v. 21, n. 1, p. 53–62, 2011.
+SCOLFORO, J. R. et al. Inventário Florestal de Minas Gerais-Equações de Volume, Peso
+de Matéria Seca e Carbono para Diferentes Fisionomias da Flora Nativa. Editora UFLA,
+2008.
+SEGURA, M.; KANNINEN, M. Allometric models for tree volume e total aboveground biomass
+in a tropical humid forest in Costa Rica. Biotropica, v. 37, n. 1, p. 2–8, 2005.
+SOUZA, P. H. Biomassa e estoque de carbono em povoamento de Anadenanthera
+peregrina (L.) Speg sob diferentes espaçamentos. Universidade do Espírito Santo, 2018.
+SOUZA, Y. F. S. Equações alométricas para estimativas de volume e biomassa em
+diferentes fitofisionomias do cerrado. Universidade de Brasília, 2020.
+THEODOROVICZ, M. M. et al. Estimativa da biomassa de bambus com classificadores
+baseados em instância e modelos de regressão. Enciclopédia Biosfera, v. 13, n. 24, p. 519–
+528, 2016.
+TOREZAN, J. M. D.; SILVEIRA, M. The biomass of bamboo (Guadua weberbaueri Pilger) in
+open forest of the southwestern amazon. Ecotropica, v. 6, p. 71–76, 2000.
+TRAUTENMÜLLER, J. W. Quantificação e distribuição do estoque de biomassa acima do
+solo em floresta estacional decidual. Universidade Federal de Santa Maria, 2015.
+TRAUTENMÜLLER, J. W. et al. Regression estimators for aboveground biomass e its
+constituent parts of trees in native southern Brazilian forests. Ecological Indicators, v. 130,
+2021.
+UHL, C. et al. Abandoned pastures in eastern Amazonia. I. Patterns of Plant Succession.
+Journal of Ecology, v. 76, n. 3, p. 663–681, 1988.
+ULLER, H. F. et al. Aboveground biomass quantification e tree-level prediction models for the
+Brazilian subtropical Atlantic Forest. Southern Forests, v. 81, n. 3, p. 261–271, 2019.
+ULLER, H. F. et al. Biomass models for three species with different growth forms e geographic
+distribution in the Brazilian Atlantic forest. Canadian Journal of Forest Research, v. 51, n. 10,
+p. 1419–1431, 2021.
+URBANO, E. Quantificação e estimativa da biomassa aérea e do carbono fixado em
+árvores de bracatingais da região metropolitana de Curitiba. Universidade Federal do
+Paraná, 2007.
+VOGEL, H. L. M. et al. Quantificação da biomassa em uma floresta estacional decidual em
+Itaara, RS, Brasil. Ciência Florestal, v. 16, p. 419-425, 2006.
+WITSCHORECK, R. Biomassa e nutrientes no corte raso de um povoamento de Pinus
+taeda L. de 17 anos de idade no município de Cambará do Sul - RS. Universidade Federal
+de Santa Maria, 2008.
+WOORTMANN, C. P. I. B. et al. Allometric equations for total, above- e below-ground biomass
+e carbon of the Amazonian forest type known as campinarana. Acta Amazonica, v. 48, n. 2, p.
+85–92, 2018.
+
+46
+
+YAMAKURA, T. et al. Aboveground biomass of tropical rain forest stands in Indonesian Borneo.
+Vegetatio, v. 68, n. 2, p. 71–82, 1986.
+ZANETTE, V. et al. Ajuste de modelos de regressão para a estimativa da biomassa aérea para
+seis regiões do estado do Paraná. Enciclopédia Biosfera, v. 14, n. 26, p. 29–43, 2017.
+
+47
+
+
