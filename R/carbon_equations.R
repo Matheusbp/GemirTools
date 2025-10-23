@@ -154,7 +154,7 @@
 #' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
 #' DBH range (cm): - | Autor: Velasco (2009)
 #' referência: Velasco, 2009: Estimativa de sequestro de carbono em mata ciliar: projeto POMAR, São Paulo (SP) / Estimate of carbon sequestration in riparian forests: the POMAR project case, São Paulo (SP). Ambiência, 5, 135-141.
-#' 
+#'
 #' @param dap DAP da árvore [cm]
 #' @param porcentagem_peso_seco Porcentagem de peso seco (padrão: 0.6)
 #' @param porc_C Proporção de carbono na biomassa (padrão: 0.47)
@@ -593,7 +593,7 @@ avocado_carbon <- function(dap, porc_C = 0.47) {
 #' Estado: PR | Compartimento: acima (tronco+galhos+folhas) | R2: 0,86 | Syx: 1,7% | Peso: Fresco
 #' DBH range (cm): 5.3-96.2 | Autor: Balbinot et al. (2008)
 #' referência: Balbinot, W. et al. (2008). AJUSTE DE EQUAÇÕES ALOMÉTRICAS PARA Araucaria angustifolia (Bert.) O. Ktze. UTILIZANDO ANÁLISE DE COMPONENTES PRINCIPAIS CONJUNTAMENTE COM ANÁLISE DE REGRESSÃO
-#' 
+#'
 #' NOTA: Plantas de 29 a 33 anos, por isso nao é boa essa equação para os anos inicais
 #' @param dap DAP da árvore [cm]
 #' @param h Altura da árvore [m]
@@ -611,7 +611,7 @@ araucaria_carbon <- function(dap, h, porc_C){
 #' DBH range (cm): 11.9-53.03 | Autor: Polbina et al. (2024)
 #' referência: Ng. Polbina Monsang, Keshav Kumar Upadhyay, Rajdeep Chanda, Rajiv Pandey, Shri Kant Tripathi, Volumetric tree growth models for aboveground biomass estimation of Pinus kesiya and Toona ciliata in Northeast India,
 #' Ecological Frontiers, Volume 44, Issue 5, 2024, Pages 958-965, ISSN 2950-5097, https://doi.org/10.1016/j.ecofro.2024.04.010.
-#' 
+#'
 #' @param dap DAP da árvore [cm]
 #' @param altura Altura da árvore [m]
 #' @param densidade Densidade da madeira [g/cm³]
@@ -768,17 +768,15 @@ guadua_weberbaueri_pilg_amazonia <- function(dap, porc_C = 0.47) {
 
 #' Handroanthus chrysotrichus (Mart. ex DC.) Mattos | Amazônia
 #'
-#' Estado: MT | Compartimento: Total (abaixo+acima) | R2: 0,98 | Syx: - | Peso: Seco
-#' DBH range (cm): 5,0 a 120 | Autor: Robortella (2010)
+#' Estado: MT | Compartimento: Total (abaixo+acima) | R2: 0,96 | Syx: - | Peso: Seco
+#' DBH range (cm): 5,0 a 12,0 | Autor: Robortella (2010)
 #' referência: ROBORTELLA, H. S. Equações de biomassa e estoques de carbono de seis espécies em plantios mistos no noroeste do Mato Grosso. Instituto Nacional de Pesquisas da Amazônia (INPA), 2010.
 #'
 #' @param dap DAP da árvore [cm]
-#' @param hf Altura do fuste [m]
-#' @param altura Altura da árvore [m]
 #' @param porc_C Proporção de carbono na biomassa (padrão: 0.47)
 #' @return Carbono acima do solo [kg]
 #' @export
-handroanthus_chrysotrichus_mart_ex_dc_mattos_amazonia <- function(dap, altura, porc_C = 0.47) {
+handroanthus_chrysotrichus_mart_ex_dc_mattos_amazonia <- function(dap, porc_C = 0.47) {
   return(porc_C * exp(-1.442+2.058*log(dap)))
 }
 
@@ -1785,7 +1783,7 @@ socratea_exorrhiza_mart_h_wendl_outro <- function(dap, hf, porc_C = 0.47) {
 }
 
 #' Várias tropical forest in Costa Rica | Outro
-#' 
+#'
 #' Estado: Outro | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,87 | Syx: 14,0% | Peso: Seco
 #' DBH range (cm): 60,0 a 1050 | Autor: Segura e Kanninen (2005)
 #' referência: SEGURA, M.; KANNINEN, M. Allometric models for tree volume e total aboveground biomass in a tropical humid forest in Costa Rica. Biotropica, v. 37, n. 1, p. 2–8, 2005.
@@ -1871,7 +1869,7 @@ diptychandra_aurantiaca_tul_pantanal <- function(dap, porc_C = 0.47) {
 licania_minutiflora_sagot_fritsch_pantanal <- function(dap, porc_C = 0.47) {
   return(porc_C * exp(-2.265+2.386*log(dap)))
 }
-  
+
 #' Magonia pubescens A.St.-Hil. | Pantanal
 #'
 #' Estado: MS | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,99 | Syx: - | Peso: Seco
