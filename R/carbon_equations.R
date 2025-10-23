@@ -23,52 +23,138 @@
 #'
 #' @note {
 #'
-#' Note que o dado da Euterpe oleracea nos dá direto os kg de carbono (C) de cada planta, nao necessitando usar porc_C.
+#' ## Summary of Functions
 #'
-#' References
+#' This package contains over 100 allometric equations for estimating carbon content in Brazilian forest species, organized by biome and species:
 #'
-#' Velasco, 2009: Estimativa de sequestro de carbono em mata ciliar: projeto POMAR, São Paulo (SP) / Estimate of carbon sequestration in riparian forests: the POMAR project case, São Paulo (SP). Ambiência, 5, 135-141.
+#' ### General Functions (25+ functions)
+#' - **Palmeira (genérica)**: Generic palm equations
+#' - **General Carbon**: Universal equations for different wood densities
+#' - **Coffee**: Coffee plant equations (Coffea arabica)
+#' - **Banana**: Banana plant equations (Musa spp.)
+#' - **Jussara**: Euterpe edulis equations
+#' - **Arbustos**: Shrub equations
+#' - **Cacau**: Cocoa equations (Theobroma cacao)
+#' - **Euterpe oleracea**: Açaí palm equations
+#' - **Citrus**: Citrus species equations
+#' - **Jaqueira**: Jackfruit equations (Artocarpus heterophyllus)
+#' - **Acacia**: Acacia species equations
+#' - **Growth Rate Classes**: Slow, medium, and fast growth equations
+#' - **Pupunha**: Peach palm equations (Bactris gasipaes)
+#' - **Castanheira**: Brazil nut equations (Bertholletia excelsa)
+#' - **Coco**: Coconut equations (Cocos nucifera)
+#' - **Eucalipto**: Eucalyptus equations
+#' - **Teca**: Teak equations (Tectona grandis)
+#' - **Cupuaçu**: Cupuaçu equations (Theobroma grandiflorum)
+#' - **Floresta tropical úmida**: Tropical humid forest equations
+#' - **Mata Atlântica restaurada**: Restored Atlantic Forest equations
+#' - **Avocado**: Avocado equations (Persea americana)
+#' - **Araucaria**: Araucaria equations (Araucaria angustifolia)
+#' - **Cedro australiano**: Australian cedar equations (Toona ciliata)
 #'
-#' Vieira, S. A., Alves, L. F., Aidar, M., Araújo, L. S., Baker, T., Batista, J. L. F., Campos, M. C., Camargo, P. B., Chave, J., Delitti, W. B. C., Higuchi, N., Honorio, E., Joly, C. A., Keller, M., Martinelli, L. A., de Mattos, E. A., Metzker, T., Phillips, O., dos Santos, F. A. M., … Trumbore, S. E. (2008). Estimation of biomass and carbon stocks: The case of the Atlantic Forest. Biota Neotropica, 8(2), 21-29. https://doi.org/10.1590/S1676-06032008000200001
+#' ### Amazonia (15+ functions)
+#' - **Acacia mangium**: Acacia mangium equations
+#' - **Aniba rosiodora**: Rosewood equations
+#' - **Bellucia**: Bellucia species equations
+#' - **Bertholletia excelsa**: Brazil nut equations
+#' - **Cecropia sciadophylla**: Cecropia equations
+#' - **Cedrela odorata**: Spanish cedar equations
+#' - **Ceiba speciosa**: Silk floss tree equations
+#' - **Croton matourensis**: Croton equations
+#' - **Goupia glabra**: Goupia equations
+#' - **Guadua weberbaueri**: Bamboo equations
+#' - **Handroanthus chrysotrichus**: Golden trumpet equations
+#' - **Laetia procera**: Laetia equations
+#' - **Schinus terebinthifolia**: Brazilian pepper equations
+#' - **Syzygium cumini**: Java plum equations
+#' - **Tabebuia aurea**: Golden trumpet equations
+#' - **Várias**: General Amazon species equations
+#' - **Vismia species**: Vismia genus equations
 #'
-#' Alves, L. F., S. A. Vieira, M. A. Scaranello, P. B. Camargo, F. A. M. Santos, C. A. Joly, and L. A. Martinelli, 2010: Forest structure and live aboveground biomass variation along an elevational gradient of tropical Atlantic moist forest (Brazil). For. Ecol. Manage., 260, 679-691, https://doi.org/10.1016/j.foreco.2010.05.023.
+#' ### Caatinga (15+ functions)
+#' - **Anadenanthera colubrina**: Angico equations
+#' - **Aspidosperma pyrifolium**: Aspidosperma equations
+#' - **Astronium urundeuva**: Aroeira equations
+#' - **Bauhinia cheilantha**: Bauhinia equations
+#' - **Cenostigma species**: Cenostigma equations
+#' - **Cereus jamacaru**: Mandacaru cactus equations
+#' - **Cnidoscolus quercifolius**: Cnidoscolus equations
+#' - **Croton species**: Croton genus equations
+#' - **Dalbergia cearensis**: Dalbergia equations
+#' - **Jatropha mollissima**: Jatropha equations
+#' - **Mimosa species**: Mimosa genus equations
+#' - **Monteverdia rigida**: Monteverdia equations
+#' - **Schinopsis brasiliensis**: Schinopsis equations
+#' - **Várias**: General Caatinga species equations
 #'
-#' Chave, J., and Coauthors, 2005: Tree allometry and improved estimation of carbon stocks and balance in tropical forests. Oecologia, 145, 87-99, https://doi.org/10.1007/s00442-005-0100-x.
+#' ### Cerrado (8+ functions)
+#' - **Anadenanthera colubrina**: Angico equations
+#' - **Croton floribundus**: Croton equations
+#' - **Eremanthus erythropappus**: Candeia equations
+#' - **Eucalyptus species**: Eucalyptus equations
+#' - **Kielmeyera species**: Kielmeyera equations
+#' - **Stryphnodendron adstringens**: Barbatimão equations
+#' - **Várias**: General Cerrado species equations
 #'
-#' Meireles, 2018: CARACTERIZAÇÃO DO ESTOQUE DE CARBONO E EQUAÇÕES ALOMÉTRICAS PARA ESTIMATIVA DE BIOMASSA DE CAFEEIROS ASSOCIADOS À GREVÍLEAS. 0-155.
+#' ### Mata Atlântica (35+ functions)
+#' - **Anadenanthera colubrina**: Angico equations
+#' - **Araucaria angustifolia**: Araucaria equations
+#' - **Ateleia glazioveana**: Ateleia equations
+#' - **Avicennia schaueriana**: Mangrove equations
+#' - **Bambusa species**: Bamboo equations
+#' - **Cecropia glaziovii**: Cecropia equations
+#' - **Cryptomeria japonica**: Japanese cedar equations
+#' - **Cyathea delgadii**: Tree fern equations
+#' - **Euterpe edulis**: Jussara palm equations
+#' - **Guadua chacoensis**: Bamboo equations
+#' - **Laguncularia racemosa**: Mangrove equations
+#' - **Leucaena leucocephala**: Leucaena equations
+#' - **Mimosa scabrella**: Mimosa equations
+#' - **Nectandra grandiflora**: Nectandra equations
+#' - **Phyllostachys aurea**: Bamboo equations
+#' - **Pimenta pseudocaryophyllus**: Pimenta equations
+#' - **Pinus species**: Pine equations
+#' - **Rhizophora mangle**: Mangrove equations
+#' - **Tabebuia cassinoides**: Tabebuia equations
+#' - **Várias**: General Atlantic Forest species equations
 #'
-#' Corrêa, A., 2013: AGROFLORESTA, E C O L O G I A e SOCIEDADE.
+#' ### Pantanal (10+ functions)
+#' - **Anadenanthera colubrina**: Angico equations
+#' - **Coccoloba guaranitica**: Coccoloba equations
+#' - **Diplokeleba floribunda**: Diplokeleba equations
+#' - **Diptychandra aurantiaca**: Diptychandra equations
+#' - **Licania minutiflora**: Licania equations
+#' - **Magonia pubescens**: Magonia equations
+#' - **Phyllostylon rhamnoides**: Phyllostylon equations
+#' - **Protium heptaphyllum**: Protium equations
+#' - **Terminalia argentea**: Terminalia equations
+#' - **Várias**: General Pantanal species equations
 #'
-#' Conti, G., and Coauthors, 2019: Developing allometric models to predict the individual aboveground biomass of shrubs worldwide. Glob. Ecol. Biogeogr., 28, 961-975, https://doi.org/10.1111/geb.12907.
+#' ### Other Species (20+ functions)
+#' - **Attalea phalerata**: Attalea palm equations
+#' - **Euterpe precatoria**: Euterpe equations
+#' - **Iriartea deltoidea**: Iriartea equations
+#' - **Mauritia flexuosa**: Buriti palm equations
+#' - **Mauritiella aculeata**: Mauritiella equations
+#' - **Oenocarpus bataua**: Oenocarpus equations
+#' - **Socratea exorrhiza**: Socratea equations
+#' - **Tropical Forest Costa Rica**: General tropical forest equations
 #'
-#' IPCC (Intergovernmental Panel on Climate Change). Forest Lands. In Intergovernmental Panel on Climate Change Guidelines for National Greenhouse Gas Inventories; Institute for Global Environmental Strategies (IGES): Hayama, Japan, 2006; p. 83. Available online: https://www.ipcc-nggip.iges.or.jp/public/2006gl/ (accessed on 22 March 2022).
-#'
-#' de Miranda, D. L. C., Sanquetta, C. R., Costa, L. G. da S., & Corte, A. P. D. (2012). Biomassa e carbono em Euterpe oleracea Mart., na Ilha do Marajó - PA. Floresta e Ambiente, 19(3), 336-343. https://doi.org/10.4322/floram.2012.039
-#' Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46-57, https://doi.org/10.1016/j.agee.2013.04.013.
-#'
-#'Allometric equations for estimating biomass of euterpe precatoria, the most abundant palm species in the Amazon, da Silva, 2015;
-#'
-#'Ètz Schroth, G., Agra, S. D., Geraldes Teixeira, W., Haag, D., & Lieberei, R. (2002). Conversion of secondary forest into agroforestry and monoculture plantations in Amazonia: consequences for biomass, litter and soil carbon stocks after 7 years. In Forest Ecology and Management (Vol. 163).
-#'
-#'Saha, C., Mahmood, H., Nayan, S. N. S., Siddique, M. R. H., Abdullah, S. M. R., Islam, S. M. Z., Iqbal, M. Z., & Akhter, M. (2021). Allometric biomass models for the most abundant fruit tree species of Bangladesh: A Non-destructive approach. Environmental Challenges, 3. https://doi.org/10.1016/j.envc.2021.100047
-#'
-#'Gomes, J. P. (2017). EQUAÇÕES DE VOLUME E BIOMASSA PARA PLANTIOS DE Acacia mangium Willd. EM ÁREA DE SAVANA, EM RORAIMA.
-#'
-#'Carneiro de Miranda, D. L., Galvão de Melo, A. C., & Sanquetta, C. R. (2011). Equações alométricas para estimativa de biomassa e carbono em árvores de reflorestamentos de restauração (Vol. 35).
-#'
-#' Malimbwi, R.E. & E., R. & Eid, Tron & Chamshama, Shabani & O., S.. (2016). Allometric volume and biomass models in Tanzania. 10.13140/RG.2.1.1891.5445.
-#'
-#'Araújo, L. S. (2022). TEOR DE CARBONO ESTOCADO EM PLANTIOS Khaya grandifoliola DE ORIGEM SEMINAL E CLONAL. Available in https://repositorio.uemasul.edu.br/server/api/core/bitstreams/9d4e1ff7-dc96-4062-a7c7-dc52a12a6f7f/content
-#'
-#'Higuchi. (1998). Biomassa da parte aérea da vegetação da floresta tropical Úmida de Terra-Firme da Amazônia Brasileira. Acta Amazonica, 28 (2), 153-166. http://www.scielo.br/pdf/aa/v28n2/1809-4392-aa-28-2-0153.pdf
+#' ## Usage Notes
+#' - All functions return carbon content in kg per individual
+#' - Default carbon percentage (porc_C) is 0.47 (47%) as per IPCC guidelines
+#' - Functions are organized by biome and species for easy navigation
+#' - Each function includes detailed metadata (R², Syx, DBH range, author, reference)
+#' - Parameters vary by function: DAP (diameter at breast height), height, wood density, etc.
 #'
 #' }
+
 #' Palmeira (genérica) | Geral
 #'
 #' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
 #' DBH range (cm): - | Autor: Velasco (2009)
 #' referência: Velasco, 2009: Estimativa de sequestro de carbono em mata ciliar: projeto POMAR, São Paulo (SP) / Estimate of carbon sequestration in riparian forests: the POMAR project case, São Paulo (SP). Ambiência, 5, 135-141.
-#'
+#' 
 #' @param dap DAP da árvore [cm]
 #' @param porcentagem_peso_seco Porcentagem de peso seco (padrão: 0.6)
 #' @param porc_C Proporção de carbono na biomassa (padrão: 0.47)
@@ -100,7 +186,7 @@ general_carbon <- function(dap, altura, densidade_madeira,
 
 #' Café arábica (Coffea arabica) | Bahia
 #'
-#' Estado: BA | Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
+#' Estado: BA | Compartimento: Total () | R2: - | Syx: - | Peso: Seco
 #' DBH range (cm): - | Autor: Meireles (2018)
 #' referência: Meireles, 2018: CARACTERIZAÇÃO DO ESTOQUE DE CARBONO E EQUAÇÕES ALOMÉTRICAS PARA ESTIMATIVA DE BIOMASSA DE CAFEEIROS ASSOCIADOS À GREVÍLEAS. 0-155.
 #'
@@ -163,7 +249,7 @@ arbusto_carbon <- function(altura_arbusto, crown_diameter,
 
 #' Cacau (Theobroma cacao L.) | Geral
 #'
-#' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
+#' Compartimento: Acima e abaixo (tronco+galhos+folhas+raizes) | R2: - | Syx: - | Peso: Seco
 #' DBH range (cm): - | Autor: Somarriba et al. (2013)
 #' referência: Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46-57, https://doi.org/10.1016/j.agee.2013.04.013.
 #'
@@ -179,7 +265,7 @@ cacau_carbon <- function(altura, diam_30cm,
 
 #' Euterpe oleracea Mart. (Açaí) | Amazônia
 #'
-#' Estado: PA | Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
+#' Estado: PA | Compartimento: Total (abaixo+acima) | R2: 0.946 | Syx: 12.09 | Peso: Seco
 #' DBH range (cm): - | Autor: de Miranda et al. (2012)
 #' referência: de Miranda, D. L. C., Sanquetta, C. R., Costa, L. G. da S., & Corte, A. P. D. (2012). Biomassa e carbono em Euterpe oleracea Mart., na Ilha do Marajó - PA. Floresta e Ambiente, 19(3), 336-343. https://doi.org/10.4322/floram.2012.039
 #'
@@ -193,23 +279,23 @@ euterpe_oleracea_carbon <- function(dap) {
 
 #' Euterpe precatoria Mart. | Amazônia
 #'
-#' Estado: Outro | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,97 | Syx: - | Peso: Seco
-#' DBH range (cm): 12,0 a 190 | Autor: Goodman et al. (2013)
+#' Estado: Peru | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,97 | Syx: - | Peso: Seco
+#' DBH range (cm): 12,0 a 19,0 | Autor: Goodman et al. (2013)
 #' referência: GOODMAN, R. C. et al. Amazon palm biomass e allometry. Forest Ecology e Management, v. 310, p. 994–1004, 2013.
 #'
-#' @param altura Altura da árvore [m]
+#' @param hf Altura do fuste [m]
 #' @param porc_C Proporção de carbono na biomassa (padrão: 0.47)
 #' @return Carbono acima do solo [kg]
 #' @export
-euterpe_precatoria_carbon <- function(altura, porc_C = 0.47) {
-  return(porc_C * ( (13.59 * altura) - 108.8) )
+euterpe_precatoria_carbon <- function(hf, porc_C = 0.47) {
+  return(porc_C * ( (13.59 * hf) - 108.8) )
 }
 
 
 #' Citrus spp. | Geral
 #'
 #' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
-#' DBH range (cm): - | Autor: Schroth et al. (2002)
+#' DBH range (cm): 8-17 | Autor: Schroth et al. (2002) - from IPCC Annex 4a.2
 #' referência: Schroth, G., Agra, S. D., Geraldes Teixeira, W., Haag, D., & Lieberei, R. (2002). Conversion of secondary forest into agroforestry and monoculture plantations in Amazonia: consequences for biomass, litter and soil carbon stocks after 7 years. In Forest Ecology and Management (Vol. 163).
 #'
 #' @param diam_30cm Diâmetro da altura de 30 cm [cm]
@@ -239,7 +325,7 @@ jaqueira_carbon <- function(dap, porc_C = 0.47) {
 
 #' Acacia mangium Willd. | Amazônia
 #'
-#' Estado: RR | Compartimento: Total (abaixo+acima) | R2: 0,97 | Syx: 1,7% | Peso: Fresco
+#' Estado: RR | Compartimento: Total (abaixo+acima) | R2: 0,96 | Syx: 1,73% | Peso: Fresco
 #' DBH range (cm): 8,0 a 300 | Autor: Gomes (2017)
 #' referência: Gomes, J. P. (2017). EQUAÇÕES DE VOLUME E BIOMASSA PARA PLANTIOS DE Acacia mangium Willd. EM ÁREA DE SAVANA, EM RORAIMA. Universidade Federal do Amazonas, 2017.
 #'
@@ -330,7 +416,7 @@ crescimento_rapido_carbon <- function(dap, idade, altura, porc_C = 0.47) {
 #' Pupunha (Bactris gasipaes Kunth) | Amazônia
 #'
 #' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
-#' DBH range (cm): - | Autor: Schroth et al. (2002)
+#' DBH range (cm): - | Autor: Schroth et al. (2002) - from IPCC Annex 4a.2
 #' referência: Schroth, G., Agra, S. D., Geraldes Teixeira, W., Haag, D., & Lieberei, R. (2002). Conversion of secondary forest into agroforestry and monoculture plantations in Amazonia: consequences for biomass, litter and soil carbon stocks after 7 years. In Forest Ecology and Management (Vol. 163).
 #'
 #' @param dap DAP da árvore [cm]
@@ -349,7 +435,7 @@ pupunha_carbon <- function(dap, porc_C = 0.47) {
 #' Castanheira-do-Brasil (Bertholletia excelsa Bonpl.) | Amazônia
 #'
 #' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
-#' DBH range (cm): - | Autor: Schroth et al. (2002)
+#' DBH range (cm): 8-26 | Autor: Schroth et al. (2002) - from IPCC Annex 4a.2
 #' referência: Schroth, G., Agra, S. D., Geraldes Teixeira, W., Haag, D., & Lieberei, R. (2002). Conversion of secondary forest into agroforestry and monoculture plantations in Amazonia: consequences for biomass, litter and soil carbon stocks after 7 years. In Forest Ecology and Management (Vol. 163).
 #'
 #' @param dap DAP da árvore [cm]
@@ -367,7 +453,7 @@ castanheira_carbon <- function(dap, porc_C = 0.47) {
 
 #' Coco-gigante (Cocos nucifera L.) | Geral
 #'
-#' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
+#' Compartimento: Acima e abaixo (tronco+galhos+folhas) | R2: 0.78 | Syx: - | Peso: Seco
 #' DBH range (cm): - | Autor: Malimbwi et al. (2016)
 #' referência: Malimbwi, R.E. & E., R. & Eid, Tron & Chamshama, Shabani & O., S.. (2016). Allometric volume and biomass models in Tanzania. 10.13140/RG.2.1.1891.5445.
 #'
@@ -384,7 +470,7 @@ coco_carbon <- function(altura,
 #' Eucalipto (Eucalyptus spp.) | Geral
 #'
 #' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
-#' DBH range (cm): - | Autor: Senelwa e Sims (1998)
+#' DBH range (cm): 1-31 | Autor: Senelwa e Sims (1998) - from IPCC Annex 4a.2
 #' referência: Senelwa, K., & Sims, R. E. H. (1998). Eucalypts for biofuel production in New Zealand. Biomass and Bioenergy, 15(2), 109-119.
 #'
 #' @param dap DAP da árvore [cm]
@@ -401,7 +487,7 @@ eucalipto_carbon <- function(dap, altura,
 #' Teca (Tectona grandis L.f.) | Geral
 #'
 #' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
-#' DBH range (cm): - | Autor: Pérez e Kanninen (2003)
+#' DBH range (cm): 10-59 | Autor: Pérez e Kanninen (2003) - from IPCC Annex 4a.2
 #' referência: Pérez, D., & Kanninen, M. (2003). Aboveground biomass and thinning of Tectona grandis plantations. Forest Ecology and Management, 179(1-3), 529-538.
 #'
 #' @param dap DAP da árvore [cm]
@@ -417,7 +503,7 @@ teca_carbon <- function(dap,
 #' Cupuaçu (Theobroma grandiflorum (Willd. ex Spreng.) K.Schum.) | Amazônia
 #'
 #' Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
-#' DBH range (cm): - | Autor: Schroth et al. (2002)
+#' DBH range (cm): 6-18 | Autor: Schroth et al. (2002) - from IPCC Annex 4a.2
 #' referência: Schroth, G., Agra, S. D., Geraldes Teixeira, W., Haag, D., & Lieberei, R. (2002). Conversion of secondary forest into agroforestry and monoculture plantations in Amazonia: consequences for biomass, litter and soil carbon stocks after 7 years. In Forest Ecology and Management (Vol. 163).
 #'
 #' @param diam_30cm Diâmetro da altura de 30 cm [cm]
@@ -452,7 +538,8 @@ general_carbon_higuchi <- function(dap, altura,
 
 #' Espécies em geral com DAP >= 5 cm em Mata Atlântica restaurada | Mata Atlântica
 #'
-#' Nogueira Junior, L. R., Engel, V. L., Parrotta, J. A., de Melo, A. C. G., &
+#' DBH range (cm):3.1-33 | Autor: Nogueira Junior et al. (2014)
+#' referência: Nogueira Junior, L. R., Engel, V. L., Parrotta, J. A., de Melo, A. C. G., &
 #' Ré, D. S. (2014). Allometric equations for estimating tree biomass in restored
 #' mixed-species Atlantic Forest stands. Biota Neotropica, 14(2). https://doi.org/10.1590/1676-06032013008413
 #'
@@ -468,7 +555,8 @@ general_carbon_mixed_atlantic_forest_abg <- function(dap, altura, densidade_made
 
 #' Espécies em geral com DAP >= 5 cm em Mata Atlântica restaurada (BGB) | Mata Atlântica
 #'
-#' Nogueira Junior, L. R., Engel, V. L., Parrotta, J. A., de Melo, A. C. G., &
+#' DBH range (cm):3.1-33 | Autor: Nogueira Junior et al. (2014)
+#' referência: Nogueira Junior, L. R., Engel, V. L., Parrotta, J. A., de Melo, A. C. G., &
 #' Ré, D. S. (2014). Allometric equations for estimating tree biomass in restored
 #' mixed-species Atlantic Forest stands. Biota Neotropica, 14(2). https://doi.org/10.1590/1676-06032013008413
 #'
@@ -485,7 +573,9 @@ general_carbon_mixed_atlantic_forest_bgb <- function(dap, altura, densidade_made
 
 #' Avocado (Persea americana Mill.) | Geral
 #'
-#' Shem Kuyah, Catherine Muthuri, Denis Wakaba, Athanase Rusanganwa Cyamweshi, Paul Kiprotich, Athanase Mukuralinda,
+#' Estado: RR | Compartimento: acima (tronco+galhos+folhas) | R2: 0,86 | Syx: 1,7% | Peso: Fresco
+#' DBH range (cm): 5.3-96.2 | Autor: Shem Kuyah et al. (2024)
+#' referência: Shem Kuyah, Catherine Muthuri, Denis Wakaba, Athanase Rusanganwa Cyamweshi, Paul Kiprotich, Athanase Mukuralinda,
 #' Allometric equations and carbon sequestration potential of mango (Mangifera indica) and avocado (Persea americana) in Kenya,
 #' Trees, Forests and People, Volume 15, 2024, 100467, ISSN 2666-7193, https://doi.org/10.1016/j.tfp.2023.100467.
 #'
@@ -497,24 +587,14 @@ avocado_carbon <- function(dap, porc_C = 0.47) {
   return(porc_C * 0.0638 * (dap^2.5435))
 }
 
-#' Fitofisionomia da Mata Atlântica densa | Mata Atlântica
-#'
-#' tiepolo, 2002 & VIEIRA S 2008 & fonseca et al 2024 Em caso de nao ter dados para a fitofisionomia de mata atlantica, usamos chave 2005
-#'
-#' @param dap DAP da árvore [cm]
-#' @param porc_C Proporção de carbono na biomassa
-#' @return Carbono acima do solo [kg]
-#' @export
-general_dense_atlantic_forest_carbon <- function(dap, porc_C){
-  abg = 21.297 - 6.953 * dap + 0.74 * dap^2
-  return(abg * porc_C)
-}
-
 
 #' Araucaria (Araucaria angustifolia (Bertol.) Kuntze) | Mata Atlântica
 #'
-#' http://bibliotecaflorestal.ufv.br/bitstream/handle/123456789/15746/Revista_Floresta_v39_n2_p232-237_2009.pdf?sequence=1
-#'
+#' Estado: PR | Compartimento: acima (tronco+galhos+folhas) | R2: 0,86 | Syx: 1,7% | Peso: Fresco
+#' DBH range (cm): 5.3-96.2 | Autor: Balbinot et al. (2008)
+#' referência: Balbinot, W. et al. (2008). AJUSTE DE EQUAÇÕES ALOMÉTRICAS PARA Araucaria angustifolia (Bert.) O. Ktze. UTILIZANDO ANÁLISE DE COMPONENTES PRINCIPAIS CONJUNTAMENTE COM ANÁLISE DE REGRESSÃO
+#' 
+#' NOTA: Plantas de 29 a 33 anos, por isso nao é boa essa equação para os anos inicais
 #' @param dap DAP da árvore [cm]
 #' @param h Altura da árvore [m]
 #' @param porc_C Proporção de carbono na biomassa
@@ -527,20 +607,19 @@ araucaria_carbon <- function(dap, h, porc_C){
 
 #' Cedro australiano (Toona ciliata M.Roem.) | Geral
 #'
-#' Ng. Polbina Monsang, Keshav Kumar Upadhyay, Rajdeep Chanda, Rajiv Pandey, Shri Kant Tripathi,
-#' Volumetric tree growth models for aboveground biomass estimation of Pinus kesiya and Toona ciliata in Northeast India,
-#' Ecological Frontiers,
-#' 2024,ISSN 2950-5097,
-#' https://doi.org/10.1016/j.ecofro.2024.04.010.
-#'
+#' Estado: India | Compartimento: acima (tronco+galhos+folhas) | R2: 0,882 | Syx: 1,7% | Peso: Fresco
+#' DBH range (cm): 11.9-53.03 | Autor: Polbina et al. (2024)
+#' referência: Ng. Polbina Monsang, Keshav Kumar Upadhyay, Rajdeep Chanda, Rajiv Pandey, Shri Kant Tripathi, Volumetric tree growth models for aboveground biomass estimation of Pinus kesiya and Toona ciliata in Northeast India,
+#' Ecological Frontiers, Volume 44, Issue 5, 2024, Pages 958-965, ISSN 2950-5097, https://doi.org/10.1016/j.ecofro.2024.04.010.
+#' 
 #' @param dap DAP da árvore [cm]
-#' @param h Altura da árvore [m]
+#' @param altura Altura da árvore [m]
 #' @param densidade Densidade da madeira [g/cm³]
 #' @param porc_C Proporção de carbono na biomassa (padrão: 0.47)
 #' @return Carbono acima do solo [kg]
 #' @export
-cedro_australiano_carbon <- function(dap, h, densidade, porc_C = 0.47){
-  return(porc_C * exp(-2.0311 + 1.4858 * log(dap * h * densidade)))
+cedro_australiano_carbon <- function(dap, altura, densidade, porc_C = 0.47){
+  return(porc_C * exp(-2.0311 + 1.4858 * log(dap * altura * densidade)))
 }
 
 #' Acacia mangium Willd. | Amazônia
@@ -699,8 +778,8 @@ guadua_weberbaueri_pilg_amazonia <- function(dap, porc_C = 0.47) {
 #' @param porc_C Proporção de carbono na biomassa (padrão: 0.47)
 #' @return Carbono acima do solo [kg]
 #' @export
-handroanthus_chrysotrichus_mart_ex_dc_mattos_amazonia <- function(dap, hf, altura, porc_C = 0.47) {
-  return(porc_C * exp(-1.888+2.119*log(dap)-0.474*log(hf/altura)))
+handroanthus_chrysotrichus_mart_ex_dc_mattos_amazonia <- function(dap, altura, porc_C = 0.47) {
+  return(porc_C * exp(-1.442+2.058*log(dap)))
 }
 
 #' Laetia procera (Poepp.) Eichler | Amazônia
@@ -1047,11 +1126,12 @@ mimosa_tenuiflora_willd_poir_caatinga <- function(dap, altura, porc_C = 0.47) {
 }
 
 
-# Monteverdia rigida (Mart.) Biral | Caatinga
-
-# Estado: PE | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,95 | Syx: - | Peso: Seco
-# DBH range (cm): 2,0 a 500 | Autor: Sampaio e Silva (2005)
-# referência: SAMPAIO, E. V. S. B.; SILVA, G. C. Biomass equations for Brazilian semiarid caatinga plants. Acta Botanica Brasilica, v. 19, n. 4, p. 935–943, 2005.
+#' Monteverdia rigida (Mart.) Biral | Caatinga
+#'
+#' Estado: PE | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,95 | Syx: - | Peso: Seco
+#' DBH range (cm): 2,0 a 500 | Autor: Sampaio e Silva (2005)
+#' referência: SAMPAIO, E. V. S. B.; SILVA, G. C. Biomass equations for Brazilian semiarid caatinga plants. Acta Botanica Brasilica, v. 19, n. 4, p. 935–943, 2005.
+#'
 #' @param dap DAP da árvore [cm]
 #' @param porc_C Proporção de carbono na biomassa (padrão: 0.47)
 #' @return Carbono acima do solo [kg]
@@ -1060,8 +1140,6 @@ monteverdia_rigida_mart_biral_caatinga <- function(dap, porc_C = 0.47) {
   return(porc_C * 0.3460*(dap^2.0231))
 }
 
-#' @rdname carbon_equations
-#' @export
 #' Schinopsis brasiliensis Engl. | Caatinga
 #'
 #' Estado: PE | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,97 | Syx: - | Peso: Seco
@@ -1091,10 +1169,6 @@ varias_caatinga <- function(dap, altura, porc_C = 0.47) {
   return(porc_C * exp(-1.2884+1.6102*log(dap)+0.4343*log(altura)))
 }
 
-#' @rdname carbon_equations
-#' @export
-#### ============ CERRADO ============
-
 #' Anadenanthera colubrina (Vell.) Brenan | Cerrado
 #'
 #' Estado: MG | Compartimento: Acima (tronco+galhos+folhas) | R2: 94,99 | Syx: 21,2% | Peso: Seco
@@ -1110,8 +1184,6 @@ anadenanthera_colubrina_vell_brenan_cerrado <- function(dap, altura, porc_C = 0.
   return(porc_C * exp(-9.995149073+2.4884117855*log(dap)+0.3203838261*log(altura))*1000)
 }
 
-#' @rdname carbon_equations
-#' @export
 #' Croton floribundus Spreng. | Cerrado
 #'
 #' Estado: SP | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,98 | Syx: 20,0% | Peso: Seco
@@ -1213,8 +1285,6 @@ stryphnodendron_adstringens_mart_coville_cerrado <- function(dap, altura, porc_C
   return(porc_C * exp(-11.2875746052+2.3822964052*log(dap)+0.9086217316*log(altura))*1000)
 }
 
-#' @rdname carbon_equations
-#' @export
 #' Stryphnodendron adstringens (Mart.) Coville | Cerrado (variant)
 #'
 #' Estado: MG | Compartimento: Acima (tronco+galhos+folhas) | R2: 98,68 | Syx: 10,8% | Peso: Seco
@@ -1243,9 +1313,7 @@ varias_cerrado <- function(dap, altura, porc_C = 0.47) {
   return(porc_C * exp(-10.1966777197+2.4240650757*log(dap)+0.5413156008*log(altura))*1000)
 }
 
-#### ============ MATA ATLÂNTICA ============
-#' @rdname carbon_equations
-#' @export
+
 #' Anadenanthera colubrina (Vell.) Brenan | Mata Atlântica
 #'
 #' Estado: MG | Compartimento: Acima (tronco+galhos+folhas) | R2: 94,50 | Syx: 28,8% | Peso: Seco

@@ -15,7 +15,7 @@ coco_carbon(altura, porc_C = 0.47)
 Carbono acima do solo [kg]
 }
 \description{
-Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
+Compartimento: Acima e abaixo (tronco+galhos+folhas) | R2: 0.78 | Syx: - | Peso: Seco
 DBH range (cm): - | Autor: Malimbwi et al. (2016)
 referência: Malimbwi, R.E. & E., R. & Eid, Tron & Chamshama, Shabani & O., S.. (2016). Allometric volume and biomass models in Tanzania. 10.13140/RG.2.1.1891.5445.
 }

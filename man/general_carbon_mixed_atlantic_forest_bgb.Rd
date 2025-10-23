@@ -24,7 +24,8 @@ general_carbon_mixed_atlantic_forest_bgb(
 Carbono acima do solo [kg]
 }
 \description{
-Nogueira Junior, L. R., Engel, V. L., Parrotta, J. A., de Melo, A. C. G., &
+DBH range (cm):3.1-33 | Autor: Nogueira Junior et al. (2014)
+referência: Nogueira Junior, L. R., Engel, V. L., Parrotta, J. A., de Melo, A. C. G., &
 Ré, D. S. (2014). Allometric equations for estimating tree biomass in restored
 mixed-species Atlantic Forest stands. Biota Neotropica, 14(2). https://doi.org/10.1590/1676-06032013008413
 }

@@ -6,7 +6,6 @@
 \usage{
 handroanthus_chrysotrichus_mart_ex_dc_mattos_amazonia(
   dap,
-  hf,
   altura,
   porc_C = 0.47
 )
@@ -14,11 +13,11 @@ handroanthus_chrysotrichus_mart_ex_dc_mattos_amazonia(
 \arguments{
 \item{dap}{DAP da árvore [cm]}
 
-\item{hf}{Altura do fuste [m]}
-
 \item{altura}{Altura da árvore [m]}
 
 \item{porc_C}{Proporção de carbono na biomassa (padrão: 0.47)}
+
+\item{hf}{Altura do fuste [m]}
 }
 \value{
 Carbono acima do solo [kg]
