@@ -15,7 +15,9 @@ avocado_carbon(dap, porc_C = 0.47)
 Carbono acima do solo [kg]
 }
 \description{
-Shem Kuyah, Catherine Muthuri, Denis Wakaba, Athanase Rusanganwa Cyamweshi, Paul Kiprotich, Athanase Mukuralinda,
+Estado: RR | Compartimento: acima (tronco+galhos+folhas) | R2: 0,86 | Syx: 1,7% | Peso: Fresco
+DBH range (cm): 5.3-96.2 | Autor: Shem Kuyah et al. (2024)
+referência: Shem Kuyah, Catherine Muthuri, Denis Wakaba, Athanase Rusanganwa Cyamweshi, Paul Kiprotich, Athanase Mukuralinda,
 Allometric equations and carbon sequestration potential of mango (Mangifera indica) and avocado (Persea americana) in Kenya,
 Trees, Forests and People, Volume 15, 2024, 100467, ISSN 2666-7193, https://doi.org/10.1016/j.tfp.2023.100467.
 }

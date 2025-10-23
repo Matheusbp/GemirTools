@@ -15,7 +15,7 @@ acacia_carbon(dap, porc_C = 0.47)
 Carbono acima do solo [kg]
 }
 \description{
-Estado: RR | Compartimento: Total (abaixo+acima) | R2: 0,97 | Syx: 1,7% | Peso: Fresco
+Estado: RR | Compartimento: Total (abaixo+acima) | R2: 0,96 | Syx: 1,73% | Peso: Fresco
 DBH range (cm): 8,0 a 300 | Autor: Gomes (2017)
 referência: Gomes, J. P. (2017). EQUAÇÕES DE VOLUME E BIOMASSA PARA PLANTIOS DE Acacia mangium Willd. EM ÁREA DE SAVANA, EM RORAIMA. Universidade Federal do Amazonas, 2017.
 }

@@ -17,7 +17,7 @@ cacau_carbon(altura, diam_30cm, porc_C = 0.47)
 Carbono acima do solo [kg]
 }
 \description{
-Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
+Compartimento: Acima e abaixo (tronco+galhos+folhas+raizes) | R2: - | Syx: - | Peso: Seco
 DBH range (cm): - | Autor: Somarriba et al. (2013)
 referência: Somarriba, E., and Coauthors, 2013: Carbon stocks and cocoa yields in agroforestry systems of Central America. Agric. Ecosyst. Environ., 173, 46-57, https://doi.org/10.1016/j.agee.2013.04.013.
 }

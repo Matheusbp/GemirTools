@@ -4,10 +4,10 @@
 \alias{euterpe_precatoria_carbon}
 \title{Euterpe precatoria Mart. | Amazônia}
 \usage{
-euterpe_precatoria_carbon(altura, porc_C = 0.47)
+euterpe_precatoria_carbon(hf, porc_C = 0.47)
 }
 \arguments{
-\item{altura}{Altura da árvore [m]}
+\item{hf}{Altura do fuste [m]}
 
 \item{porc_C}{Proporção de carbono na biomassa (padrão: 0.47)}
 }
@@ -15,7 +15,7 @@ euterpe_precatoria_carbon(altura, porc_C = 0.47)
 Carbono acima do solo [kg]
 }
 \description{
-Estado: Outro | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,97 | Syx: - | Peso: Seco
-DBH range (cm): 12,0 a 190 | Autor: Goodman et al. (2013)
+Estado: Peru | Compartimento: Acima (tronco+galhos+folhas) | R2: 0,97 | Syx: - | Peso: Seco
+DBH range (cm): 12,0 a 19,0 | Autor: Goodman et al. (2013)
 referência: GOODMAN, R. C. et al. Amazon palm biomass e allometry. Forest Ecology e Management, v. 310, p. 994–1004, 2013.
 }

@@ -4,12 +4,12 @@
 \alias{cedro_australiano_carbon}
 \title{Cedro australiano (Toona ciliata M.Roem.) | Geral}
 \usage{
-cedro_australiano_carbon(dap, h, densidade, porc_C = 0.47)
+cedro_australiano_carbon(dap, altura, densidade, porc_C = 0.47)
 }
 \arguments{
 \item{dap}{DAP da árvore [cm]}
 
-\item{h}{Altura da árvore [m]}
+\item{altura}{Altura da árvore [m]}
 
 \item{densidade}{Densidade da madeira [g/cm³]}
 
@@ -19,9 +19,8 @@ cedro_australiano_carbon(dap, h, densidade, porc_C = 0.47)
 Carbono acima do solo [kg]
 }
 \description{
-Ng. Polbina Monsang, Keshav Kumar Upadhyay, Rajdeep Chanda, Rajiv Pandey, Shri Kant Tripathi,
-Volumetric tree growth models for aboveground biomass estimation of Pinus kesiya and Toona ciliata in Northeast India,
-Ecological Frontiers,
-2024,ISSN 2950-5097,
-https://doi.org/10.1016/j.ecofro.2024.04.010.
+Estado: India | Compartimento: acima (tronco+galhos+folhas) | R2: 0,882 | Syx: 1,7% | Peso: Fresco
+DBH range (cm): 11.9-53.03 | Autor: Polbina et al. (2024)
+referência: Ng. Polbina Monsang, Keshav Kumar Upadhyay, Rajdeep Chanda, Rajiv Pandey, Shri Kant Tripathi, Volumetric tree growth models for aboveground biomass estimation of Pinus kesiya and Toona ciliata in Northeast India,
+Ecological Frontiers, Volume 44, Issue 5, 2024, Pages 958-965, ISSN 2950-5097, https://doi.org/10.1016/j.ecofro.2024.04.010.
 }

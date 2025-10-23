@@ -18,6 +18,6 @@ Carbono acima do solo [kg]
 }
 \description{
 Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
-DBH range (cm): - | Autor: Senelwa e Sims (1998)
+DBH range (cm): 1-31 | Autor: Senelwa e Sims (1998) - from IPCC Annex 4a.2
 referência: Senelwa, K., & Sims, R. E. H. (1998). Eucalypts for biofuel production in New Zealand. Biomass and Bioenergy, 15(2), 109-119.
 }

@@ -15,7 +15,7 @@ coffee_carbon(diam_base, porc_C = 0.47)
 Carbono acima do solo [kg]
 }
 \description{
-Estado: BA | Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
+Estado: BA | Compartimento: Total () | R2: - | Syx: - | Peso: Seco
 DBH range (cm): - | Autor: Meireles (2018)
 referência: Meireles, 2018: CARACTERIZAÇÃO DO ESTOQUE DE CARBONO E EQUAÇÕES ALOMÉTRICAS PARA ESTIMATIVA DE BIOMASSA DE CAFEEIROS ASSOCIADOS À GREVÍLEAS. 0-155.
 }

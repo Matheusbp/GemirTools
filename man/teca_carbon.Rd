@@ -16,6 +16,6 @@ Carbono acima do solo [kg]
 }
 \description{
 Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
-DBH range (cm): - | Autor: Pérez e Kanninen (2003)
+DBH range (cm): 10-59 | Autor: Pérez e Kanninen (2003) - from IPCC Annex 4a.2
 referência: Pérez, D., & Kanninen, M. (2003). Aboveground biomass and thinning of Tectona grandis plantations. Forest Ecology and Management, 179(1-3), 529-538.
 }

@@ -17,5 +17,10 @@ araucaria_carbon(dap, h, porc_C)
 Carbono acima do solo [kg]
 }
 \description{
-http://bibliotecaflorestal.ufv.br/bitstream/handle/123456789/15746/Revista_Floresta_v39_n2_p232-237_2009.pdf?sequence=1
+Estado: PR | Compartimento: acima (tronco+galhos+folhas) | R2: 0,86 | Syx: 1,7% | Peso: Fresco
+DBH range (cm): 5.3-96.2 | Autor: Balbinot et al. (2008)
+referência: Balbinot, W. et al. (2008). AJUSTE DE EQUAÇÕES ALOMÉTRICAS PARA Araucaria angustifolia (Bert.) O. Ktze. UTILIZANDO ANÁLISE DE COMPONENTES PRINCIPAIS CONJUNTAMENTE COM ANÁLISE DE REGRESSÃO
+}
+\details{
+NOTA: Plantas de 29 a 33 anos, por isso nao é boa essa equação para os anos inicais
 }

@@ -16,6 +16,6 @@ Carbono acima do solo [kg]
 }
 \description{
 Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
-DBH range (cm): - | Autor: Schroth et al. (2002)
+DBH range (cm): 6-18 | Autor: Schroth et al. (2002) - from IPCC Annex 4a.2
 referência: Schroth, G., Agra, S. D., Geraldes Teixeira, W., Haag, D., & Lieberei, R. (2002). Conversion of secondary forest into agroforestry and monoculture plantations in Amazonia: consequences for biomass, litter and soil carbon stocks after 7 years. In Forest Ecology and Management (Vol. 163).
 }

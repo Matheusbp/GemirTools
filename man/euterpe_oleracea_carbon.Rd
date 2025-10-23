@@ -13,7 +13,7 @@ euterpe_oleracea_carbon(dap)
 Carbono acima do solo [kg]
 }
 \description{
-Estado: PA | Compartimento: Acima (tronco+galhos+folhas) | R2: - | Syx: - | Peso: Seco
+Estado: PA | Compartimento: Total (abaixo+acima) | R2: 0.946 | Syx: 12.09 | Peso: Seco
 DBH range (cm): - | Autor: de Miranda et al. (2012)
 referência: de Miranda, D. L. C., Sanquetta, C. R., Costa, L. G. da S., & Corte, A. P. D. (2012). Biomassa e carbono em Euterpe oleracea Mart., na Ilha do Marajó - PA. Floresta e Ambiente, 19(3), 336-343. https://doi.org/10.4322/floram.2012.039
 }
